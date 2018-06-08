@@ -40,6 +40,7 @@ PODS:
   - FritzSDK/Core (1.0.1)
   - FritzSDK/FritzVision (1.0.1)
   - FritzSDK/FritzVisionModel (1.0.1):
+    - FritzSDK/Core
     - FritzSDK/FritzVision
   - GoogleAPIClientForREST/Core (1.3.4):
     - GTMSessionFetcher (>= 1.1.7)
@@ -132,7 +133,7 @@ SPEC CHECKSUMS:
   FirebaseMLVision: f9756d8376dd150fb17629eaa7bdc6baa8965677
   FirebaseMLVisionLabelModel: ab16cb2bc13630ee13d9b0c6104b94165e86933c
   Fritz: 1c250b26939c00f19f66763f2ee2a5da8bf80602
-  FritzSDK: 26c7d8092ea71b8e8eb671164bc91a99e66b5167
+  FritzSDK: 9c8d87f0df41723f0a0ce0ab5316ae4b62ce273d
   GoogleAPIClientForREST: f7951c455df271bc6259b3ddb4073d0026475ccf
   GoogleMobileVision: 6b0a3a2dae1974ec35d80fdeeacc3a03193642e0
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
@@ -142,6 +143,6 @@ SPEC CHECKSUMS:
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
 
-PODFILE CHECKSUM: 68949ff92d348425a46bcfe89436b701ebe3020c
+PODFILE CHECKSUM: f5bb323a2db1807d496831d4b27dddbfd2ceeeda
 
 COCOAPODS: 1.5.2
