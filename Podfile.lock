@@ -81,7 +81,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/MLVision
   - Firebase/MLVisionLabelModel
-  - Fritz (from `https://github.com/fritzlabs/swift-sdk.git`, branch `new-xcode-sdks`)
+  - Fritz (from `https://github.com/fritzlabs/swift-sdk.git`, branch `master`)
   - FritzSDK (from `../swift-sdk`)
   - FritzSDK/FritzVisionModel (from `../swift-sdk`)
   - R.swift (~> 4.0)
@@ -110,14 +110,14 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   Fritz:
-    :branch: new-xcode-sdks
+    :branch: master
     :git: https://github.com/fritzlabs/swift-sdk.git
   FritzSDK:
     :path: "../swift-sdk"
 
 CHECKOUT OPTIONS:
   Fritz:
-    :commit: 6bbc287be6bfdc15c1b01de540ea8523fe74667e
+    :commit: 0a27a298386466a0ac3353abf403c2ba087630b4
     :git: https://github.com/fritzlabs/swift-sdk.git
 
 SPEC CHECKSUMS:
@@ -143,6 +143,6 @@ SPEC CHECKSUMS:
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
 
-PODFILE CHECKSUM: f5bb323a2db1807d496831d4b27dddbfd2ceeeda
+PODFILE CHECKSUM: 2e1cfb8ca2c1e95bfeac3bcfcfd4f12a25401dd5
 
 COCOAPODS: 1.5.2
