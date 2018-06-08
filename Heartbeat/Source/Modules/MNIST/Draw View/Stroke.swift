@@ -1,4 +1,3 @@
-//
 //  Stroke.swift
 //  TouchDraw
 //

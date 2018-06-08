@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b04-JT-WBk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Label View Controller-->
+        <scene sceneID="HlJ-0R-MZD">
+            <objects>
+                <viewController id="b04-JT-WBk" customClass="ImageLabelViewController" customModule="Heartbeat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7MN-v2-O2l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ofz-X8-cwq">
+                                <rect key="frame" x="39" y="139" width="296" height="388"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ofz-X8-cwq" firstAttribute="leading" secondItem="hfC-rb-e5R" secondAttribute="leading" constant="39" id="MZF-Sl-QW3"/>
+                            <constraint firstItem="Ofz-X8-cwq" firstAttribute="centerY" secondItem="7MN-v2-O2l" secondAttribute="centerY" id="Pws-9D-vz7"/>
+                            <constraint firstItem="Ofz-X8-cwq" firstAttribute="centerX" secondItem="7MN-v2-O2l" secondAttribute="centerX" id="eQP-Bf-2Rn"/>
+                            <constraint firstItem="Ofz-X8-cwq" firstAttribute="top" secondItem="hfC-rb-e5R" secondAttribute="top" constant="119" id="wui-hm-qgJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hfC-rb-e5R"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Ofz-X8-cwq" id="YFe-7X-j1S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dGt-wh-ykY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-207.19999999999999" y="-417.8410794602699"/>
+        </scene>
+    </scenes>
+</document>

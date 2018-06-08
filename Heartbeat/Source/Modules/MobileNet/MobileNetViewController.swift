@@ -12,6 +12,8 @@ import AlamofireImage
 import Fritz
 import Vision
 
+
+
 class MobileNetViewController: UIViewController {
 
     @IBOutlet weak var resultView: UIView! {
