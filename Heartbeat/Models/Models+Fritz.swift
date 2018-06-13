@@ -5,7 +5,7 @@
 //  Created by Andrew Barba on 1/6/18.
 //  Copyright © 2018 Fritz Labs, Inc. All rights reserved.
 //
-import Fritz
+import FritzManagedModel
 
 extension MobileNet: SwiftIdentifiedModel {
 
@@ -24,7 +24,7 @@ extension MNIST: SwiftIdentifiedModel {
 
     static let modelIdentifier: String = "model-id-2"
 
-    static let session = Fritz.Session(appToken: "app-token-12345")
+    static let session = Session(appToken: "app-token-12345")
 }
 
 extension AgeNet: SwiftIdentifiedModel {
@@ -33,7 +33,7 @@ extension AgeNet: SwiftIdentifiedModel {
 
     static let modelIdentifier: String = "model-id-3"
 
-    static let session = Fritz.Session(appToken: "app-token-12345")
+    static let session = Session(appToken: "app-token-12345")
 }
 
 extension GenderNet: SwiftIdentifiedModel {
@@ -42,7 +42,7 @@ extension GenderNet: SwiftIdentifiedModel {
 
     static let modelIdentifier: String = "model-id-4"
 
-    static let session = Fritz.Session(appToken: "app-token-12345")
+    static let session = Session(appToken: "app-token-12345")
 }
 
 extension SSDMobilenetFeatureExtractor: SwiftIdentifiedModel {
@@ -51,5 +51,5 @@ extension SSDMobilenetFeatureExtractor: SwiftIdentifiedModel {
 
     static let modelIdentifier: String = "model-id-5"
     
-    static let session = Fritz.Session(appToken: "app-token-12345")
+    static let session = Session(appToken: "app-token-12345")
 }

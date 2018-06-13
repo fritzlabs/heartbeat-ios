@@ -6,26 +6,26 @@
 //  Copyright © 2018 Fritz Labs, Inc. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import Firebase
-import FritzSDK
-
+import FritzVisionLabelModel
+import FritzVision
 
 class ImageLabelViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
-    let fritzVision = FritzVisionModel()
+    let fritzVision = FritzVisionLabelModel()
+
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        
         doDetection(name: "bostonCommon")
-        doDetection(name: "Park")
+        // doDetection(name: "Park")
     }
     lazy var vision = Vision.vision()
 
