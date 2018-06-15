@@ -8,7 +8,8 @@
 
 import UIKit
 import AlamofireImage
-import Fritz
+import CoreML
+
 
 class MNISTViewController: UIViewController {
 

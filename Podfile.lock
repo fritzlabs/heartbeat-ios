@@ -5,7 +5,71 @@ PODS:
   - Crashlytics (3.10.2):
     - Fabric (~> 1.7.7)
   - Fabric (1.7.7)
+  - Firebase/Core (5.2.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.0.1)
+  - Firebase/CoreOnly (5.2.0):
+    - FirebaseCore (= 5.0.3)
+  - Firebase/MLVision (5.2.0):
+    - Firebase/CoreOnly
+    - FirebaseMLVision (= 0.9.0)
+  - Firebase/MLVisionLabelModel (5.2.0):
+    - Firebase/CoreOnly
+    - FirebaseMLVisionLabelModel (= 0.9.0)
+  - FirebaseAnalytics (5.0.1):
+    - FirebaseCore (~> 5.0)
+    - FirebaseInstanceID (~> 3.0)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - nanopb (~> 0.3)
+  - FirebaseCore (5.0.3):
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseInstanceID (3.1.0):
+    - FirebaseCore (~> 5.0)
+  - FirebaseMLCommon (0.9.0)
+  - FirebaseMLVision (0.9.0):
+    - FirebaseCore (~> 5.0)
+    - FirebaseMLCommon (~> 0.9)
+    - GoogleAPIClientForREST/Core (~> 1.3)
+    - GoogleAPIClientForREST/Vision (~> 1.3)
+    - GoogleMobileVision/Detector (~> 1.3.0)
+  - FirebaseMLVisionLabelModel (0.9.0):
+    - GoogleMobileVision/LabelDetector (~> 1.3.0)
   - Fritz (1.0.0-beta.13)
+  - FritzSDK (1.0.1):
+    - FritzSDK/Core (= 1.0.1)
+  - FritzSDK/Core (1.0.1)
+  - FritzSDK/FritzVision (1.0.1)
+  - FritzSDK/FritzVisionModel (1.0.1):
+    - FritzSDK/Core
+    - FritzSDK/FritzVision
+  - GoogleAPIClientForREST/Core (1.3.4):
+    - GTMSessionFetcher (>= 1.1.7)
+  - GoogleAPIClientForREST/Vision (1.3.4):
+    - GoogleAPIClientForREST/Core
+    - GTMSessionFetcher (>= 1.1.7)
+  - GoogleMobileVision/Detector (1.3.2):
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - GTMSessionFetcher/Core (~> 1.1)
+    - Protobuf (~> 3.1)
+  - GoogleMobileVision/LabelDetector (1.3.2):
+    - GoogleMobileVision/Detector (~> 1.3)
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - GoogleToolboxForMac/Logger (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GTMSessionFetcher (1.1.15):
+    - GTMSessionFetcher/Full (= 1.1.15)
+  - GTMSessionFetcher/Core (1.1.15)
+  - GTMSessionFetcher/Full (1.1.15):
+    - GTMSessionFetcher/Core (= 1.1.15)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - Protobuf (3.6.0)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
@@ -14,7 +78,12 @@ DEPENDENCIES:
   - AlamofireImage (~> 3.3)
   - Crashlytics (~> 3.9)
   - Fabric (~> 1.7)
-  - Fritz (~> 1.0.0-beta.13)
+  - Firebase/Core
+  - Firebase/MLVision
+  - Firebase/MLVisionLabelModel
+  - Fritz (from `https://github.com/fritzlabs/swift-sdk.git`, branch `master`)
+  - FritzSDK (from `../swift-sdk`)
+  - FritzSDK/FritzVisionModel (from `../swift-sdk`)
   - R.swift (~> 4.0)
 
 SPEC REPOS:
@@ -23,19 +92,57 @@ SPEC REPOS:
     - AlamofireImage
     - Crashlytics
     - Fabric
-    - Fritz
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - FirebaseMLCommon
+    - FirebaseMLVision
+    - FirebaseMLVisionLabelModel
+    - GoogleAPIClientForREST
+    - GoogleMobileVision
+    - GoogleToolboxForMac
+    - GTMSessionFetcher
+    - nanopb
+    - Protobuf
     - R.swift
     - R.swift.Library
+
+EXTERNAL SOURCES:
+  Fritz:
+    :branch: master
+    :git: https://github.com/fritzlabs/swift-sdk.git
+  FritzSDK:
+    :path: "../swift-sdk"
+
+CHECKOUT OPTIONS:
+  Fritz:
+    :commit: 0a27a298386466a0ac3353abf403c2ba087630b4
+    :git: https://github.com/fritzlabs/swift-sdk.git
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
   Crashlytics: 0360624eea1c978a743feddb2fb1ef8b37fb7a0d
   Fabric: bda89e242bce1b7b8ab264248cf3407774ce0095
-  Fritz: 502fffad370b6378d878f8836e0fba51fab374a1
+  Firebase: 25ed0412036d7d008568d1fb4d2e9d81ea8a0a2c
+  FirebaseAnalytics: b3628aea54c50464c32c393fb2ea032566e7ecc2
+  FirebaseCore: a3c87242451633fff8490183898075ce77d168d2
+  FirebaseInstanceID: 05d779cbb97bd5bd5c51a38a903fc9cfe1b2454a
+  FirebaseMLCommon: 73a2f53c8b3e6cd18e73dd1be095c3192af26a5e
+  FirebaseMLVision: f9756d8376dd150fb17629eaa7bdc6baa8965677
+  FirebaseMLVisionLabelModel: ab16cb2bc13630ee13d9b0c6104b94165e86933c
+  Fritz: 1c250b26939c00f19f66763f2ee2a5da8bf80602
+  FritzSDK: 9c8d87f0df41723f0a0ce0ab5316ae4b62ce273d
+  GoogleAPIClientForREST: f7951c455df271bc6259b3ddb4073d0026475ccf
+  GoogleMobileVision: 6b0a3a2dae1974ec35d80fdeeacc3a03193642e0
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  Protobuf: 0fc0ad8bec688b2a3017a139953e01374fedbd5f
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
 
-PODFILE CHECKSUM: 5ec73e90b24ceff364e20fb0f660e6b85d7725cb
+PODFILE CHECKSUM: 41afc31c709fe23f6340fb891bd73ebe070eed01
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.5.2

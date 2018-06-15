@@ -9,8 +9,10 @@
 import UIKit
 import AVFoundation
 import AlamofireImage
-import Fritz
+
 import Vision
+
+
 
 class MobileNetViewController: UIViewController {
 

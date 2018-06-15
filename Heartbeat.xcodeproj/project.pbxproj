@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		196DDFB830E752A761DB57B8 /* Pods_Heartbeat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5BD89ECFAC366472049E82 /* Pods_Heartbeat.framework */; };
 		381817E31FE2DADD00050FF6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381817E21FE2DADD00050FF6 /* RootViewController.swift */; };
 		381817E51FE2DAE400050FF6 /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381817E41FE2DAE400050FF6 /* Root.storyboard */; };
 		383D40CB1FE18FAC00438A9B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D40CA1FE18FAC00438A9B /* R.generated.swift */; };
@@ -31,7 +30,7 @@
 		38F2E23A1FE0D0B6007241CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F2E2391FE0D0B6007241CB /* AppDelegate.swift */; };
 		38F2E2411FE0D0B6007241CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38F2E2401FE0D0B6007241CB /* Assets.xcassets */; };
 		38F2E2441FE0D0B6007241CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F2E2421FE0D0B6007241CB /* LaunchScreen.storyboard */; };
-		83242C2620640B2C00B955D2 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 83242C2520640B2C00B955D2 /* MobileNet.mlmodel */; };
+		83063E1D20C9EF6400710664 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83063E1C20C9EF6400710664 /* GoogleService-Info.plist */; };
 		835B7551201A8AFB0030FE16 /* SSDMobilenetFeatureExtractor.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 835B7550201A8AFB0030FE16 /* SSDMobilenetFeatureExtractor.mlmodel */; };
 		835B755E201A8B150030FE16 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835B7555201A8B140030FE16 /* Math.swift */; };
 		835B755F201A8B150030FE16 /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835B7556201A8B140030FE16 /* UIImage+CVPixelBuffer.swift */; };
@@ -48,7 +47,26 @@
 		835B756F201A8B2D0030FE16 /* Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835B756B201A8B2D0030FE16 /* Anchors.swift */; };
 		835B7570201A8B2D0030FE16 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835B756C201A8B2D0030FE16 /* Utility.swift */; };
 		835B7572201A8CE00030FE16 /* BlackMirrorStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835B7571201A8CE00030FE16 /* BlackMirrorStoryboard.storyboard */; };
+		838B8B9520C6E430003F63AC /* MobileNet.encrypted.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 838B8B9420C6E430003F63AC /* MobileNet.encrypted.mlmodel */; };
+		83AA981620C9F4090046EE9A /* ImageLabel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83AA981520C9F4090046EE9A /* ImageLabel.storyboard */; };
+		83AA981A20C9F5820046EE9A /* ImageLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA981920C9F5820046EE9A /* ImageLabelViewController.swift */; };
+		83AA981C20C9F8950046EE9A /* bostonCommon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 83AA981B20C9F8950046EE9A /* bostonCommon.jpg */; };
+		8B638FBAEF65E6F68C6FFF91 /* Pods_Heartbeat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F3364D38540D0892791505 /* Pods_Heartbeat.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		838B8B8F20C5D2DD003F63AC /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.encrypted.mlmodel";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILE_DIR)/${INPUT_FILE_BASE}.swift",
+			);
+			script = "#\"${PODS_ROOT}/Fritz/Fritz.framework/build-encrypted-model.sh\" ${INPUT_FILE_PATH} ${INPUT_FILE_BASE}\n\"${PODS_ROOT}/Fritz/Scripts/build-encrypted-model.sh\" ${INPUT_FILE_PATH} ${INPUT_FILE_BASE}\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
 		381817E21FE2DADD00050FF6 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -76,7 +94,10 @@
 		38F2E2401FE0D0B6007241CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38F2E2431FE0D0B6007241CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38F2E2451FE0D0B6007241CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83242C2520640B2C00B955D2 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
+		3D2F518CADD098551282B421 /* Pods-Heartbeat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heartbeat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Heartbeat/Pods-Heartbeat.release.xcconfig"; sourceTree = "<group>"; };
+		53F3364D38540D0892791505 /* Pods_Heartbeat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Heartbeat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		773CE11120C4C3AE700922AA /* Pods-Heartbeat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heartbeat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Heartbeat/Pods-Heartbeat.debug.xcconfig"; sourceTree = "<group>"; };
+		83063E1C20C9EF6400710664 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		835B7550201A8AFB0030FE16 /* SSDMobilenetFeatureExtractor.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SSDMobilenetFeatureExtractor.mlmodel; sourceTree = "<group>"; };
 		835B7555201A8B140030FE16 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		835B7556201A8B140030FE16 /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
@@ -93,9 +114,10 @@
 		835B756B201A8B2D0030FE16 /* Anchors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Anchors.swift; sourceTree = "<group>"; };
 		835B756C201A8B2D0030FE16 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		835B7571201A8CE00030FE16 /* BlackMirrorStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BlackMirrorStoryboard.storyboard; sourceTree = "<group>"; };
-		AE5BD89ECFAC366472049E82 /* Pods_Heartbeat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Heartbeat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1372C3DC7B399D3E8B847F4 /* Pods-Heartbeat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heartbeat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Heartbeat/Pods-Heartbeat.debug.xcconfig"; sourceTree = "<group>"; };
-		EF3EEEC0D5C3BD7048C6B741 /* Pods-Heartbeat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heartbeat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Heartbeat/Pods-Heartbeat.release.xcconfig"; sourceTree = "<group>"; };
+		838B8B9420C6E430003F63AC /* MobileNet.encrypted.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.encrypted.mlmodel; sourceTree = "<group>"; };
+		83AA981520C9F4090046EE9A /* ImageLabel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageLabel.storyboard; sourceTree = "<group>"; };
+		83AA981920C9F5820046EE9A /* ImageLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelViewController.swift; sourceTree = "<group>"; };
+		83AA981B20C9F8950046EE9A /* bostonCommon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bostonCommon.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,19 +125,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				196DDFB830E752A761DB57B8 /* Pods_Heartbeat.framework in Frameworks */,
+				8B638FBAEF65E6F68C6FFF91 /* Pods_Heartbeat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1506ADEE4B587282C7177E1F /* Frameworks */ = {
+		24870006648EBCA70F05508A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AE5BD89ECFAC366472049E82 /* Pods_Heartbeat.framework */,
+				773CE11120C4C3AE700922AA /* Pods-Heartbeat.debug.xcconfig */,
+				3D2F518CADD098551282B421 /* Pods-Heartbeat.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		381817D91FE2D93F00050FF6 /* Root */ = {
@@ -155,6 +178,7 @@
 		383D40C61FE18EFA00438A9B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				83AA981420C9F3AB0046EE9A /* ImageLabel */,
 				835B7549201A7AB70030FE16 /* BlackMirror */,
 				381817DA1FE2D94600050FF6 /* Common */,
 				385CF1B11FF2EA8600F1BFF0 /* Demos */,
@@ -218,8 +242,8 @@
 				38B18CBF1FE224BA005AA896 /* MNIST.mlmodel */,
 				38E96BF62001308B00683571 /* AgeNet.mlmodel */,
 				38E96BF72001308B00683571 /* GenderNet.mlmodel */,
-				83242C2520640B2C00B955D2 /* MobileNet.mlmodel */,
 				38E96BF42001308B00683571 /* Models+Fritz.swift */,
+				838B8B9420C6E430003F63AC /* MobileNet.encrypted.mlmodel */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -258,8 +282,8 @@
 			children = (
 				38F2E2381FE0D0B6007241CB /* Heartbeat */,
 				38F2E2371FE0D0B6007241CB /* Products */,
-				8E4F2C91079D1F45793D461F /* Pods */,
-				1506ADEE4B587282C7177E1F /* Frameworks */,
+				24870006648EBCA70F05508A /* Pods */,
+				63C64F35016CD94D09B5E79E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -274,12 +298,22 @@
 		38F2E2381FE0D0B6007241CB /* Heartbeat */ = {
 			isa = PBXGroup;
 			children = (
+				83AA981B20C9F8950046EE9A /* bostonCommon.jpg */,
+				83063E1C20C9EF6400710664 /* GoogleService-Info.plist */,
 				38B18CB51FE2228F005AA896 /* Models */,
 				383D40C41FE18EEC00438A9B /* Source */,
 				383D40C71FE18F0400438A9B /* Media */,
 				383D40C81FE18F0D00438A9B /* Supporting Files */,
 			);
 			path = Heartbeat;
+			sourceTree = "<group>";
+		};
+		63C64F35016CD94D09B5E79E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F3364D38540D0892791505 /* Pods_Heartbeat.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		835B7549201A7AB70030FE16 /* BlackMirror */ = {
@@ -312,13 +346,13 @@
 			path = CoreMLHelpers;
 			sourceTree = "<group>";
 		};
-		8E4F2C91079D1F45793D461F /* Pods */ = {
+		83AA981420C9F3AB0046EE9A /* ImageLabel */ = {
 			isa = PBXGroup;
 			children = (
-				D1372C3DC7B399D3E8B847F4 /* Pods-Heartbeat.debug.xcconfig */,
-				EF3EEEC0D5C3BD7048C6B741 /* Pods-Heartbeat.release.xcconfig */,
+				83AA981520C9F4090046EE9A /* ImageLabel.storyboard */,
+				83AA981920C9F5820046EE9A /* ImageLabelViewController.swift */,
 			);
-			name = Pods;
+			path = ImageLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,16 +362,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38F2E2481FE0D0B6007241CB /* Build configuration list for PBXNativeTarget "Heartbeat" */;
 			buildPhases = (
-				5CB4378877FF69BA957F9C57 /* [CP] Check Pods Manifest.lock */,
+				BA89F08CA980FB2524835732 /* [CP] Check Pods Manifest.lock */,
 				383D40CC1FE1901700438A9B /* Swift Lint */,
 				383D40C31FE18EA000438A9B /* R.swift */,
 				38F2E2321FE0D0B6007241CB /* Sources */,
 				38F2E2331FE0D0B6007241CB /* Frameworks */,
 				38F2E2341FE0D0B6007241CB /* Resources */,
 				38B18CC31FE22C91005AA896 /* Fabric */,
-				06519E0C02678CFC3497A876 /* [CP] Embed Pods Frameworks */,
+				90E1C8CE0B9202B1F3DF3CEA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
+				838B8B8F20C5D2DD003F63AC /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -389,10 +424,13 @@
 				835B7572201A8CE00030FE16 /* BlackMirrorStoryboard.storyboard in Resources */,
 				3890742C1FFDE6A900DFF7F9 /* MobileNet.storyboard in Resources */,
 				381817E51FE2DAE400050FF6 /* Root.storyboard in Resources */,
+				83AA981620C9F4090046EE9A /* ImageLabel.storyboard in Resources */,
 				835B756D201A8B2D0030FE16 /* coco_labels_list.txt in Resources */,
 				38F2E2441FE0D0B6007241CB /* LaunchScreen.storyboard in Resources */,
+				83063E1D20C9EF6400710664 /* GoogleService-Info.plist in Resources */,
 				38F2E2411FE0D0B6007241CB /* Assets.xcassets in Resources */,
 				385CF1B51FF2EAAA00F1BFF0 /* Demos.storyboard in Resources */,
+				83AA981C20C9F8950046EE9A /* bostonCommon.jpg in Resources */,
 				38BCA5851FF53C87009ABCC6 /* MNIST.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,30 +438,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		06519E0C02678CFC3497A876 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Heartbeat/Pods-Heartbeat-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
-				"${PODS_ROOT}/Fritz/Fritz.framework",
-				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fritz.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Heartbeat/Pods-Heartbeat-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		383D40C31FE18EA000438A9B /* R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -466,7 +480,43 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" 3ab14d933cbf3577dd7434aa17e1171fdd726172 a7e273788cbf79557095d9bd720a5d71abef69142d7a82ef17e9d88751ee49d8";
 		};
-		5CB4378877FF69BA957F9C57 /* [CP] Check Pods Manifest.lock */ = {
+		90E1C8CE0B9202B1F3DF3CEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Heartbeat/Pods-Heartbeat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Fritz/Fritz.framework",
+				"${BUILT_PRODUCTS_DIR}/FritzSDK/FritzSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fritz.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Heartbeat/Pods-Heartbeat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA89F08CA980FB2524835732 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -495,10 +545,10 @@
 				835B756F201A8B2D0030FE16 /* Anchors.swift in Sources */,
 				385CF1B81FF2F14700F1BFF0 /* DemoTableViewCell.swift in Sources */,
 				835B7561201A8B150030FE16 /* BoundingBox.swift in Sources */,
+				838B8B9520C6E430003F63AC /* MobileNet.encrypted.mlmodel in Sources */,
 				38B18CC01FE224BA005AA896 /* MNIST.mlmodel in Sources */,
 				835B7568201A8B1D0030FE16 /* SSDPostprocessor.swift in Sources */,
 				381817E31FE2DADD00050FF6 /* RootViewController.swift in Sources */,
-				83242C2620640B2C00B955D2 /* MobileNet.mlmodel in Sources */,
 				835B7565201A8B150030FE16 /* NonMaxSuppression.swift in Sources */,
 				835B7564201A8B150030FE16 /* CVPixelBuffer+Helpers.swift in Sources */,
 				38BCA5831FF53C47009ABCC6 /* StrokeSettings.swift in Sources */,
@@ -518,6 +568,7 @@
 				835B7562201A8B150030FE16 /* Predictions.swift in Sources */,
 				38BCA57C1FF53BF9009ABCC6 /* MNISTViewController.swift in Sources */,
 				835B7570201A8B2D0030FE16 /* Utility.swift in Sources */,
+				83AA981A20C9F5820046EE9A /* ImageLabelViewController.swift in Sources */,
 				38BCA5811FF53C47009ABCC6 /* TouchDrawView.swift in Sources */,
 				38E96C01200130E500683571 /* HumanViewController.swift in Sources */,
 				835B7551201A8AFB0030FE16 /* SSDMobilenetFeatureExtractor.mlmodel in Sources */,
@@ -652,7 +703,7 @@
 		};
 		38F2E2491FE0D0B6007241CB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1372C3DC7B399D3E8B847F4 /* Pods-Heartbeat.debug.xcconfig */;
+			baseConfigurationReference = 773CE11120C4C3AE700922AA /* Pods-Heartbeat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -661,7 +712,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Heartbeat/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fritz.Heartbeat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fritz.Hearbeat2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -671,7 +722,7 @@
 		};
 		38F2E24A1FE0D0B6007241CB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF3EEEC0D5C3BD7048C6B741 /* Pods-Heartbeat.release.xcconfig */;
+			baseConfigurationReference = 3D2F518CADD098551282B421 /* Pods-Heartbeat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -680,7 +731,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Heartbeat/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fritz.Heartbeat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fritz.Hearbeat2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
