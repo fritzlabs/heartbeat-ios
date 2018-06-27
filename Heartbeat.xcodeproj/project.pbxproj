@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		196DDFB830E752A761DB57B8 /* Pods_Heartbeat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5BD89ECFAC366472049E82 /* Pods_Heartbeat.framework */; };
+		38173F3120E2DCD00036005E /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38173F3020E2DCD00036005E /* VisionViewController.swift */; };
+		38173F3320E2DCD90036005E /* Vision.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38173F3220E2DCD90036005E /* Vision.storyboard */; };
 		381817E31FE2DADD00050FF6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381817E21FE2DADD00050FF6 /* RootViewController.swift */; };
 		381817E51FE2DAE400050FF6 /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381817E41FE2DAE400050FF6 /* Root.storyboard */; };
 		383D40CB1FE18FAC00438A9B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D40CA1FE18FAC00438A9B /* R.generated.swift */; };
@@ -51,6 +53,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38173F3020E2DCD00036005E /* VisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
+		38173F3220E2DCD90036005E /* Vision.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vision.storyboard; sourceTree = "<group>"; };
 		381817E21FE2DADD00050FF6 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		381817E41FE2DAE400050FF6 /* Root.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
 		383D40CA1FE18FAC00438A9B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = Heartbeat/R.generated.swift; sourceTree = SOURCE_ROOT; };
@@ -118,6 +122,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		38173F2F20E2DCBC0036005E /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+				38173F3020E2DCD00036005E /* VisionViewController.swift */,
+				38173F3220E2DCD90036005E /* Vision.storyboard */,
+			);
+			path = Vision;
+			sourceTree = "<group>";
+		};
 		381817D91FE2D93F00050FF6 /* Root */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +175,7 @@
 				389074281FFDE68900DFF7F9 /* MobileNet */,
 				38BCA57A1FF53BDD009ABCC6 /* MNIST */,
 				381817D91FE2D93F00050FF6 /* Root */,
+				38173F2F20E2DCBC0036005E /* Vision */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -389,6 +403,7 @@
 				835B7572201A8CE00030FE16 /* BlackMirrorStoryboard.storyboard in Resources */,
 				3890742C1FFDE6A900DFF7F9 /* MobileNet.storyboard in Resources */,
 				381817E51FE2DAE400050FF6 /* Root.storyboard in Resources */,
+				38173F3320E2DCD90036005E /* Vision.storyboard in Resources */,
 				835B756D201A8B2D0030FE16 /* coco_labels_list.txt in Resources */,
 				38F2E2441FE0D0B6007241CB /* LaunchScreen.storyboard in Resources */,
 				38F2E2411FE0D0B6007241CB /* Assets.xcassets in Resources */,
@@ -409,14 +424,20 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Heartbeat/Pods-Heartbeat-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
-				"${PODS_ROOT}/Fritz/Fritz.framework",
+				"${PODS_ROOT}/Fritz/Frameworks/FritzCore.framework",
+				"${PODS_ROOT}/Fritz/Frameworks/FritzManagedModel.framework",
+				"${PODS_ROOT}/Fritz/Frameworks/FritzVision.framework",
+				"${PODS_ROOT}/Fritz/Frameworks/FritzVisionLabelModel.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fritz.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzManagedModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVision.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVisionLabelModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +524,7 @@
 				835B7564201A8B150030FE16 /* CVPixelBuffer+Helpers.swift in Sources */,
 				38BCA5831FF53C47009ABCC6 /* StrokeSettings.swift in Sources */,
 				3890742A1FFDE6A000DFF7F9 /* MobileNetViewController.swift in Sources */,
+				38173F3120E2DCD00036005E /* VisionViewController.swift in Sources */,
 				835B755F201A8B150030FE16 /* UIImage+CVPixelBuffer.swift in Sources */,
 				835B756E201A8B2D0030FE16 /* SSDViewController.swift in Sources */,
 				38F2E23A1FE0D0B6007241CB /* AppDelegate.swift in Sources */,

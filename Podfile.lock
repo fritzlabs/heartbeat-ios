@@ -5,7 +5,14 @@ PODS:
   - Crashlytics (3.10.2):
     - Fabric (~> 1.7.7)
   - Fabric (1.7.7)
-  - Fritz (1.0.0-beta.13)
+  - Fritz/Core (1.0.0-beta.16)
+  - Fritz/ManagedModel (1.0.0-beta.16):
+    - Fritz/Core
+  - Fritz/Vision (1.0.0-beta.16):
+    - Fritz/Core
+  - Fritz/VisionLabelModel (1.0.0-beta.16):
+    - Fritz/Core
+    - Fritz/Vision
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
@@ -14,7 +21,8 @@ DEPENDENCIES:
   - AlamofireImage (~> 3.3)
   - Crashlytics (~> 3.9)
   - Fabric (~> 1.7)
-  - Fritz (~> 1.0.0-beta.13)
+  - Fritz/ManagedModel (~> 1.0.0-beta)
+  - Fritz/VisionLabelModel (~> 1.0.0-beta)
   - R.swift (~> 4.0)
 
 SPEC REPOS:
@@ -32,10 +40,10 @@ SPEC CHECKSUMS:
   AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
   Crashlytics: 0360624eea1c978a743feddb2fb1ef8b37fb7a0d
   Fabric: bda89e242bce1b7b8ab264248cf3407774ce0095
-  Fritz: 502fffad370b6378d878f8836e0fba51fab374a1
+  Fritz: 0c15b62a0bb060640af7d570bf34a88b5df2a511
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
 
-PODFILE CHECKSUM: 5ec73e90b24ceff364e20fb0f660e6b85d7725cb
+PODFILE CHECKSUM: a90139682ea0bd0c55d2cc41830fd292d49b9d2d
 
 COCOAPODS: 1.5.3

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="npk-a6-hdM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="npk-a6-hdM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -52,8 +52,39 @@
                                             </segue>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="52B-Dp-Scz" detailTextLabel="V6g-2U-4Wy" rowHeight="120" style="IBUITableViewCellStyleSubtitle" id="iMX-bO-lR9" customClass="DemoTableViewCell" customModule="Heartbeat" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="9t4-NO-cg4" detailTextLabel="fw7-e7-WKk" rowHeight="120" style="IBUITableViewCellStyleSubtitle" id="fHJ-4a-60H" customClass="DemoTableViewCell" customModule="Heartbeat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="155" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fHJ-4a-60H" id="WCD-te-dzm">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="VISION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9t4-NO-cg4">
+                                                    <rect key="frame" x="16" y="36" width="73.5" height="26.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Uses the FritzVision SDK to label images in real-time" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fw7-e7-WKk">
+                                                    <rect key="frame" x="16" y="66.5" width="304" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="0.80078125" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="U1q-0n-fri" kind="show" id="9nG-fF-fp9">
+                                                <segue key="commit" inheritsFrom="parent" id="YWj-6A-VRd"/>
+                                                <segue key="preview" inheritsFrom="commit" id="LZj-Ve-hh3"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="52B-Dp-Scz" detailTextLabel="V6g-2U-4Wy" rowHeight="120" style="IBUITableViewCellStyleSubtitle" id="iMX-bO-lR9" customClass="DemoTableViewCell" customModule="Heartbeat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="275" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iMX-bO-lR9" id="AHI-PM-OtK">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="119.5"/>
@@ -84,7 +115,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="vSw-B4-xka" detailTextLabel="3ey-Do-2Cx" rowHeight="120" style="IBUITableViewCellStyleSubtitle" id="D04-M4-ixc" customClass="DemoTableViewCell" customModule="Heartbeat" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="275" width="375" height="120"/>
+                                        <rect key="frame" x="0.0" y="395" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D04-M4-ixc" id="sRQ-lw-KjK">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="119.5"/>
@@ -115,7 +146,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Uwi-es-8tr" detailTextLabel="hYn-dN-Ths" rowHeight="120" style="IBUITableViewCellStyleSubtitle" id="Sek-dU-N8d" customClass="DemoTableViewCell" customModule="Heartbeat" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="395" width="375" height="120"/>
+                                        <rect key="frame" x="0.0" y="515" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sek-dU-N8d" id="fPM-2a-VKX">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="119.5"/>
@@ -163,6 +194,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lGB-gg-8Dx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1060" y="164"/>
+        </scene>
+        <!--Vision-->
+        <scene sceneID="aTX-sn-sVM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Vision" id="U1q-0n-fri" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DLR-nh-D8y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="225"/>
         </scene>
         <!--MobileNet-->
         <scene sceneID="XwI-Kx-iBA">
@@ -212,6 +251,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="eRw-YZ-SbC"/>
         <segue reference="yV2-Ie-OMQ"/>
+        <segue reference="9nG-fF-fp9"/>
         <segue reference="uPS-Z1-QVn"/>
     </inferredMetricsTieBreakers>
 </document>

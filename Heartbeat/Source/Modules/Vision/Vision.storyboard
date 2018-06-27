@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YMc-my-d2o">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--VISION-->
+        <scene sceneID="yWz-zc-k8l">
+            <objects>
+                <viewController id="YMc-my-d2o" customClass="VisionViewController" customModule="Heartbeat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sHm-sQ-YxJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbT-iv-Lq6">
+                                <rect key="frame" x="20" y="579" width="335" height="54"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eFW-og-twf">
+                                        <rect key="frame" x="12" y="14" width="311" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1215697452" green="0.1215666011" blue="0.12156876179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="Q2V-hj-AlR"/>
+                                    <constraint firstItem="eFW-og-twf" firstAttribute="centerY" secondItem="hbT-iv-Lq6" secondAttribute="centerY" id="bNu-dc-sTl"/>
+                                    <constraint firstItem="eFW-og-twf" firstAttribute="leading" secondItem="hbT-iv-Lq6" secondAttribute="leading" constant="12" id="cOV-yI-R0b"/>
+                                    <constraint firstAttribute="trailing" secondItem="eFW-og-twf" secondAttribute="trailing" constant="12" id="hSe-NF-Xjb"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xH8-uu-QR5">
+                                <rect key="frame" x="171.5" y="643.5" width="32" height="15.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="odk-G6-sp1" firstAttribute="bottom" secondItem="xH8-uu-QR5" secondAttribute="bottom" constant="8" id="2eF-Fv-VhA"/>
+                            <constraint firstItem="odk-G6-sp1" firstAttribute="bottom" secondItem="hbT-iv-Lq6" secondAttribute="bottom" constant="34" id="2x1-22-DGS"/>
+                            <constraint firstItem="hbT-iv-Lq6" firstAttribute="leading" secondItem="odk-G6-sp1" secondAttribute="leading" constant="20" id="YVp-0g-Kko"/>
+                            <constraint firstItem="xH8-uu-QR5" firstAttribute="centerX" secondItem="odk-G6-sp1" secondAttribute="centerX" id="lSQ-eS-QbX"/>
+                            <constraint firstItem="odk-G6-sp1" firstAttribute="trailing" secondItem="hbT-iv-Lq6" secondAttribute="trailing" constant="20" id="rYU-qm-J6S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="odk-G6-sp1"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="VISION" id="pNC-eK-vYT"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="confidenceLabel" destination="xH8-uu-QR5" id="E6Q-7f-4J8"/>
+                        <outlet property="predictionLabel" destination="eFW-og-twf" id="tB0-rG-CFt"/>
+                        <outlet property="resultView" destination="hbT-iv-Lq6" id="3nc-rm-vZh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PGS-7J-h02" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96.799999999999997" y="196.55172413793105"/>
+        </scene>
+    </scenes>
+</document>
