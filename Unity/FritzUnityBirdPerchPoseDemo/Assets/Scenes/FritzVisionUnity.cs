@@ -95,7 +95,21 @@ public class FritzVisionUnity : MonoBehaviour
 			return;
 		}
 
-#if UNITY_IOS && !UNITY_EDITOR
+#if UNITY_ANDROID && !UNITY_EDITOR
+
+        XRCameraImage image;
+        if (!cameraManager.TryGetLatestImage(out image))
+        {
+            image.Dispose();
+            return;
+        }
+
+        FritzPoseManager.ProcessImageAsync(image);
+
+        // You must dispose the CameraImage to avoid resource leaks.
+        image.Dispose();
+
+#elif UNITY_IOS && !UNITY_EDITOR
         var cameraParams = new XRCameraParams
         {
             zNear = m_Cam.nearClipPlane,
@@ -115,7 +129,7 @@ public class FritzVisionUnity : MonoBehaviour
         FritzPoseManager.ProcessPoseAsync(frame.nativePtr);
 
 #else
-		var randomPosition = debugPoint;
+        var randomPosition = debugPoint;
 		randomPosition.x = randomPosition.x * UnityEngine.Random.Range(-0.5f, 0.5f);
 		randomPosition.y = randomPosition.y * UnityEngine.Random.Range(-0.5f, 0.5f);
 
