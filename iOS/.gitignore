@@ -1,0 +1,12 @@
+#### CocoaPods
+Pods/
+*.generated.swift
+
+#### macOS
+.DS_Store
+
+#### Xcode
+xcuserdata/
+*.xcworkspace
+*.zip
+*.ipa

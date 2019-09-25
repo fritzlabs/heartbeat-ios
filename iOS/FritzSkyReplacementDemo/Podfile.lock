@@ -1,0 +1,36 @@
+PODS:
+  - Fritz (3.7.0):
+    - Fritz/Vision (= 3.7.0)
+  - Fritz/Vision (3.7.0):
+    - FritzBase/Vision (= 3.7.0)
+  - Fritz/VisionSegmentationModel/Sky (3.7.0):
+    - FritzVisionSkySegmentationModel (= 3.7.0)
+  - FritzBase/Core (3.7.0)
+  - FritzBase/CoreMLHelpers (3.7.0)
+  - FritzBase/ManagedModel (3.7.0):
+    - FritzBase/Core (= 3.7.0)
+  - FritzBase/Vision (3.7.0):
+    - FritzBase/Core (= 3.7.0)
+    - FritzBase/CoreMLHelpers (= 3.7.0)
+    - FritzBase/ManagedModel (= 3.7.0)
+  - FritzVisionSkySegmentationModel (3.7.0):
+    - FritzBase/Vision (= 3.7.0)
+
+DEPENDENCIES:
+  - Fritz (~> 3.7.0)
+  - Fritz/VisionSegmentationModel/Sky
+
+SPEC REPOS:
+  trunk:
+    - Fritz
+    - FritzBase
+    - FritzVisionSkySegmentationModel
+
+SPEC CHECKSUMS:
+  Fritz: 9a069783f9024c98656c9ac4fa0f30712c1ec23b
+  FritzBase: 664ec16001a9d03536dae03dcbc469452bf040b9
+  FritzVisionSkySegmentationModel: 45e6d36fcce37193808c2581f0ad25395ff394ff
+
+PODFILE CHECKSUM: faa8f2c88ab60f289e573f76c94f91048de5bb60
+
+COCOAPODS: 1.8.0.beta.1

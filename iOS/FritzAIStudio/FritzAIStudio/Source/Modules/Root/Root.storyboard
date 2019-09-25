@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BRy-bl-cgV">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="cK8-AA-1nR">
+            <objects>
+                <viewController id="hqM-8d-JS0" customClass="RootViewController" customModule="FritzAIStudio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="91w-7J-Ucv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fritzLogo" translatesAutoresizingMaskIntoConstraints="NO" id="hpv-Gw-uNe">
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hpv-Gw-uNe" firstAttribute="centerX" secondItem="ZjF-g5-A5N" secondAttribute="centerX" id="NGZ-4c-XTj"/>
+                            <constraint firstItem="hpv-Gw-uNe" firstAttribute="centerY" secondItem="ZjF-g5-A5N" secondAttribute="centerY" id="ajo-Zl-aPb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZjF-g5-A5N"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SNA-rg-QyG"/>
+                    <connections>
+                        <segue destination="bx1-wx-3nn" kind="showDetail" identifier="toDemos" id="VDI-iX-0i8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mKr-hU-NY3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="537" y="175"/>
+        </scene>
+        <!--Demos-->
+        <scene sceneID="bdq-fH-3sV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Demos" id="bx1-wx-3nn" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CsO-Fa-xJP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1255" y="220"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rw4-vI-zmy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="BRy-bl-cgV" customClass="NavigationController" customModule="FritzAIStudio" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dLo-IE-qPP">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hqM-8d-JS0" kind="relationship" relationship="rootViewController" id="5TQ-mG-Pqu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GFX-uP-uYO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-300" y="175"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fritzLogo" width="200" height="200"/>
+    </resources>
+</document>

@@ -1,0 +1,36 @@
+PODS:
+  - Fritz (3.7.0):
+    - Fritz/Vision (= 3.7.0)
+  - Fritz/Vision (3.7.0):
+    - FritzBase/Vision (= 3.7.0)
+  - Fritz/VisionSegmentationModel/Hair (3.7.0):
+    - FritzVisionHairSegmentationModel (= 3.7.0)
+  - FritzBase/Core (3.7.0)
+  - FritzBase/CoreMLHelpers (3.7.0)
+  - FritzBase/ManagedModel (3.7.0):
+    - FritzBase/Core (= 3.7.0)
+  - FritzBase/Vision (3.7.0):
+    - FritzBase/Core (= 3.7.0)
+    - FritzBase/CoreMLHelpers (= 3.7.0)
+    - FritzBase/ManagedModel (= 3.7.0)
+  - FritzVisionHairSegmentationModel (3.7.0):
+    - FritzBase/Vision (= 3.7.0)
+
+DEPENDENCIES:
+  - Fritz (~> 3.7.0)
+  - Fritz/VisionSegmentationModel/Hair
+
+SPEC REPOS:
+  trunk:
+    - Fritz
+    - FritzBase
+    - FritzVisionHairSegmentationModel
+
+SPEC CHECKSUMS:
+  Fritz: 9a069783f9024c98656c9ac4fa0f30712c1ec23b
+  FritzBase: 664ec16001a9d03536dae03dcbc469452bf040b9
+  FritzVisionHairSegmentationModel: ff31b4756ae752fd31b695986235d2fcc2290402
+
+PODFILE CHECKSUM: 84588125069e45c6f3795cd4ab0e750da295a03a
+
+COCOAPODS: 1.8.0.beta.1

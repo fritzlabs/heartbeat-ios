@@ -1,0 +1,36 @@
+PODS:
+  - Fritz (3.7.0):
+    - Fritz/Vision (= 3.7.0)
+  - Fritz/Vision (3.7.0):
+    - FritzBase/Vision (= 3.7.0)
+  - Fritz/VisionLabelModel (3.7.0):
+    - FritzVisionLabelModel (= 3.7.0)
+  - FritzBase/Core (3.7.0)
+  - FritzBase/CoreMLHelpers (3.7.0)
+  - FritzBase/ManagedModel (3.7.0):
+    - FritzBase/Core (= 3.7.0)
+  - FritzBase/Vision (3.7.0):
+    - FritzBase/Core (= 3.7.0)
+    - FritzBase/CoreMLHelpers (= 3.7.0)
+    - FritzBase/ManagedModel (= 3.7.0)
+  - FritzVisionLabelModel (3.7.0):
+    - FritzBase/Vision (= 3.7.0)
+
+DEPENDENCIES:
+  - Fritz (~> 3.7.0)
+  - Fritz/VisionLabelModel
+
+SPEC REPOS:
+  trunk:
+    - Fritz
+    - FritzBase
+    - FritzVisionLabelModel
+
+SPEC CHECKSUMS:
+  Fritz: 9a069783f9024c98656c9ac4fa0f30712c1ec23b
+  FritzBase: 664ec16001a9d03536dae03dcbc469452bf040b9
+  FritzVisionLabelModel: 4b809fc9b6a5d05c21616f99c2af8ec77505e46e
+
+PODFILE CHECKSUM: f310f8685a0ed9a9f959acac3a8370450111db7d
+
+COCOAPODS: 1.8.0.beta.1

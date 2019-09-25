@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83305C75228399E500F93F6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83305C74228399E500F93F6B /* AppDelegate.swift */; };
+		83305C77228399E500F93F6B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 83305C76228399E500F93F6B /* art.scnassets */; };
+		83305C79228399E500F93F6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83305C78228399E500F93F6B /* ViewController.swift */; };
+		83305C7C228399E500F93F6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83305C7A228399E500F93F6B /* Main.storyboard */; };
+		83305C7E228399E600F93F6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83305C7D228399E600F93F6B /* Assets.xcassets */; };
+		83305C81228399E600F93F6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83305C7F228399E600F93F6B /* LaunchScreen.storyboard */; };
+		83305CBC2284E20500F93F6B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83305CBB2284E20500F93F6B /* Utils.swift */; };
+		83305CBE2284EE5000F93F6B /* ARKIt+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83305CBD2284EE5000F93F6B /* ARKIt+Utilities.swift */; };
+		83305CC02285094800F93F6B /* ObjectDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83305CBF2285094800F93F6B /* ObjectDetectionViewController.swift */; };
+		8340AA8B22852F0B00E43DA2 /* Fritz-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42584E2EBE2DAE50CF8BDE36 /* Fritz-Info.plist */; };
+		A2A8DC1C46E9D63D9569D52B /* Pods_FritzARKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C646242A0042E14AD9AC2F62 /* Pods_FritzARKitDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E6E27880ED8470AC3CAC911 /* Pods-FritzARKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzARKitDemo.release.xcconfig"; path = "Target Support Files/Pods-FritzARKitDemo/Pods-FritzARKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		42584E2EBE2DAE50CF8BDE36 /* Fritz-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Fritz-Info.plist"; path = "FritzARKitDemo/Fritz-Info.plist"; sourceTree = SOURCE_ROOT; };
+		83305C71228399E500F93F6B /* FritzARKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FritzARKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83305C74228399E500F93F6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83305C76228399E500F93F6B /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		83305C78228399E500F93F6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83305C7B228399E500F93F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83305C7D228399E600F93F6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83305C80228399E600F93F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83305C82228399E600F93F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83305CBB2284E20500F93F6B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		83305CBD2284EE5000F93F6B /* ARKIt+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARKIt+Utilities.swift"; sourceTree = "<group>"; };
+		83305CBF2285094800F93F6B /* ObjectDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionViewController.swift; sourceTree = "<group>"; };
+		9A26D4C88B58FF8B5D112804 /* Pods-FritzARKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzARKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-FritzARKitDemo/Pods-FritzARKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C646242A0042E14AD9AC2F62 /* Pods_FritzARKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FritzARKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83305C6E228399E500F93F6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2A8DC1C46E9D63D9569D52B /* Pods_FritzARKitDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		030F575060758418DECE37B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C646242A0042E14AD9AC2F62 /* Pods_FritzARKitDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6AAD0B742F5315E0A15ECA94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A26D4C88B58FF8B5D112804 /* Pods-FritzARKitDemo.debug.xcconfig */,
+				1E6E27880ED8470AC3CAC911 /* Pods-FritzARKitDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		83305C68228399E500F93F6B = {
+			isa = PBXGroup;
+			children = (
+				83305CBD2284EE5000F93F6B /* ARKIt+Utilities.swift */,
+				83305C73228399E500F93F6B /* FritzARKitDemo */,
+				83305C72228399E500F93F6B /* Products */,
+				6AAD0B742F5315E0A15ECA94 /* Pods */,
+				030F575060758418DECE37B4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83305C72228399E500F93F6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83305C71228399E500F93F6B /* FritzARKitDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83305C73228399E500F93F6B /* FritzARKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				83305C74228399E500F93F6B /* AppDelegate.swift */,
+				83305C76228399E500F93F6B /* art.scnassets */,
+				83305C78228399E500F93F6B /* ViewController.swift */,
+				83305CBF2285094800F93F6B /* ObjectDetectionViewController.swift */,
+				83305CBB2284E20500F93F6B /* Utils.swift */,
+				83305C7A228399E500F93F6B /* Main.storyboard */,
+				83305C7D228399E600F93F6B /* Assets.xcassets */,
+				83305C7F228399E600F93F6B /* LaunchScreen.storyboard */,
+				83305C82228399E600F93F6B /* Info.plist */,
+				42584E2EBE2DAE50CF8BDE36 /* Fritz-Info.plist */,
+			);
+			path = FritzARKitDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83305C70228399E500F93F6B /* FritzARKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83305C85228399E600F93F6B /* Build configuration list for PBXNativeTarget "FritzARKitDemo" */;
+			buildPhases = (
+				A672DB1AE9EAA12C4AE70D0A /* [CP] Check Pods Manifest.lock */,
+				83305C6D228399E500F93F6B /* Sources */,
+				83305C6E228399E500F93F6B /* Frameworks */,
+				83305C6F228399E500F93F6B /* Resources */,
+				C54F589A65BE2D39092F002B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FritzARKitDemo;
+			productName = ARPoseDemo;
+			productReference = 83305C71228399E500F93F6B /* FritzARKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83305C69228399E500F93F6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Fritz;
+				TargetAttributes = {
+					83305C70228399E500F93F6B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 83305C6C228399E500F93F6B /* Build configuration list for PBXProject "FritzARKitDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83305C68228399E500F93F6B;
+			productRefGroup = 83305C72228399E500F93F6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83305C70228399E500F93F6B /* FritzARKitDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83305C6F228399E500F93F6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8340AA8B22852F0B00E43DA2 /* Fritz-Info.plist in Resources */,
+				83305C77228399E500F93F6B /* art.scnassets in Resources */,
+				83305C81228399E600F93F6B /* LaunchScreen.storyboard in Resources */,
+				83305C7E228399E600F93F6B /* Assets.xcassets in Resources */,
+				83305C7C228399E500F93F6B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A672DB1AE9EAA12C4AE70D0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FritzARKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C54F589A65BE2D39092F002B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FritzARKitDemo/Pods-FritzARKitDemo-frameworks.sh",
+				"${PODS_ROOT}/FritzBase/Frameworks/FritzCore.framework",
+				"${PODS_ROOT}/FritzBase/Frameworks/Fritz.framework",
+				"${PODS_ROOT}/FritzBase/Frameworks/CoreMLHelpers.framework",
+				"${PODS_ROOT}/FritzBase/Frameworks/FritzManagedModel.framework",
+				"${PODS_ROOT}/FritzBase/Frameworks/FritzVision.framework",
+				"${PODS_ROOT}/FritzVisionObjectModel/Frameworks/FritzVisionObjectModel.framework",
+				"${PODS_ROOT}/FritzVisionPoseModel/Frameworks/FritzVisionPoseModel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fritz.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreMLHelpers.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzManagedModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVision.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVisionObjectModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVisionPoseModel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FritzARKitDemo/Pods-FritzARKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83305C6D228399E500F93F6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83305C79228399E500F93F6B /* ViewController.swift in Sources */,
+				83305C75228399E500F93F6B /* AppDelegate.swift in Sources */,
+				83305CBE2284EE5000F93F6B /* ARKIt+Utilities.swift in Sources */,
+				83305CC02285094800F93F6B /* ObjectDetectionViewController.swift in Sources */,
+				83305CBC2284E20500F93F6B /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		83305C7A228399E500F93F6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83305C7B228399E500F93F6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83305C7F228399E600F93F6B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83305C80228399E600F93F6B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83305C83228399E600F93F6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83305C84228399E600F93F6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83305C86228399E600F93F6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A26D4C88B58FF8B5D112804 /* Pods-FritzARKitDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FritzARKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTLLINKER_FLAGS = "-cikernel";
+				MTL_COMPILER_FLAGS = "-fcikernel";
+				PRODUCT_BUNDLE_IDENTIFIER = ai.fritz.ARKitFritzPoseExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83305C87228399E600F93F6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E6E27880ED8470AC3CAC911 /* Pods-FritzARKitDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FritzARKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTLLINKER_FLAGS = "-cikernel";
+				MTL_COMPILER_FLAGS = "-fcikernel";
+				PRODUCT_BUNDLE_IDENTIFIER = ai.fritz.ARKitFritzPoseExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83305C6C228399E500F93F6B /* Build configuration list for PBXProject "FritzARKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83305C83228399E600F93F6B /* Debug */,
+				83305C84228399E600F93F6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83305C85228399E600F93F6B /* Build configuration list for PBXNativeTarget "FritzARKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83305C86228399E600F93F6B /* Debug */,
+				83305C87228399E600F93F6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83305C69228399E500F93F6B /* Project object */;
+}

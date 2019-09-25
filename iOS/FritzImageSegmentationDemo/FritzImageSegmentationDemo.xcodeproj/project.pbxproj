@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33D68F0AA3D533CA117ABA11 /* Pods_FritzImageSegmentationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CDDD5B65086AE2C6FCA1D47 /* Pods_FritzImageSegmentationDemo.framework */; };
+		830D47BD216CF3530003DE84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D47BC216CF3530003DE84 /* AppDelegate.swift */; };
+		830D47BF216CF3530003DE84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D47BE216CF3530003DE84 /* ViewController.swift */; };
+		830D47C2216CF3530003DE84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830D47C0216CF3530003DE84 /* Main.storyboard */; };
+		830D47C4216CF3530003DE84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830D47C3216CF3530003DE84 /* Assets.xcassets */; };
+		830D47C7216CF3530003DE84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830D47C5216CF3530003DE84 /* LaunchScreen.storyboard */; };
+		83446F40216D727600B87ED3 /* CustomBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83446F3F216D727600B87ED3 /* CustomBlurView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		830D47B9216CF3530003DE84 /* FritzImageSegmentationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FritzImageSegmentationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		830D47BC216CF3530003DE84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		830D47BE216CF3530003DE84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		830D47C1216CF3530003DE84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		830D47C3216CF3530003DE84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		830D47C6216CF3530003DE84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		830D47C8216CF3530003DE84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83446F3F216D727600B87ED3 /* CustomBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBlurView.swift; sourceTree = "<group>"; };
+		8CDDD5B65086AE2C6FCA1D47 /* Pods_FritzImageSegmentationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FritzImageSegmentationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7EF8C04E604E27DBB0B8572 /* Pods-FritzImageSegmentationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzImageSegmentationDemo.release.xcconfig"; path = "Target Support Files/Pods-FritzImageSegmentationDemo/Pods-FritzImageSegmentationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		ED261265C7C0872D6EDDE954 /* Pods-FritzImageSegmentationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzImageSegmentationDemo.debug.xcconfig"; path = "Target Support Files/Pods-FritzImageSegmentationDemo/Pods-FritzImageSegmentationDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		830D47B6216CF3530003DE84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D68F0AA3D533CA117ABA11 /* Pods_FritzImageSegmentationDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		830D47B0216CF3530003DE84 = {
+			isa = PBXGroup;
+			children = (
+				830D47BB216CF3530003DE84 /* FritzImageSegmentationDemo */,
+				830D47BA216CF3530003DE84 /* Products */,
+				E80DAFCE9CAD317B0AADF19B /* Pods */,
+				B96B639D589745193082A0A7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		830D47BA216CF3530003DE84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				830D47B9216CF3530003DE84 /* FritzImageSegmentationDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		830D47BB216CF3530003DE84 /* FritzImageSegmentationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				830D47BC216CF3530003DE84 /* AppDelegate.swift */,
+				830D47BE216CF3530003DE84 /* ViewController.swift */,
+				83446F3F216D727600B87ED3 /* CustomBlurView.swift */,
+				830D47C0216CF3530003DE84 /* Main.storyboard */,
+				830D47C3216CF3530003DE84 /* Assets.xcassets */,
+				830D47C5216CF3530003DE84 /* LaunchScreen.storyboard */,
+				830D47C8216CF3530003DE84 /* Info.plist */,
+			);
+			path = FritzImageSegmentationDemo;
+			sourceTree = "<group>";
+		};
+		B96B639D589745193082A0A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CDDD5B65086AE2C6FCA1D47 /* Pods_FritzImageSegmentationDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E80DAFCE9CAD317B0AADF19B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED261265C7C0872D6EDDE954 /* Pods-FritzImageSegmentationDemo.debug.xcconfig */,
+				E7EF8C04E604E27DBB0B8572 /* Pods-FritzImageSegmentationDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		830D47B8216CF3530003DE84 /* FritzImageSegmentationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830D47D6216CF3530003DE84 /* Build configuration list for PBXNativeTarget "FritzImageSegmentationDemo" */;
+			buildPhases = (
+				C9497E339FE0479F9C03BBC9 /* [CP] Check Pods Manifest.lock */,
+				830D47B5216CF3530003DE84 /* Sources */,
+				830D47B6216CF3530003DE84 /* Frameworks */,
+				830D47B7216CF3530003DE84 /* Resources */,
+				F799D23F61F3FAECCF8959DB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FritzImageSegmentationDemo;
+			productName = FritzImageSegmentationDemo;
+			productReference = 830D47B9216CF3530003DE84 /* FritzImageSegmentationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		830D47B1216CF3530003DE84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Fritz;
+				TargetAttributes = {
+					830D47B8216CF3530003DE84 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 830D47B4216CF3530003DE84 /* Build configuration list for PBXProject "FritzImageSegmentationDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 830D47B0216CF3530003DE84;
+			productRefGroup = 830D47BA216CF3530003DE84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				830D47B8216CF3530003DE84 /* FritzImageSegmentationDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		830D47B7216CF3530003DE84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830D47C7216CF3530003DE84 /* LaunchScreen.storyboard in Resources */,
+				830D47C4216CF3530003DE84 /* Assets.xcassets in Resources */,
+				830D47C2216CF3530003DE84 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9497E339FE0479F9C03BBC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FritzImageSegmentationDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F799D23F61F3FAECCF8959DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FritzImageSegmentationDemo/Pods-FritzImageSegmentationDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FritzImageSegmentationDemo/Pods-FritzImageSegmentationDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FritzImageSegmentationDemo/Pods-FritzImageSegmentationDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		830D47B5216CF3530003DE84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830D47BF216CF3530003DE84 /* ViewController.swift in Sources */,
+				83446F40216D727600B87ED3 /* CustomBlurView.swift in Sources */,
+				830D47BD216CF3530003DE84 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		830D47C0216CF3530003DE84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				830D47C1216CF3530003DE84 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		830D47C5216CF3530003DE84 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				830D47C6216CF3530003DE84 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		830D47D4216CF3530003DE84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		830D47D5216CF3530003DE84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		830D47D7216CF3530003DE84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED261265C7C0872D6EDDE954 /* Pods-FritzImageSegmentationDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FritzImageSegmentationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.fritz.FritzImageSegmentationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		830D47D8216CF3530003DE84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7EF8C04E604E27DBB0B8572 /* Pods-FritzImageSegmentationDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FritzImageSegmentationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.fritz.FritzImageSegmentationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		830D47B4216CF3530003DE84 /* Build configuration list for PBXProject "FritzImageSegmentationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830D47D4216CF3530003DE84 /* Debug */,
+				830D47D5216CF3530003DE84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		830D47D6216CF3530003DE84 /* Build configuration list for PBXNativeTarget "FritzImageSegmentationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830D47D7216CF3530003DE84 /* Debug */,
+				830D47D8216CF3530003DE84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 830D47B1216CF3530003DE84 /* Project object */;
+}

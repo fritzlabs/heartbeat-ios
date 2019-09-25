@@ -1,0 +1,23 @@
+source 'git@github.com:CocoaPods/Specs.git'
+
+platform :ios, '11.0'
+
+use_frameworks!
+inhibit_all_warnings!
+
+project 'FritzAIStudio.xcodeproj'
+
+target 'FritzAIStudio' do
+  pod 'Crashlytics', '~> 3.9'
+  pod 'Fabric', '~> 1.7'
+  pod 'ColorSlider', '~> 4.4'
+  pod 'Fritz', '~> 4.1.0'
+  pod 'Fritz/VisionObjectModel'
+  pod 'Fritz/VisionStyleModel'
+  pod 'Fritz/VisionLabelModel'
+  pod 'Fritz/VisionSegmentationModel/People/Fast'
+  pod 'Fritz/VisionSegmentationModel/Hair'
+  pod 'Fritz/VisionPoseModel'
+
+  pod 'R.swift', '5.0.0.alpha.2'
+end

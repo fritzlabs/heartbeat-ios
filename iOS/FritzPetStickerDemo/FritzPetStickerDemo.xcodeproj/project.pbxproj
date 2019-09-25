@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07E1F5075AFAB587890D3780 /* Pods_FritzPetStickerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9E527705BAFC3AA411D27C /* Pods_FritzPetStickerDemo.framework */; };
+		83E704A6226A4B6200FF678D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E704A5226A4B6200FF678D /* AppDelegate.swift */; };
+		83E704A8226A4B6200FF678D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E704A7226A4B6200FF678D /* ViewController.swift */; };
+		83E704AB226A4B6200FF678D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E704A9226A4B6200FF678D /* Main.storyboard */; };
+		83E704AD226A4B6200FF678D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83E704AC226A4B6200FF678D /* Assets.xcassets */; };
+		83E704B0226A4B6200FF678D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E704AE226A4B6200FF678D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		53CD84B8368B34F84E3C28B0 /* Pods-FritzPetStickerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzPetStickerDemo.release.xcconfig"; path = "Target Support Files/Pods-FritzPetStickerDemo/Pods-FritzPetStickerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		83E704A2226A4B6200FF678D /* FritzPetStickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FritzPetStickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E704A5226A4B6200FF678D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83E704A7226A4B6200FF678D /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		83E704AA226A4B6200FF678D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83E704AC226A4B6200FF678D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83E704AF226A4B6200FF678D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83E704B1226A4B6200FF678D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA9E527705BAFC3AA411D27C /* Pods_FritzPetStickerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FritzPetStickerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B79C8AFE929B0A8D4B50AB62 /* Pods-FritzPetStickerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzPetStickerDemo.debug.xcconfig"; path = "Target Support Files/Pods-FritzPetStickerDemo/Pods-FritzPetStickerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83E7049F226A4B6200FF678D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E1F5075AFAB587890D3780 /* Pods_FritzPetStickerDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3416539E3282F0B389088B90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B79C8AFE929B0A8D4B50AB62 /* Pods-FritzPetStickerDemo.debug.xcconfig */,
+				53CD84B8368B34F84E3C28B0 /* Pods-FritzPetStickerDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		83E70499226A4B6200FF678D = {
+			isa = PBXGroup;
+			children = (
+				83E704A4226A4B6200FF678D /* FritzPetStickerDemo */,
+				83E704A3226A4B6200FF678D /* Products */,
+				3416539E3282F0B389088B90 /* Pods */,
+				84BEB48CA4AE3E92296CE6BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83E704A3226A4B6200FF678D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83E704A2226A4B6200FF678D /* FritzPetStickerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83E704A4226A4B6200FF678D /* FritzPetStickerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				83E704A5226A4B6200FF678D /* AppDelegate.swift */,
+				83E704A7226A4B6200FF678D /* ViewController.swift */,
+				83E704A9226A4B6200FF678D /* Main.storyboard */,
+				83E704AC226A4B6200FF678D /* Assets.xcassets */,
+				83E704AE226A4B6200FF678D /* LaunchScreen.storyboard */,
+				83E704B1226A4B6200FF678D /* Info.plist */,
+			);
+			path = FritzPetStickerDemo;
+			sourceTree = "<group>";
+		};
+		84BEB48CA4AE3E92296CE6BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA9E527705BAFC3AA411D27C /* Pods_FritzPetStickerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83E704A1226A4B6200FF678D /* FritzPetStickerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83E704B4226A4B6200FF678D /* Build configuration list for PBXNativeTarget "FritzPetStickerDemo" */;
+			buildPhases = (
+				A87BA6BF21E7427A83460FB4 /* [CP] Check Pods Manifest.lock */,
+				83E7049E226A4B6200FF678D /* Sources */,
+				83E7049F226A4B6200FF678D /* Frameworks */,
+				83E704A0226A4B6200FF678D /* Resources */,
+				75EBBA0EAF846061FEE1D29C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FritzPetStickerDemo;
+			productName = FritzPetStickerDemo;
+			productReference = 83E704A2226A4B6200FF678D /* FritzPetStickerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83E7049A226A4B6200FF678D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Fritz;
+				TargetAttributes = {
+					83E704A1226A4B6200FF678D = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 83E7049D226A4B6200FF678D /* Build configuration list for PBXProject "FritzPetStickerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83E70499226A4B6200FF678D;
+			productRefGroup = 83E704A3226A4B6200FF678D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83E704A1226A4B6200FF678D /* FritzPetStickerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83E704A0226A4B6200FF678D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E704B0226A4B6200FF678D /* LaunchScreen.storyboard in Resources */,
+				83E704AD226A4B6200FF678D /* Assets.xcassets in Resources */,
+				83E704AB226A4B6200FF678D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75EBBA0EAF846061FEE1D29C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FritzPetStickerDemo/Pods-FritzPetStickerDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FritzPetStickerDemo/Pods-FritzPetStickerDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FritzPetStickerDemo/Pods-FritzPetStickerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A87BA6BF21E7427A83460FB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FritzPetStickerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83E7049E226A4B6200FF678D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E704A8226A4B6200FF678D /* ViewController.swift in Sources */,
+				83E704A6226A4B6200FF678D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		83E704A9226A4B6200FF678D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83E704AA226A4B6200FF678D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83E704AE226A4B6200FF678D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83E704AF226A4B6200FF678D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83E704B2226A4B6200FF678D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83E704B3226A4B6200FF678D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83E704B5226A4B6200FF678D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B79C8AFE929B0A8D4B50AB62 /* Pods-FritzPetStickerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FritzPetStickerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.fritz.FritzPetStickerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83E704B6226A4B6200FF678D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53CD84B8368B34F84E3C28B0 /* Pods-FritzPetStickerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FritzPetStickerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.fritz.FritzPetStickerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83E7049D226A4B6200FF678D /* Build configuration list for PBXProject "FritzPetStickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E704B2226A4B6200FF678D /* Debug */,
+				83E704B3226A4B6200FF678D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83E704B4226A4B6200FF678D /* Build configuration list for PBXNativeTarget "FritzPetStickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E704B5226A4B6200FF678D /* Debug */,
+				83E704B6226A4B6200FF678D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83E7049A226A4B6200FF678D /* Project object */;
+}
