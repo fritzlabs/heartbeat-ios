@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Fritz AI Studio</string>
+    <!-- In the MainActivity -->
+    <string name="demo_title">Fritz AI Studio</string>
+
+    <string name="fritz_vision_style_transfer">Style Transfer</string>
+    <string name="fritz_vision_style_transfer_description">Run style transfer on live video feed.</string>
+
+    <string name="fritz_vision_title">Image Labeling</string>
+    <string name="fritz_vision_description">Label a still image.</string>
+    <string name="fritz_vision_description_live_video">Label video frames</string>
+
+    <string name="fritz_customtfmobile_title">Custom TFMobile Model</string>
+    <string name="fritz_customtfmobile_description">Demonstrates using a TFMobile model to label images. Note, this is not a prebuilt model provided by the Vision API.</string>
+
+    <string name="fritz_customtflite_title">Custom TFLite Model</string>
+    <string name="fritz_customtflite_description">Demonstrates using a custom TFLite model to identify handwritten numbers. Note, this is not a prebuilt model provided by the Vision API.</string>
+
+    <string name="fritz_handwriting_detection">Handwriting Detection</string>
+    <string name="fritz_handwriting_detection_description">Detects numbers from 0-9. Draw a number on the canvas and guess what it is.</string>
+
+    <string name="fritz_info_title">Learn More About Fritz</string>
+    <string name="fritz_info_description">Want to add these machine learning features to your app? Check out our SDK for more details.</string>
+
+    <string name="fritz_object_detection_title">Object Detection</string>
+    <string name="fritz_object_detection_description">Detect objects in an image and label them</string>
+
+    <string name="fritz_vision_img_seg_title">Image Segmentation</string>
+    <string name="fritz_vision_img_seg_description">Take a picture and identify people in the photo (highlighted in blue).</string>
+
+    <string name="fritz_pose_estimation_title">Pose Estimation</string>
+    <string name="fritz_pose_estimation_description">Detect body position and keypoints.</string>
+
+    <string name="fritz_vision_people_segmentation_title">People Segmentation</string>
+    <string name="fritz_vision_people_segmentation_description">Create a mask on people in an image.</string>
+
+    <string name="fritz_vision_living_room_segmentation_title">Living Room Segmentation</string>
+    <string name="fritz_vision_living_room_segmentation_description">Create a mask on living room objects.</string>
+
+    <string name="fritz_vision_outdoor_segmentation_title">Outdoor Segmentation</string>
+    <string name="fritz_vision_outdoor_segmentation_description">Create a mask on outdoor objects in an image.</string>
+
+    <string name="mnist_title">MNIST</string>
+    <string name="mnist_description">Classic MNIST handwriting recognizer for digits 0&#8211;9</string>
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="toggle_turn_on">NN:On</string>
+    <string name="toggle_turn_off">NN:Off</string>
+    <string name="toggle">Use NNAPI</string>
+    <string name="clear">Clear</string>
+    <string name="select_photo">Select Photo</string>
+    <string name="detect">Detect</string>
+    <string name="not_detected">Not detected</string>
+    <string name="found_digits">Detected = %1$s</string>
+    <string name="available_models">Available Models</string>
+    <string name="fritz_hair_color_title">Hair Coloring</string>
+    <string name="fritz_hair_color_description">Change your hair color with Image Segmentation.</string>
+
+    <string-array name="img_seg_model_options">
+        <item>People 384x384</item>
+        <item>Living Room 384x384</item>
+        <item>Outdoor 384x384</item>
+    </string-array>
+    <string-array name="style_transfer_options">
+        <item>Bicentennial Print</item>
+        <item>Femmes</item>
+        <item>Head of Clown</item>
+        <item>Horses on Seashore</item>
+        <item>Kaleidoscope</item>
+        <item>Pink Blue Rhombus</item>
+        <item>Poppy Field</item>
+        <item>Ritmo Plastico</item>
+        <item>Starry Night</item>
+        <item>The Scream</item>
+        <item>The Trail</item>
+    </string-array>
+</resources>

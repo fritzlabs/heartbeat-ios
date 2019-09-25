@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- In the production demo account -->
+    <string name="fritz_api_key">25eb6224a2e040a3a06e10e779a17166</string>
+    <string name="inception_v3_model_id">08c1cea18756489cb244952aa7b218a0</string>
+    <string name="tflite_model_id">7bf64aad64b7420f94f9c106a5e96cbd</string>
+</resources>

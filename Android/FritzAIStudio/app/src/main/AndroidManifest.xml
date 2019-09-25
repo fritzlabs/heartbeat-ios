@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ai.fritz.aistudio">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="ai.fritz.aistudio.activities.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="ai.fritz.aistudio.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name="ai.fritz.aistudio.activities.vision.StyleTransferActivity"
+            android:parentActivityName="ai.fritz.aistudio.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name="ai.fritz.aistudio.activities.vision.ImageLabelingActivity"
+            android:parentActivityName="ai.fritz.aistudio.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ai.fritz.aistudio.activities.vision.ObjectDetectionActivity"
+            android:parentActivityName="ai.fritz.aistudio.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ai.fritz.aistudio.activities.vision.ImageSegmentationActivity"
+            android:parentActivityName="ai.fritz.aistudio.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name="ai.fritz.aistudio.activities.vision.PoseEstimationActivity"
+            android:parentActivityName="ai.fritz.aistudio.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ai.fritz.aistudio.activities.vision.HairSegmentationActivity"
+            android:parentActivityName="ai.fritz.aistudio.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name="ai.fritz.aistudio.activities.custommodel.CustomTFMobileActivity"
+            android:parentActivityName="ai.fritz.aistudio.activities.MainActivity" />
+        <activity
+            android:name="ai.fritz.aistudio.activities.custommodel.CustomTFLiteActivity"
+            android:parentActivityName="ai.fritz.aistudio.activities.MainActivity" />
+
+        <meta-data
+            android:name="fritz_api_key"
+            android:value="@string/fritz_api_key" />
+
+
+        <service
+            android:name="ai.fritz.core.FritzCustomModelService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+
+</manifest>

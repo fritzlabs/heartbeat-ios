@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:colorpicker="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <ai.fritz.haircoloring.AutoFitTextureView
+        android:id="@+id/texture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" />
+
+    <ai.fritz.vision.FritzSurfaceView
+        android:id="@+id/gpuimageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:gpuimage_show_loading="false"
+        app:gpuimage_surface_type="surface_view" />
+
+    <ImageButton
+        android:id="@+id/camera_switch_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:padding="@dimen/margin_sm"
+        android:src="@drawable/ic_camera_switch" />
+
+    <Button
+        android:id="@+id/chose_model_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="gravity"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <com.github.veritas1.verticalslidecolorpicker.VerticalSlideColorPicker
+        android:id="@+id/color_picker"
+        android:layout_width="40dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        colorpicker:borderColor="@android:color/black"
+        colorpicker:borderWidth="2dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+      <ai.fritz.aistudio.ui.AutoFitTextureView
+          android:id="@+id/texture"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_alignParentTop="true"/>
+
+      <ai.fritz.aistudio.ui.OverlayView
+          android:id="@+id/debug_overlay"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_alignParentTop="true"/>
+
+      <Button
+          android:id="@+id/chose_model_btn"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingBottom="10dp"
+          android:paddingTop="10dp"
+          android:layout_alignParentBottom="true"
+          android:gravity="center_horizontal"
+          android:textSize="18sp"
+          android:textColor="#FFF"
+          android:background="@color/colorPrimary"
+          android:textStyle="bold"
+          android:visibility="gone"
+          android:textAlignment="gravity"
+          android:foreground="?attr/selectableItemBackground"/>
+</RelativeLayout>

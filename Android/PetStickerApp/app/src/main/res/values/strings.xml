@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Pet Stickers</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="save_sticker_btn">Save Sticker</string>
+    <string name="error_saving_sticker">There was an error saving your sticker</string>
+    <string name="saved_sticker">Saved Sticker!</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_md"
+    android:paddingLeft="@dimen/margin_md"
+    android:paddingRight="@dimen/margin_md"
+    android:paddingTop="@dimen/margin_md"
+    tools:context="ai.fritz.aistudio.VisionActivity">
+
+    <include layout="@layout/app_bar" />
+    
+    <ImageView
+        android:id="@+id/image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:maxWidth="200dp"
+        />
+
+    <TextView
+        android:id="@+id/vision_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="@dimen/margin_sm"
+        android:paddingBottom="@dimen/margin_sm"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/select_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_md"
+        android:background="@color/lighter_black_bg"
+        android:text="@string/select_photo" />
+
+</LinearLayout>

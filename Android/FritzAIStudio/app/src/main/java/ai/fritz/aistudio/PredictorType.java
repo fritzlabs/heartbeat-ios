@@ -1,0 +1,11 @@
+package ai.fritz.aistudio;
+
+public enum PredictorType {
+    POSE_ESTIMATION,
+    STYLE_TRANSFER,
+    IMAGE_LABELING,
+    OBJECT_DETECTION,
+    PEOPLE_SEGMENTATION,
+    LIVING_ROOM_SEGMENTATION,
+    OUTDOOR_SEGMENTATION,
+}

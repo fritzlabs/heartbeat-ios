@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/margin_md"
+    android:paddingRight="@dimen/margin_md"
+    android:paddingTop="@dimen/margin_md"
+    android:paddingBottom="@dimen/margin_md"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar" />
+
+    <ai.fritz.aistudio.ui.DrawView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/view_draw"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            android:background="@color/lighter_black_bg"
+            android:layout_marginRight="@dimen/margin_md"
+            android:id="@+id/button_clear"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/lighter_black_bg"
+            android:text="@string/detect"
+            android:id="@+id/button_detect"/>
+
+        <TextView
+            android:paddingLeft="@dimen/margin_sm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/text_result"/>
+    </LinearLayout>
+
+</LinearLayout>
