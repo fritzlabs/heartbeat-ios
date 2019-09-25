@@ -14,16 +14,16 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
 
   var previewView: UIImageView!
 
-  lazy var poseModel = FritzVisionPoseModel()
+  lazy var poseModel = FritzVisionHumanPoseModel()
 
-  lazy var poseSmoother = PoseSmoother<OneEuroPointFilter>()
+  lazy var poseSmoother = PoseSmoother<OneEuroPointFilter, HumanSkeleton>()
 
   private lazy var captureSession: AVCaptureSession = {
     let session = AVCaptureSession()
 
     guard
       let backCamera = AVCaptureDevice.default(
-        .builtInWideAngleCamera,
+          .builtInWideAngleCamera,
         for: .video,
         position: .back),
       let input = try? AVCaptureDeviceInput(device: backCamera)
@@ -69,11 +69,13 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     }
   }
 
+  var minPoseThreshold: Double { return 0.4 }
+
   func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
 
     let image = FritzVisionImage(sampleBuffer: sampleBuffer, connection: connection)
     let options = FritzVisionPoseModelOptions()
-    options.minPoseThreshold = 0.4
+    options.minPoseThreshold = minPoseThreshold
 
     guard let result = try? poseModel.predict(image, options: options) else {
       // If there was no pose, display original image
@@ -81,7 +83,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
       return
     }
 
-    guard var pose = result.pose() else {
+    guard let pose = result.pose() else {
       displayInputImage(image)
       return
     }

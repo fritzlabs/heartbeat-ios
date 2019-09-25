@@ -1,19 +1,19 @@
-Heartbeat by Fritz
+Fritz AI Studio
 ===================
 
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Fritz.svg)](https://img.shields.io/cocoapods/v/Fritz.svg)
 [![Twitter](https://img.shields.io/badge/twitter-@fritzlabs-blue.svg?style=flat)](http://twitter.com/fritzlabs)
 
-Heartbeat by Fritz is a collection of unique experiences built with machine learning models. Explore the code for our demos, or fork the repo and build your own app.
+Fritz AI Studio is a collection of unique experiences built with machine learning models. Explore the code for our demos, or fork the repo and build your own app.
 
-Heartbeat by Fritz is also available from the [App Store](https://itunes.apple.com/us/app/heartbeat-by-fritz/id1325206416).
+Fritz AI Studio is also available from the [App Store](https://itunes.apple.com/us/app/heartbeat-by-fritz/id1325206416).
 
 
 ## Fritz AI
 
-Fritz AI helps you teach your applications how to see, hear, feel, think, and sense. Create ML-powered features in your mobile apps for both Android and iOS. Start with our ready-to-use feature APIs or connect and deploy your own custom models.
+Fritz AI is the machine learning platform for iOS and Android developers. Teach your mobile apps to see, hear, sense, and think. Start with our ready-to-use feature APIs or connect and deploy your own custom models.
 
-[Sign up](https://app.fritz.ai/register) for an account on Fritz AI in order to get started with machine learning in your apps.
+[Sign up](https://app.fritz.ai/register) for a free account on Fritz AI in order to get started with machine learning in your apps.
 
 
 ## Getting Started

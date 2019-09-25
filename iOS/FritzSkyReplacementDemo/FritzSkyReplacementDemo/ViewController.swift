@@ -53,7 +53,7 @@ class ViewController: UIViewController {
 
   func initialBackground() -> UIImageView {
     let shiftedLeft = CGRect(origin: CGPoint(x: -view.bounds.width, y: view.bounds.minY),
-                             size: view.bounds.size)
+      size: view.bounds.size)
     let view = UIImageView(frame: shiftedLeft)
     view.contentMode = .scaleAspectFill
     view.image = background
@@ -62,11 +62,11 @@ class ViewController: UIViewController {
 
   func startAnimation(on imageView: UIImageView, delay: Double) {
     UIView.animate(withDuration: animationDuration, delay: delay, options: [.repeat, .curveLinear], animations: {
-      imageView.frame = CGRect(
-        origin: CGPoint(x: self.view.bounds.width, y: self.view.bounds.minY),
-        size: self.view.bounds.size
-      )
-    })
+        imageView.frame = CGRect(
+          origin: CGPoint(x: self.view.bounds.width, y: self.view.bounds.minY),
+          size: self.view.bounds.size
+        )
+      })
   }
 
   /// Remove background of input image based on an alpha mask.

@@ -505,14 +505,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38F2E2481FE0D0B6007241CB /* Build configuration list for PBXNativeTarget "FritzAIStudio" */;
 			buildPhases = (
-				2C1AC0BE073F2B5C7B449D97 /* [CP] Check Pods Manifest.lock */,
-				383D40CC1FE1901700438A9B /* Swift Lint */,
-				383D40C31FE18EA000438A9B /* R.swift */,
+				2C1AC0BE073F2B5C7B449D97 /* ShellScript */,
+				383D40CC1FE1901700438A9B /* ShellScript */,
+				383D40C31FE18EA000438A9B /* ShellScript */,
 				38F2E2321FE0D0B6007241CB /* Sources */,
 				38F2E2331FE0D0B6007241CB /* Frameworks */,
 				38F2E2341FE0D0B6007241CB /* Resources */,
-				38B18CC31FE22C91005AA896 /* Fabric */,
-				EA18C4F1306D7737BA6172C8 /* [CP] Embed Pods Frameworks */,
+				38B18CC31FE22C91005AA896 /* ShellScript */,
+				EA18C4F1306D7737BA6172C8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -539,7 +539,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 38F2E2311FE0D0B6007241CB /* Build configuration list for PBXProject "FritzAIStudio" */;
+			buildConfigurationList = 38F2E2311FE0D0B6007241CB /* Build configuration list for PBXProject "Fritz Labs" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -584,7 +584,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2C1AC0BE073F2B5C7B449D97 /* [CP] Check Pods Manifest.lock */ = {
+		2C1AC0BE073F2B5C7B449D97 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -606,7 +606,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		383D40C31FE18EA000438A9B /* R.swift */ = {
+		383D40C31FE18EA000438A9B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -622,7 +622,7 @@
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/FritzAIStudio\"\n# Solution as per https://github.com/mac-cain13/R.swift/issues/456#issuecomment-426344064\ndate > \"$SRCROOT/FritzAIStudio/rswift.workaround.file\"\n";
 		};
-		383D40CC1FE1901700438A9B /* Swift Lint */ = {
+		383D40CC1FE1901700438A9B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -636,7 +636,7 @@
 			shellPath = /bin/sh;
 			shellScript = "#if which swiftlint >/dev/null; then\n#    swiftlint\n#else\n#    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n#fi";
 		};
-		38B18CC31FE22C91005AA896 /* Fabric */ = {
+		38B18CC31FE22C91005AA896 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -650,7 +650,7 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" 3ab14d933cbf3577dd7434aa17e1171fdd726172 a7e273788cbf79557095d9bd720a5d71abef69142d7a82ef17e9d88751ee49d8\n";
 		};
-		EA18C4F1306D7737BA6172C8 /* [CP] Embed Pods Frameworks */ = {
+		EA18C4F1306D7737BA6172C8 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -895,7 +895,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/FritzAIStudio/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -916,7 +915,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/FritzAIStudio/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -931,7 +929,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		38F2E2311FE0D0B6007241CB /* Build configuration list for PBXProject "FritzAIStudio" */ = {
+		38F2E2311FE0D0B6007241CB /* Build configuration list for PBXProject "Fritz Labs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38F2E2461FE0D0B6007241CB /* Debug */,

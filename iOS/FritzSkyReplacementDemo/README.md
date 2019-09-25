@@ -8,7 +8,7 @@ In this app, we use the Sky Segmentation model by Fritz to create gifs where the
 
 ## Fritz AI
 
-Fritz AI helps you teach your applications how to see, hear, feel, think, and sense. Create ML-powered features in your mobile apps for both Android and iOS. Start with our ready-to-use feature APIs or connect and deploy your own custom models.
+Fritz AI is the machine learning platform for iOS and Android developers. Teach your mobile apps to see, hear, sense, and think. Start with our ready-to-use feature APIs or connect and deploy your own custom models.
 
 ## Requirements
 
@@ -21,20 +21,20 @@ Fritz AI helps you teach your applications how to see, hear, feel, think, and se
 
 **Step 1: Create a Fritz AI Account**
 
-[Sign up](https://app.fritz.ai/register) for an account on Fritz AI in order to get started.
+[Sign up](https://app.fritz.ai/register) for a free account on Fritz AI in order to get started.
 
-**Step 2: Clone / Fork the fritz-ios-tutorials repository and open FritzSkyReplacementDemo**
+**Step 2: Clone / Fork the fritz-examples repository and open FritzSkyReplacementDemo**
 
 ```
-git clone https://github.com/fritzlabs/fritz-ios-tutorials.git
+git clone https://github.com/fritzlabs/fritz-examples.git
 ```
 
 **Step 3: Setup the project via Cocoapods**
 
-Install dependencies via Cocoapods by running `pod install` from `fritz-ios-tutorials/FritzSkyReplacementDemo`
+Install dependencies via Cocoapods by running `pod install` from `fritz-examples/iOS/FritzSkyReplacementDemo`
 
 ```
-cd fritz-ios-tutorials/FritzSkyReplacementDemo
+cd fritz-examples/iOS/FritzSkyReplacementDemo
 pod repo update
 pod install
 ```
@@ -48,11 +48,6 @@ XCode > Open > FritzSkyReplacementDemo.xcworkspace
 **Step 5: Run the app**
 
 Attach a device or use an emulator to run the app. If you get the error "Please download the Fritz-Info.plist", you'll need to register the app with Fritz (See Step 2).
-
-## For questions on how to use the demos, contact us:
-
-- [Slack](https://heartbeat-by-fritz.slack.com/join/shared_invite/enQtMzY5OTM1MzgyODIzLTZhNTFjYmRiODU0NjZjNjJlOGRjYzI2OTIwY2M4YTBiNjM1ODU1ZmU3Y2Q2MmMzMmI2ZTIzZjQ1ZWI3NzBkZGU)
-- [Help Center](https://docs.fritz.ai/help-center/index.html)
 
 ## Documentation
 

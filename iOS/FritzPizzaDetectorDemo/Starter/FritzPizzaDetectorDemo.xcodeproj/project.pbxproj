@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -98,11 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83CF5506226FC44B00F995AA /* Build configuration list for PBXNativeTarget "FritzPizzaDetectorDemo" */;
 			buildPhases = (
-				CB469173CE2DB334D3397BAE /* [CP] Check Pods Manifest.lock */,
+				CB469173CE2DB334D3397BAE /* ShellScript */,
 				83CF54F0226FC44900F995AA /* Sources */,
 				83CF54F1226FC44900F995AA /* Frameworks */,
 				83CF54F2226FC44900F995AA /* Resources */,
-				AF706660276906083F1D83A0 /* [CP] Embed Pods Frameworks */,
+				AF706660276906083F1D83A0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -128,7 +128,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CF54EF226FC44900F995AA /* Build configuration list for PBXProject "FritzPizzaDetectorDemo" */;
+			buildConfigurationList = 83CF54EF226FC44900F995AA /* Build configuration list for PBXProject "FritzImageLabelingDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -161,7 +161,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AF706660276906083F1D83A0 /* [CP] Embed Pods Frameworks */ = {
+		AF706660276906083F1D83A0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -178,7 +178,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FritzPizzaDetectorDemo/Pods-FritzPizzaDetectorDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CB469173CE2DB334D3397BAE /* [CP] Check Pods Manifest.lock */ = {
+		CB469173CE2DB334D3397BAE /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -356,7 +356,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FritzPizzaDetectorDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -375,7 +374,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FritzPizzaDetectorDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -391,7 +389,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		83CF54EF226FC44900F995AA /* Build configuration list for PBXProject "FritzPizzaDetectorDemo" */ = {
+		83CF54EF226FC44900F995AA /* Build configuration list for PBXProject "FritzImageLabelingDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CF5504226FC44B00F995AA /* Debug */,

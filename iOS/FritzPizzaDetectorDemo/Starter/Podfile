@@ -6,7 +6,7 @@ target 'FritzPizzaDetectorDemo' do
   use_frameworks!
 
   # Pods for FritzPizzaDetectorDemo
-  pod 'Fritz', '~> 3.7.0'
+  pod 'Fritz', '~> 4.1.0'
   pod 'Fritz/VisionLabelModel'
 
 end

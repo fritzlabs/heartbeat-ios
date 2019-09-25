@@ -3,46 +3,46 @@ import AVFoundation
 import Fritz
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate,
-UINavigationControllerDelegate {
-    
-  @IBOutlet var imageView: UIImageView!
-  var maskView: UIImageView!
-  var backgroundView: UIImageView!
+  UINavigationControllerDelegate {
 
-  let context = CIContext()
-  private lazy var visionModel = FritzVisionPetSegmentationModel()
+    @IBOutlet var imageView: UIImageView!
+    var maskView: UIImageView!
+    var backgroundView: UIImageView!
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    openPhotoLibrary()
-    backgroundView = UIImageView(frame: view.bounds)
-    backgroundView.backgroundColor = .red
-    view.addSubview(backgroundView)
+    let context = CIContext()
+    private lazy var visionModel = FritzVisionPetSegmentationModel()
 
-    imageView = UIImageView(frame: view.bounds)
-    imageView.contentMode = .scaleAspectFit
-    view.addSubview(imageView)
-  }
+    override func viewDidLoad() {
+      super.viewDidLoad()
+      openPhotoLibrary()
+      backgroundView = UIImageView(frame: view.bounds)
+      backgroundView.backgroundColor = .red
+      view.addSubview(backgroundView)
 
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
-  }
-  
-  func openPhotoLibrary() {
-    if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
-      let imagePicker = UIImagePickerController()
-      imagePicker.delegate = self
-      imagePicker.sourceType = .photoLibrary
-      imagePicker.allowsEditing = true
-      self.present(imagePicker, animated: true, completion: nil)
+      imageView = UIImageView(frame: view.bounds)
+      imageView.contentMode = .scaleAspectFit
+      view.addSubview(imageView)
     }
-  }
-  
-  @objc func imagePickerController(_ picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!){
-    self.dismiss(animated: true, completion: { () -> Void in
-    })
-    createSticker(image)
-  }
+
+    override func viewDidAppear(_ animated: Bool) {
+      super.viewDidAppear(animated)
+    }
+
+    func openPhotoLibrary() {
+      if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.allowsEditing = true
+        self.present(imagePicker, animated: true, completion: nil)
+      }
+    }
+
+    @objc func imagePickerController(_ picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!) {
+      self.dismiss(animated: true, completion: { () -> Void in
+      })
+      createSticker(image)
+    }
 }
 
 
@@ -65,7 +65,7 @@ extension ViewController {
       )
       else { return }
 
-    let petSticker = fritzImage.masked(withAlphaMask: mask)
+    let petSticker = fritzImage.masked(with: mask)
 
     DispatchQueue.main.async {
       self.imageView.image = petSticker

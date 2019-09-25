@@ -8,7 +8,7 @@ class ViewController: UIViewController {
   var maskView: UIImageView!
   var backgroundView: UIImageView!
 
-  private lazy var visionModel = FritzVisionPeopleSegmentationModel()
+  private lazy var visionModel = FritzVisionPeopleSegmentationModelFast()
 
   private lazy var cameraSession = AVCaptureSession()
   private let sessionQueue = DispatchQueue(label: "com.fritzdemo.imagesegmentation.session")
@@ -66,6 +66,13 @@ class ViewController: UIViewController {
 
 extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
 
+  /// Scores output from model greater than this value will be set as 1.
+  /// Lowering this value will make the mask more intense for lower confidence values.
+  var clippingScoresAbove: Double { return 0.7 }
+
+  /// Values lower than this value will not appear in the mask.
+  var zeroingScoresBelow: Double { return 0.25 }
+
   func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
     let image = FritzVisionImage(sampleBuffer: sampleBuffer, connection: connection)
 
@@ -77,8 +84,8 @@ extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
 
     let mask = result.buildSingleClassMask(
       forClass: FritzVisionPeopleClass.person,
-      clippingScoresAbove: 0.7,
-      zeroingScoresBelow: 0.25
+      clippingScoresAbove: clippingScoresAbove,
+      zeroingScoresBelow: zeroingScoresBelow
     )
 
     DispatchQueue.main.async {

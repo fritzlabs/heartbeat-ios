@@ -67,7 +67,7 @@ extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
   /// The method used to blend the hair mask with the underlying image.
   /// Soft light produces the best results in our tests, but check out
   /// .hue and .color for different effects.
-  var blendMode: CIBlendKernel { return .softLight }
+  var blendKernel: CIBlendKernel { return .softLight }
 
   /// Color of the mask.
   var color: UIColor { return .blue }
@@ -77,16 +77,16 @@ extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
 
     guard let result = try? visionModel.predict(image),
       let mask = result.buildSingleClassMask(
-      forClass: FritzVisionHairSegmentationClass.hair,
-      clippingScoresAbove: clippingScoresAbove,
-      zeroingScoresBelow: zeroingScoresBelow,
-      resize: false,
-      color: color)
+        forClass: FritzVisionHairSegmentationClass.hair,
+        clippingScoresAbove: clippingScoresAbove,
+        zeroingScoresBelow: zeroingScoresBelow,
+        resize: false,
+        color: color)
       else { return }
 
     let blended = image.blend(
       withMask: mask,
-      blendKernel: blendMode,
+      blendKernel: blendKernel,
       opacity: opacity
     )
 

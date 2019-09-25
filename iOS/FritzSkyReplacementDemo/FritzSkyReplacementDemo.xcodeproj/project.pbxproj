@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -105,11 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 837BFB9222AAE6FC00010A93 /* Build configuration list for PBXNativeTarget "FritzSkyReplacementDemo" */;
 			buildPhases = (
-				F4E63DE038EA65B06A534018 /* [CP] Check Pods Manifest.lock */,
+				F4E63DE038EA65B06A534018 /* ShellScript */,
 				837BFB7C22AAE6FB00010A93 /* Sources */,
 				837BFB7D22AAE6FB00010A93 /* Frameworks */,
 				837BFB7E22AAE6FB00010A93 /* Resources */,
-				A4FD6B8FAC6FCD2D4936DDF2 /* [CP] Embed Pods Frameworks */,
+				A4FD6B8FAC6FCD2D4936DDF2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -135,7 +135,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 837BFB7B22AAE6FB00010A93 /* Build configuration list for PBXProject "FritzSkyReplacementDemo" */;
+			buildConfigurationList = 837BFB7B22AAE6FB00010A93 /* Build configuration list for PBXProject "SkySegmentationGifCreator" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -169,7 +169,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A4FD6B8FAC6FCD2D4936DDF2 /* [CP] Embed Pods Frameworks */ = {
+		A4FD6B8FAC6FCD2D4936DDF2 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -186,7 +186,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FritzSkyReplacementDemo/Pods-FritzSkyReplacementDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F4E63DE038EA65B06A534018 /* [CP] Check Pods Manifest.lock */ = {
+		F4E63DE038EA65B06A534018 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -364,7 +364,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FritzSkyReplacementDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -383,7 +382,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FritzSkyReplacementDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -399,7 +397,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		837BFB7B22AAE6FB00010A93 /* Build configuration list for PBXProject "FritzSkyReplacementDemo" */ = {
+		837BFB7B22AAE6FB00010A93 /* Build configuration list for PBXProject "SkySegmentationGifCreator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				837BFB9022AAE6FC00010A93 /* Debug */,

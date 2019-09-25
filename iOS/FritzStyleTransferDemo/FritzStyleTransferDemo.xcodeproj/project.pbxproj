@@ -95,11 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83AC97C821495DD600E86B44 /* Build configuration list for PBXNativeTarget "FritzStyleTransferDemo" */;
 			buildPhases = (
-				5D1BF771AE4439EF6FE66C95 /* [CP] Check Pods Manifest.lock */,
+				5D1BF771AE4439EF6FE66C95 /* ShellScript */,
 				83AC97B221495DD400E86B44 /* Sources */,
 				83AC97B321495DD400E86B44 /* Frameworks */,
 				83AC97B421495DD400E86B44 /* Resources */,
-				861F0BDBE5ADD909627E5917 /* [CP] Embed Pods Frameworks */,
+				861F0BDBE5ADD909627E5917 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -122,6 +122,7 @@
 				TargetAttributes = {
 					83AC97B521495DD400E86B44 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -157,7 +158,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5D1BF771AE4439EF6FE66C95 /* [CP] Check Pods Manifest.lock */ = {
+		5D1BF771AE4439EF6FE66C95 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -175,7 +176,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		861F0BDBE5ADD909627E5917 /* [CP] Embed Pods Frameworks */ = {
+		861F0BDBE5ADD909627E5917 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -346,7 +347,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FritzStyleTransferDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -354,7 +354,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ai.fritz.FritzStyleTransferDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -365,7 +365,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FritzStyleTransferDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -373,7 +372,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ai.fritz.FritzStyleTransferDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

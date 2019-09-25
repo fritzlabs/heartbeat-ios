@@ -21,7 +21,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
 
     guard
       let backCamera = AVCaptureDevice.default(
-        .builtInWideAngleCamera,
+          .builtInWideAngleCamera,
         for: .video,
         position: .back),
       let input = try? AVCaptureDeviceInput(device: backCamera)
@@ -63,10 +63,10 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
   func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
     let fritzImage = FritzVisionImage(sampleBuffer: sampleBuffer, connection: connection)
     guard let stylizedImage = try? styleModel.predict(fritzImage) else { return }
-      let styled = UIImage(pixelBuffer: stylizedImage)
-      DispatchQueue.main.async {
-        self.previewView.image = styled
-      }
+    let styled = UIImage(pixelBuffer: stylizedImage)
+    DispatchQueue.main.async {
+      self.previewView.image = styled
+    }
 
   }
 }

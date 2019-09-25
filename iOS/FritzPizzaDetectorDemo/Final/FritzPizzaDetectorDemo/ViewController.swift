@@ -13,7 +13,7 @@ class ViewController: UIViewController {
   private let captureQueue = DispatchQueue(label: "com.fritzdemo.pizzadetector.capture", qos: DispatchQoS.userInitiated)
 
   private lazy var previewLayer: AVCaptureVideoPreviewLayer = {
-    let preview =  AVCaptureVideoPreviewLayer(session: cameraSession)
+    let preview = AVCaptureVideoPreviewLayer(session: cameraSession)
     preview.videoGravity = .resizeAspectFill
     return preview
   }()
@@ -132,4 +132,3 @@ extension ViewController {
     }
   }
 }
-
