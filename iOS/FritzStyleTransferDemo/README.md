@@ -2,7 +2,7 @@
 
 [![Twitter](https://img.shields.io/badge/twitter-@fritzlabs-blue.svg?style=flat)](http://twitter.com/fritzlabs)
 
-In this app, we use the [Style Transfer API by Fritz](https://www.fritz.ai/features/style-transfer.html) in order to build different camera filters inspired by some of the greatest artists like Van Gogh and Picasso.
+In this app, we use the [Style Transfer API by Fritz AI](https://www.fritz.ai/features/style-transfer.html) in order to build different camera filters inspired by some of the greatest artists like Van Gogh and Picasso.
 
 For the full tutorial, visit [our post on Heartbeat](https://heartbeat.fritz.ai/real-time-style-transfer-for-ios-transform-your-photos-and-videos-into-masterpieces-f04111fcd2ff).
 

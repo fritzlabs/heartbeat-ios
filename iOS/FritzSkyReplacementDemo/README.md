@@ -1,8 +1,8 @@
-# Create GIFs with a moving sky using Sky Segmentation by Fritz.
+# Create GIFs with a Moving Sky Using Sky Segmentation by Fritz AI
 
 [![Twitter](https://img.shields.io/badge/twitter-@fritzlabs-blue.svg?style=flat)](http://twitter.com/fritzlabs)
 
-In this app, we use the Sky Segmentation model by Fritz to create gifs where the sky moves.
+In this app, we use the Sky Segmentation model by Fritz AI to create gifs where the sky moves.
 
 <img src="images/sky_segmentation_result.gif" width="250" />
 

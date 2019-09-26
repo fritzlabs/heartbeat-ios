@@ -49,11 +49,6 @@ XCode > Open > FritzPetStickerDemo.xcworkspace
 
 Attach a device or use an emulator to run the app. If you get the error "Please download the Fritz-Info.plist", you'll need to register the app with Fritz (See Step 2).
 
-## For questions on how to use the demos, contact us:
-
-- [Slack](https://heartbeat-by-fritz.slack.com/join/shared_invite/enQtMzY5OTM1MzgyODIzLTZhNTFjYmRiODU0NjZjNjJlOGRjYzI2OTIwY2M4YTBiNjM1ODU1ZmU3Y2Q2MmMzMmI2ZTIzZjQ1ZWI3NzBkZGU)
-- [Help Center](https://docs.fritz.ai/help-center/index.html)
-
 ## Documentation
 
 [Fritz Docs Home](https://docs.fritz.ai/)

@@ -4,9 +4,7 @@ Fritz AI Studio
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Fritz.svg)](https://img.shields.io/cocoapods/v/Fritz.svg)
 [![Twitter](https://img.shields.io/badge/twitter-@fritzlabs-blue.svg?style=flat)](http://twitter.com/fritzlabs)
 
-Fritz AI Studio is a collection of unique experiences built with machine learning models. Explore the code for our demos, or fork the repo and build your own app.
-
-Fritz AI Studio is also available from the [App Store](https://itunes.apple.com/us/app/heartbeat-by-fritz/id1325206416).
+Fritz AI Studio is a collection of unique experiences built with machine learning models. Explore the code for our demos, or fork the repo and build your own app. It's also available from the [App Store](https://itunes.apple.com/us/app/heartbeat-by-fritz/id1325206416).
 
 
 ## Fritz AI

@@ -1,8 +1,8 @@
-# Fritz iOS Tutorials 
+# Fritz iOS Tutorials
 
-Fritz AI helps you teach your applications how to see, hear, feel, think, and sense. Create ML-powered features in your mobile apps for both Android and iOS. Start with our ready-to-use feature APIs or connect and deploy your own custom models.
+Fritz AI is the machine learning platform for iOS and Android developers. Teach your mobile apps to see, hear, sense, and think. Start with our ready-to-use feature APIs or connect and deploy your own custom models.
 
-[Sign up](https://app.fritz.ai/register) for an account on Fritz AI in order to get started with machine learning in your apps.
+[Sign up](https://app.fritz.ai/register) for an account on Fritz AI in order to get started.
 
 ## Examples for iOS
 
@@ -10,7 +10,7 @@ Fritz AI helps you teach your applications how to see, hear, feel, think, and se
 
 - [Image Segmentation](https://www.fritz.ai/features/image-segmentation.html): Create pixel level masks of different objects in a scene.
 - [Image Labeling](https://www.fritz.ai/features/image-labeling.html): Classify different objects in an video or image.
-- [Pose Estimation](https://www.fritz.ai/features/pose-estimation.html): Identify and track a person's body position.: Detect multiple objects and track their location.
+- [Pose Estimation](https://www.fritz.ai/features/pose-estimation.html): Identify and track a person's body position.
 - [Object Detection](https://www.fritz.ai/features/object-detection.html): Detect multiple objects and track their location.
 - [Style Transfer](https://www.fritz.ai/features/style-transfer.html): Transform photos and videos into artistic masterpieces.
 
@@ -24,9 +24,9 @@ We currently support Core ML for iOS.
 
 ## Example Apps
 
-If you are new to Fritz, I'd recommend getting started with our Heartbeat App. You can also install the latest version from the [App Store](https://itunes.apple.com/us/app/heartbeat-by-fritz/id1325206416?mt=8):
+If you are new to Fritz, it's recommended to get started with our Fritz AI Studio App. You can also install the latest version from the [App Store](https://itunes.apple.com/us/app/heartbeat-by-fritz/id1325206416?mt=8):
 
-- Heartbeat App - Our kitchen sink project showcases all on-device Vision APIs and Custom Model usage. ([Open Source Code](https://github.com/fritzlabs/heartbeat-ios))
+- Fritz AI Studio App - Our kitchen sink project showcases all on-device Vision APIs and Custom Model usage. ([Open Source Code](https://github.com/fritzlabs/fritz-examples/tree/master/iOS/FritzAIStudio))
 - Fritz Image Segmentation Demo - Create a portrait mode filter with People Segmentation ([tutorial](https://heartbeat.fritz.ai/building-an-image-segmentation-app-in-ios-3377eb4a3e7c)).
 - Fritz Hair Color Demo - Try out different hair colors and styles ([tutorial](https://heartbeat.fritz.ai/try-on-a-new-style-build-an-ios-app-to-change-your-hair-color-with-fritz-hair-segmentation-177324b077b3)).
 - Fritz Pizza Detector Demo - Create Domino's Points for Pies feature by recognizing pizza ([tutorial](https://heartbeat.fritz.ai/recreate-dominos-points-for-pies-app-on-ios-with-fritz-image-labeling-2ed23398e1c2)).

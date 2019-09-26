@@ -1,27 +1,25 @@
-# Fritz Demo App
+# Fritz AI Studio App
 
 [ ![Codeship Status for fritzlabs/fritz-sdk-android](https://app.codeship.com/projects/c74152e0-65d1-0136-2d69-32e87736c6c6/status?branch=master)](https://app.codeship.com/projects/297281)
 [![Twitter](https://img.shields.io/badge/twitter-@fritzlabs-blue.svg?style=flat)](http://twitter.com/fritzlabs)
 
-Fritz is the machine learning platform for iOS and Android developers. This is our kitchen-sink application that showcases all the different ML features provided by Fritz as well as examples on using custom models.
-
-To download the latest version from the Google Play Store, [please visit our app page](https://play.google.com/store/apps/details?id=ai.fritz.heartbeat&hl=en_US).
+Fritz AI is the machine learning platform for iOS and Android developers. Teach your mobile apps to see, hear, sense, and think. Start with our ready-to-use feature APIs or connect and deploy your own custom models.
 
 **Vision API: Prebuilt models that you can simply drop into your apps:**
 
-- [Image Segmentation](https://www.fritz.ai/features/image-segmentation.html): Create pixel level masks of different objects in a scene. ([code](app/src/main/java/ai/fritz/aistudio/activities/vision/ImageSegmentationActivity.java))
-- [Image Labeling](https://www.fritz.ai/features/image-labeling.html): Classify different objects in an video or image.([code](app/src/main/java/ai/fritz/aistudio/activities/vision/ImageLabelingActivity.java))
-- [Pose Estimation](https://www.fritz.ai/features/pose-estimation.html): Identify and track a person's body position.([code](app/src/main/java/ai/fritz/aistudio/activities/vision/PoseEstimationActivity.java))
-- [Object Detection](https://www.fritz.ai/features/object-detection.html): Detect multiple objects and track their location.([code](app/src/main/java/ai/fritz/aistudio/activities/vision/ObjectDetectionActivity.java))
-- [Style Transfer](https://www.fritz.ai/features/style-transfer.html): Transform photos and videos into artistic masterpieces.([code](app/src/main/java/ai/fritz/aistudio/activities/vision/StyleTransferActivity.java))
+- [Image Segmentation](https://www.fritz.ai/features/image-segmentation.html): Create pixel level masks of different objects in a scene ([code](app/src/main/java/ai/fritz/heartbeat/activities/vision/ImageSegmentationActivity.java))
+- [Image Labeling](https://www.fritz.ai/features/image-labeling.html): Classify different objects in an video or image ([code](app/src/main/java/ai/fritz/heartbeat/activities/vision/ImageLabelingActivity.java))
+- [Pose Estimation](https://www.fritz.ai/features/pose-estimation.html): Identify and track a person's body position ([code](app/src/main/java/ai/fritz/heartbeat/activities/vision/PoseEstimationActivity.java))
+- [Object Detection](https://www.fritz.ai/features/object-detection.html): Detect multiple objects and track their location ([code](app/src/main/java/ai/fritz/heartbeat/activities/vision/ObjectDetectionActivity.java))
+- [Style Transfer](https://www.fritz.ai/features/style-transfer.html): Transform photos and videos into artistic masterpieces ([code](app/src/main/java/ai/fritz/heartbeat/activities/vision/StyleTransferActivity.java))
 
 **Custom Models: Deploy, Monitor, and Update your own models:**
 
 We currently support both TensorFlow Lite and TensorFlow Mobile for Android.
 
-- [Analytics and Monitoring](https://www.fritz.ai/features/analytics-monitoring.html): Monitor machine learning models running on-device with Fritz.
-- [Model Management](https://www.fritz.ai/features/model-management.html): Iterate on your ML models over-the-air, without having to release your app.
-- [Model Protection](https://www.fritz.ai/features/model-protection.html): Use model protection to keep models from being tampered-with or stolen.
+- [Analytics and Monitoring](https://www.fritz.ai/features/analytics-monitoring.html): Monitor machine learning models running on-device with Fritz AI
+- [Model Management](https://www.fritz.ai/features/model-management.html): Iterate on your ML models over-the-air, without having to release your app
+- [Model Protection](https://www.fritz.ai/features/model-protection.html): Use model protection to keep models from being tampered-with or stolen
 
 ## Requirements
 
@@ -30,9 +28,9 @@ We currently support both TensorFlow Lite and TensorFlow Mobile for Android.
 
 ## Getting Started
 
-**Step 1: Create a Fritz Account**
+**Step 1: Create a Fritz AI Account**
 
-In order to use Fritz, please [register for a free account](https://app.fritz.ai/register).
+[Sign up](https://app.fritz.ai/register) for a free account on Fritz AI in order to get started.
 
 **Step 2: Clone / Fork the fritz-examples repository and open the demo app in Android Studio**
 
@@ -40,7 +38,7 @@ In order to use Fritz, please [register for a free account](https://app.fritz.ai
 git clone https://github.com/fritzlabs/fritz-examples.git
 ```
 
-In Android Studio, choose "Open an existing Android Studio project" and select `fritz-demo-app`.
+In Android Studio, choose "Open an existing Android Studio project" and select `FritzAIStudio`.
 
 **Step 3: Build the Android Studio Project**
 
@@ -56,10 +54,14 @@ With your Android device connected, select `Run > Run App` from the top nav. Aft
 
 [Android API Docs](https://docs.fritz.ai/android/latest/index.html)
 
+## Join the community
+
+[Heartbeat](https://heartbeat.fritz.ai/?utm_source=github&utm_campaign=fritz-examples) is a community of developers interested in the intersection of mobile and machine learning. [Chat with us in Slack](https://join.slack.com/t/heartbeat-by-fritz/shared_invite/enQtMzY5OTM1MzgyODIzLTZhNTFjYmRiODU0NjZjNjJlOGRjYzI2OTIwY2M4YTBiNjM1ODU1ZmU3Y2Q2MmMzMmI2ZTIzZjQ1ZWI3NzBkZGU) and stay up to date on the latest mobile ML news with our [Newsletter](https://mobileml.us16.list-manage.com/subscribe?u=de53bead690affb8e9a21de8f&id=68acb5c0fd).
+
 ## Help
 
 For any questions or issues, you can:
 
 - Submit an issue on this repo
 - Go to our [Help Center](https://docs.fritz.ai/help-center/index.html)
-- Message us directly in [Slack](https://join.slack.com/t/aistudio-by-fritz/shared_invite/enQtNTY5NDM2MTQwMTgwLTAyODE3MmQzZjU2NWE5MDNmYTgwM2E1MjU5Y2Y2NmI2YTlkMTMwZTAwYTAwMzQ5NzQ2NDBhZjhmYjU2YWY3OGU)
+- Message us directly in [Slack](https://heartbeat-by-fritz.slack.com/join/shared_invite/enQtNTY5NDM2MTQwMTgwLTAyODE3MmQzZjU2NWE5MDNmYTgwM2E1MjU5Y2Y2NmI2YTlkMTMwZTAwYTAwMzQ5NzQ2NDBhZjhmYjU2YWY3OGU)
