@@ -52,8 +52,8 @@
   },
   "lock": {
     "ai.fritz.vision-unity": {
-      "hash": "5251b696259161e8a45e9663276b9478f9a14b20",
-      "revision": "1.0.1"
+      "hash": "0043b986d465d68ec38c054d5de2beab351b343f",
+      "revision": "HEAD"
     }
   }
 }

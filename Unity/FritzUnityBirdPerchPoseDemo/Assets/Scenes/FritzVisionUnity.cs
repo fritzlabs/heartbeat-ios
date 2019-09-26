@@ -104,7 +104,7 @@ public class FritzVisionUnity : MonoBehaviour
             return;
         }
 
-        FritzPoseManager.ProcessImageAsync(image);
+        FritzPoseManager.ProcessPoseFromImageAsync(image);
 
         // You must dispose the CameraImage to avoid resource leaks.
         image.Dispose();
@@ -126,7 +126,7 @@ public class FritzVisionUnity : MonoBehaviour
             return;
         }
 
-        FritzPoseManager.ProcessPoseAsync(frame.nativePtr);
+        FritzPoseManager.ProcessPoseFromFrameAsync(frame);
 
 #else
         var randomPosition = debugPoint;
@@ -188,9 +188,6 @@ public class FritzVisionUnity : MonoBehaviour
 			var rotation = Quaternion.LookRotation(m_Cam.transform.position - bird.transform.position);
 			bird.transform.rotation = Quaternion.Slerp(bird.transform.rotation, rotation, Time.deltaTime * 10f);
 		}
-
-
-
 
 		return;
 	}

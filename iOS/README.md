@@ -24,7 +24,7 @@ We currently support Core ML for iOS.
 
 ## Example Apps
 
-If you are new to Fritz, it's recommended to get started with our Fritz AI Studio App. You can also install the latest version from the [App Store](https://itunes.apple.com/us/app/heartbeat-by-fritz/id1325206416?mt=8):
+If you are new to Fritz, it's recommended to get started with our Fritz AI Studio App. You can also install the latest version from the [App Store](https://apps.apple.com/us/app/fritz-ai-studio/id1325206416):
 
 - Fritz AI Studio App - Our kitchen sink project showcases all on-device Vision APIs and Custom Model usage. ([Open Source Code](https://github.com/fritzlabs/fritz-examples/tree/master/iOS/FritzAIStudio))
 - Fritz Image Segmentation Demo - Create a portrait mode filter with People Segmentation ([tutorial](https://heartbeat.fritz.ai/building-an-image-segmentation-app-in-ios-3377eb4a3e7c)).
@@ -47,4 +47,3 @@ For any questions or issues, you can:
 - Submit an issue on this repo
 - Go to our [Help Center](https://docs.fritz.ai/help-center/index.html)
 - Message us directly in [Slack](https://heartbeat-by-fritz.slack.com/join/shared_invite/enQtNTY5NDM2MTQwMTgwLTAyODE3MmQzZjU2NWE5MDNmYTgwM2E1MjU5Y2Y2NmI2YTlkMTMwZTAwYTAwMzQ5NzQ2NDBhZjhmYjU2YWY3OGU)
-
