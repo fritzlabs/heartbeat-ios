@@ -17,11 +17,8 @@ class ObjectDetectionViewController: UIViewController, ARSCNViewDelegate, ARSess
 
   @IBOutlet var sceneView: ARSCNView!
 
-  lazy var poseModel = FritzVisionPoseModel()
 
   lazy var objectModel = FritzVisionObjectModel()
-
-  private var anchorPoints = [UUID: PosePart]()
 
   var detectorQueue = DispatchQueue(label: "ai.arpose.fritz.detectorQueue")
 
@@ -72,7 +69,7 @@ class ObjectDetectionViewController: UIViewController, ARSCNViewDelegate, ARSess
   ///   - image: Image.
   func update(newObjects objects: [CGRect], forImage image: FritzVisionImage) {
 
-    let size = image.size!
+    let size = image.size
 
     // remove objects that are not still in there and save those that are.
     var toInclude: [(SCNNode, CGRect)] = []
@@ -137,7 +134,7 @@ class ObjectDetectionViewController: UIViewController, ARSCNViewDelegate, ARSess
     guard let objects = try? self.objectModel.predict(image, options: options) else { return }
 
     let selected = objects.filter { $0.label == self.labelName }
-    let scaledObjects = selected.map { $0.boundingBox.scaledBy(image.size!) }
+    let scaledObjects = selected.map { $0.boundingBox.scaledBy(image.size) }
     self.update(newObjects: scaledObjects, forImage: image)
   }
 

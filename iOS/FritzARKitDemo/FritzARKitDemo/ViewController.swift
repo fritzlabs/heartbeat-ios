@@ -12,6 +12,7 @@ import ARKit
 import Fritz
 import AVFoundation
 
+typealias HumanPose = Pose<HumanSkeleton>
 extension CGRect {
 
   var center: CGPoint {
@@ -25,7 +26,7 @@ extension CGRect {
 extension Pose {
 
   func boundingBox() -> CGRect {
-    var (minX, minY, maxX, maxY) = (0.0, 0.0, 0.0, 0.0)
+    var (minX, minY, maxX, maxY) = (CGFloat(0.0), CGFloat(0.0), CGFloat(0.0), CGFloat(0.0))
 
     for keypoint in keypoints {
       let x = keypoint.position.x
@@ -62,9 +63,9 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
 
   @IBOutlet var sceneView: ARSCNView!
 
-  lazy var poseModel = FritzVisionPoseModel()
+  lazy var poseModel = FritzVisionHumanPoseModel()
 
-  private var anchorPoints = [UUID: PosePart]()
+  private var anchorPoints = [UUID: HumanSkeleton]()
 
   var detectorQueue = DispatchQueue(label: "ai.arpose.fritz.detectorQueue")
 
@@ -114,9 +115,9 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
   /// - Parameters:
   ///   - objects: Objects detected from most recent object detection run.
   ///   - image: Image.
-  func update(newPoses poses: [Pose], forImage image: FritzVisionImage) {
+  func update(newPoses poses: [HumanPose], forImage image: FritzVisionImage) {
 
-    let size = image.size!
+    let size = image.size
     // Find center of object and translate to current camera view
     let deltaY = (size.height - viewBounds.height) / 2
     let deltaX = (size.width - viewBounds.width) / 2
@@ -213,7 +214,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
     options.minPoseThreshold = 0.1
     options.forceVisionPrediction = true
     guard let poseResults = try? self.poseModel.predict(image, options: options),
-      let pose = poseResults.decodePose()
+      let pose = poseResults.pose()
       else { return }
 
     self.update(newPoses: [pose], forImage: image)

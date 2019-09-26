@@ -6,7 +6,7 @@ In this app, we use [Object Detection API by Fritz](https://www.fritz.ai/feature
 
 ## Fritz AI
 
-Fritz AI helps you teach your applications how to see, hear, feel, think, and sense. Create ML-powered features in your mobile apps for both Android and iOS. Start with our ready-to-use feature APIs or connect and deploy your own custom models.
+Fritz AI is the machine learning platform for iOS and Android developers. Teach your mobile apps to see, hear, sense, and think. Start with our ready-to-use feature APIs or connect and deploy your own custom models.
 
 ## Requirements
 
@@ -19,22 +19,22 @@ Fritz AI helps you teach your applications how to see, hear, feel, think, and se
 
 **Step 1: Create a Fritz AI Account**
 
-[Sign up](https://app.fritz.ai/register) for an account on Fritz AI in order to get started.
+[Sign up](https://app.fritz.ai/register) for a free account on Fritz AI in order to get started.
 
 Make sure that you have added the `Fritz-Info.plist` file to the app.
 
-**Step 2: Clone / Fork the fritz-ios-tutorials repository and open FritzStyleTransferDemo**
+**Step 2: Clone / Fork the fritz-examples repository and open FritzStyleTransferDemo**
 
 ```
-git clone https://github.com/fritzlabs/fritz-ios-tutorials.git
+git clone https://github.com/fritzlabs/fritz-examples.git
 ```
 
 **Step 3: Setup the project via Cocoapods**
 
-Install dependencies via Cocoapods by running `pod install` from `fritz-ios-tutorials/FritzARKitDemo`
+Install dependencies via Cocoapods by running `pod install` from `fritz-examples/iOS/FritzARKitDemo`
 
 ```
-cd fritz-ios-tutorials/FritzARKitDemo
+cd fritz-examples/iOS/FritzARKitDemo
 pod repo update
 pod install
 ```

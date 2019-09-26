@@ -1,24 +1,24 @@
 PODS:
-  - Fritz (3.3.5):
-    - Fritz/Vision (= 3.3.5)
-  - Fritz/Vision (3.3.5):
-    - FritzBase/Vision
-  - Fritz/VisionObjectModel (3.3.5):
-    - FritzVisionObjectModel
-  - Fritz/VisionPoseModel (3.3.5):
-    - FritzVisionPoseModel
-  - FritzBase/Core (3.3.5)
-  - FritzBase/CoreMLHelpers (3.3.5)
-  - FritzBase/ManagedModel (3.3.5):
-    - FritzBase/Core
-  - FritzBase/Vision (3.3.5):
-    - FritzBase/Core
-    - FritzBase/CoreMLHelpers
-    - FritzBase/ManagedModel
-  - FritzVisionObjectModel (3.3.5):
-    - FritzBase/Vision
-  - FritzVisionPoseModel (3.3.5):
-    - FritzBase/Vision
+  - Fritz (4.1.2):
+    - Fritz/Vision (= 4.1.2)
+  - Fritz/Vision (4.1.2):
+    - FritzBase/Vision (= 4.1.2)
+  - Fritz/VisionObjectModel (4.1.2):
+    - FritzVisionObjectModel (~> 4.1.0)
+  - Fritz/VisionPoseModel (4.1.2):
+    - FritzVisionPoseModel (~> 4.1.0)
+  - FritzBase/Core (4.1.2)
+  - FritzBase/CoreMLHelpers (4.1.2)
+  - FritzBase/ManagedModel (4.1.2):
+    - FritzBase/Core (= 4.1.2)
+  - FritzBase/Vision (4.1.2):
+    - FritzBase/Core (= 4.1.2)
+    - FritzBase/CoreMLHelpers (= 4.1.2)
+    - FritzBase/ManagedModel (= 4.1.2)
+  - FritzVisionObjectModel (4.1.2):
+    - FritzBase/Vision (~> 4.1.0)
+  - FritzVisionPoseModel (4.1.2):
+    - FritzBase/Vision (~> 4.1.0)
 
 DEPENDENCIES:
   - Fritz
@@ -26,18 +26,18 @@ DEPENDENCIES:
   - Fritz/VisionPoseModel
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Fritz
     - FritzBase
     - FritzVisionObjectModel
     - FritzVisionPoseModel
 
 SPEC CHECKSUMS:
-  Fritz: 685dd8a6b1be394aade03b3d9c046ad199f1fd33
-  FritzBase: 954e6823940f071322909521723d9ad844c02f0e
-  FritzVisionObjectModel: 628b9abd56105d9cc9a270c29e5e9dfd7013420f
-  FritzVisionPoseModel: f93faba64136ebac69ef226fe2bf89b27daf22b5
+  Fritz: fa94d01b6fcf6db6fdd2814f698930bc38291ee2
+  FritzBase: 244b4fea58f82781184b2f776537b2a2452083f8
+  FritzVisionObjectModel: 09c6c47d736a655604ad2219e6c5f0d5be7232f4
+  FritzVisionPoseModel: d8ec955b9f2638e726685286daca5498588974c9
 
 PODFILE CHECKSUM: 092ed0c2b218f74d544fb49acd8faf192e825a09
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.0.beta.2
