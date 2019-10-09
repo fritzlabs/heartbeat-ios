@@ -6,7 +6,7 @@ class ViewController: UIViewController {
 
   var cameraView: UIImageView!
 
-  private lazy var visionModel = FritzVisionHairSegmentationModel()
+  private lazy var visionModel = FritzVisionHairSegmentationModelFast()
 
   private lazy var cameraSession = AVCaptureSession()
   private let sessionQueue = DispatchQueue(label: "com.fritzdemo.imagesegmentation.session")
@@ -77,7 +77,7 @@ extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
 
     guard let result = try? visionModel.predict(image),
       let mask = result.buildSingleClassMask(
-        forClass: FritzVisionHairSegmentationClass.hair,
+        forClass: FritzVisionHairClass.hair,
         clippingScoresAbove: clippingScoresAbove,
         zeroingScoresBelow: zeroingScoresBelow,
         resize: false,

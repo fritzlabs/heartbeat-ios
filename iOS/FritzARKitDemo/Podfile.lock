@@ -1,43 +1,43 @@
 PODS:
-  - Fritz (4.1.2):
-    - Fritz/Vision (= 4.1.2)
-  - Fritz/Vision (4.1.2):
-    - FritzBase/Vision (= 4.1.2)
-  - Fritz/VisionObjectModel (4.1.2):
-    - FritzVisionObjectModel (~> 4.1.0)
-  - Fritz/VisionPoseModel (4.1.2):
-    - FritzVisionPoseModel (~> 4.1.0)
-  - FritzBase/Core (4.1.2)
-  - FritzBase/CoreMLHelpers (4.1.2)
-  - FritzBase/ManagedModel (4.1.2):
-    - FritzBase/Core (= 4.1.2)
-  - FritzBase/Vision (4.1.2):
-    - FritzBase/Core (= 4.1.2)
-    - FritzBase/CoreMLHelpers (= 4.1.2)
-    - FritzBase/ManagedModel (= 4.1.2)
-  - FritzVisionObjectModel (4.1.2):
-    - FritzBase/Vision (~> 4.1.0)
-  - FritzVisionPoseModel (4.1.2):
-    - FritzBase/Vision (~> 4.1.0)
+  - Fritz (4.2.4):
+    - Fritz/Vision (= 4.2.4)
+  - Fritz/Vision (4.2.4):
+    - FritzBase/Vision (= 4.2.4)
+  - Fritz/VisionObjectModel/Fast (4.2.4):
+    - FritzVisionObjectModelFast (~> 4.2.0)
+  - Fritz/VisionPoseModel/Human/Fast (4.2.4):
+    - FritzVisionHumanPoseModelFast (~> 4.2.0)
+  - FritzBase/Core (4.2.4)
+  - FritzBase/CoreMLHelpers (4.2.4)
+  - FritzBase/ManagedModel (4.2.4):
+    - FritzBase/Core (= 4.2.4)
+  - FritzBase/Vision (4.2.4):
+    - FritzBase/Core (= 4.2.4)
+    - FritzBase/CoreMLHelpers (= 4.2.4)
+    - FritzBase/ManagedModel (= 4.2.4)
+  - FritzVisionHumanPoseModelFast (4.2.3):
+    - FritzBase/Vision (~> 4.2.0)
+  - FritzVisionObjectModelFast (4.2.3):
+    - FritzBase/Vision (~> 4.2.0)
 
 DEPENDENCIES:
-  - Fritz
-  - Fritz/VisionObjectModel
-  - Fritz/VisionPoseModel
+  - Fritz (~> 4.2.4)
+  - Fritz/VisionObjectModel/Fast
+  - Fritz/VisionPoseModel/Human/Fast
 
 SPEC REPOS:
   trunk:
     - Fritz
     - FritzBase
-    - FritzVisionObjectModel
-    - FritzVisionPoseModel
+    - FritzVisionHumanPoseModelFast
+    - FritzVisionObjectModelFast
 
 SPEC CHECKSUMS:
-  Fritz: fa94d01b6fcf6db6fdd2814f698930bc38291ee2
-  FritzBase: 244b4fea58f82781184b2f776537b2a2452083f8
-  FritzVisionObjectModel: 09c6c47d736a655604ad2219e6c5f0d5be7232f4
-  FritzVisionPoseModel: d8ec955b9f2638e726685286daca5498588974c9
+  Fritz: 22a0d6cc85abac643e4e9894c5cde1ac63b8d646
+  FritzBase: 4fd974c8903c619a2f68e8f909c1f960e63b1857
+  FritzVisionHumanPoseModelFast: 2fe6dce96ea6ea3588851a568684a70be93a8e9b
+  FritzVisionObjectModelFast: 8cb51336fc125fe3f1fb513e683e20f958ef3339
 
-PODFILE CHECKSUM: 092ed0c2b218f74d544fb49acd8faf192e825a09
+PODFILE CHECKSUM: 0b72a61ae9a1a13edc65ca178520bc37429c7473
 
-COCOAPODS: 1.8.0.beta.2
+COCOAPODS: 1.8.3

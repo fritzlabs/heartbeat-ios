@@ -33,7 +33,7 @@ class FritzVisionLabelViewController: UIViewController {
         return preview
     }()
 
-    private let visionModel = FritzVisionLabelModel()
+    private let visionModel = FritzVisionLabelModelFast()
 
     private let sessionQueue = DispatchQueue(label: "ai.fritz.aistudio.mobilenet.session")
 

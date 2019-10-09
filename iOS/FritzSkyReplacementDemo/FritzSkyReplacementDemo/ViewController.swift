@@ -21,7 +21,7 @@ class ViewController: UIViewController {
   /// Controls the opacity the mask is applied to the base image.
   var opacity: CGFloat { return 1.0 }
 
-  private lazy var visionModel = FritzVisionSkySegmentationModel()
+  private lazy var visionModel = FritzVisionSkySegmentationModelFast()
 
   let foreground = UIImage(named: "mountains.jpg")
   let background = UIImage(named: "clouds.png")

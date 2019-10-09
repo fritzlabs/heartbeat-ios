@@ -1,58 +1,36 @@
 PODS:
-  - Fritz (4.1.0):
-    - Fritz/Vision (= 4.1.0)
-  - Fritz/Vision (4.1.0):
-    - FritzBase/Vision (= 4.1.0)
-  - Fritz/VisionSegmentationModel/People (4.1.0):
-    - Fritz/VisionSegmentationModel/People/Accurate (= 4.1.0)
-    - Fritz/VisionSegmentationModel/People/Fast (= 4.1.0)
-    - Fritz/VisionSegmentationModel/People/Small (= 4.1.0)
-    - FritzVisionPeopleSegmentationModelFast (~> 4.1.0)
-    - FritzVisionPeopleSegmentationModelSmall (~> 4.1.0)
-  - Fritz/VisionSegmentationModel/People/Accurate (4.1.0):
-    - FritzVisionPeopleSegmentationModelAccurate (~> 4.1.0)
-    - FritzVisionPeopleSegmentationModelFast (~> 4.1.0)
-    - FritzVisionPeopleSegmentationModelSmall (~> 4.1.0)
-  - Fritz/VisionSegmentationModel/People/Fast (4.1.0):
-    - FritzVisionPeopleSegmentationModelFast (~> 4.1.0)
-    - FritzVisionPeopleSegmentationModelSmall (~> 4.1.0)
-  - Fritz/VisionSegmentationModel/People/Small (4.1.0):
-    - FritzVisionPeopleSegmentationModelFast (~> 4.1.0)
-    - FritzVisionPeopleSegmentationModelSmall (~> 4.1.0)
-  - FritzBase/Core (4.1.0)
-  - FritzBase/CoreMLHelpers (4.1.0)
-  - FritzBase/ManagedModel (4.1.0):
-    - FritzBase/Core (= 4.1.0)
-  - FritzBase/Vision (4.1.0):
-    - FritzBase/Core (= 4.1.0)
-    - FritzBase/CoreMLHelpers (= 4.1.0)
-    - FritzBase/ManagedModel (= 4.1.0)
-  - FritzVisionPeopleSegmentationModelAccurate (4.1.0):
-    - FritzBase/Vision (~> 4.1.0)
-  - FritzVisionPeopleSegmentationModelFast (4.1.0):
-    - FritzBase/Vision (~> 4.1.0)
-  - FritzVisionPeopleSegmentationModelSmall (4.1.0):
-    - FritzBase/Vision (~> 4.1.0)
+  - Fritz (4.2.4):
+    - Fritz/Vision (= 4.2.4)
+  - Fritz/Vision (4.2.4):
+    - FritzBase/Vision (= 4.2.4)
+  - Fritz/VisionSegmentationModel/People/Fast (4.2.4):
+    - FritzVisionPeopleSegmentationModelFast (~> 4.2.0)
+  - FritzBase/Core (4.2.4)
+  - FritzBase/CoreMLHelpers (4.2.4)
+  - FritzBase/ManagedModel (4.2.4):
+    - FritzBase/Core (= 4.2.4)
+  - FritzBase/Vision (4.2.4):
+    - FritzBase/Core (= 4.2.4)
+    - FritzBase/CoreMLHelpers (= 4.2.4)
+    - FritzBase/ManagedModel (= 4.2.4)
+  - FritzVisionPeopleSegmentationModelFast (4.2.3):
+    - FritzBase/Vision (~> 4.2.0)
 
 DEPENDENCIES:
-  - Fritz (~> 4.1.0)
-  - Fritz/VisionSegmentationModel/People
+  - Fritz (~> 4.2.4)
+  - Fritz/VisionSegmentationModel/People/Fast
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Fritz
     - FritzBase
-    - FritzVisionPeopleSegmentationModelAccurate
     - FritzVisionPeopleSegmentationModelFast
-    - FritzVisionPeopleSegmentationModelSmall
 
 SPEC CHECKSUMS:
-  Fritz: 65530f5e3bc8a5875e01976875e0acee57358cfc
-  FritzBase: 800f4d6e1e595e8b3a0780c6427f031624d37040
-  FritzVisionPeopleSegmentationModelAccurate: b4aca3a2864dbda2be054fb8026dacfccd0b1cd3
-  FritzVisionPeopleSegmentationModelFast: 5e4a3111e6229055f32ceed923240349e9389399
-  FritzVisionPeopleSegmentationModelSmall: 205f86f73a6490f84a236d1387b86c2c9f7b2fba
+  Fritz: 22a0d6cc85abac643e4e9894c5cde1ac63b8d646
+  FritzBase: 4fd974c8903c619a2f68e8f909c1f960e63b1857
+  FritzVisionPeopleSegmentationModelFast: 139367f1e4c7f817250a57f8035c57fef2357e48
 
-PODFILE CHECKSUM: ac72c6091cc1c2db709f85c140a5222db9bf14df
+PODFILE CHECKSUM: cdba00ef193c1b55887b42f4bb89f06b7ee79791
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.3

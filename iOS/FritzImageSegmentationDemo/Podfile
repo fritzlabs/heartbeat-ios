@@ -4,6 +4,6 @@
 target 'FritzImageSegmentationDemo' do
   use_frameworks!
 
-  pod 'Fritz', '~> 4.1.0'
-  pod 'Fritz/VisionSegmentationModel/People'
+  pod 'Fritz', '~> 4.2.4'
+  pod 'Fritz/VisionSegmentationModel/People/Fast'
 end

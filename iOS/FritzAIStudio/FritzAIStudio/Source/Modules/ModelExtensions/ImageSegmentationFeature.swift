@@ -22,7 +22,7 @@ extension FritzVisionSegmentationModel: ImagePredictor {
     let maxThreshold = Double((options[.maxThreshold] as! RangeValue).value)
 
     return mask.buildSingleClassMask(
-      forClass: FritzVisionHairSegmentationClass.hair,
+      forClass: FritzVisionHairClass.hair,
       clippingScoresAbove: maxThreshold,
       zeroingScoresBelow: minThreshold,
       maxAlpha: 255,

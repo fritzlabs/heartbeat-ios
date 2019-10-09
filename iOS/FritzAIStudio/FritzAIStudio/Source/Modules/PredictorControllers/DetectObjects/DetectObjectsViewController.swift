@@ -22,7 +22,7 @@ class DetectObjectsViewController: UIViewController, AVCaptureVideoDataOutputSam
     var screenHeight: Double?
     var screenWidth: Double?
 
-    let visionModel = FritzVisionObjectModel()
+  let visionModel = FritzVisionObjectModelFast()
 
     private lazy var cameraLayer: AVCaptureVideoPreviewLayer = {
         let layer = AVCaptureVideoPreviewLayer(session: self.captureSession)

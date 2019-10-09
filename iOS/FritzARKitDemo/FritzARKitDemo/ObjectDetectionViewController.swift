@@ -18,7 +18,7 @@ class ObjectDetectionViewController: UIViewController, ARSCNViewDelegate, ARSess
   @IBOutlet var sceneView: ARSCNView!
 
 
-  lazy var objectModel = FritzVisionObjectModel()
+  lazy var objectModel = FritzVisionObjectModelFast()
 
   var detectorQueue = DispatchQueue(label: "ai.arpose.fritz.detectorQueue")
 

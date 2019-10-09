@@ -9,7 +9,7 @@
 import Foundation
 import Fritz
 
-extension FritzVisionHumanPoseModel: ImagePredictor {
+extension FritzVisionHumanPosePredictor: ImagePredictor {
 
   func predict(_ image: FritzVisionImage, options: ConfigurableOptions) throws -> UIImage? {
 

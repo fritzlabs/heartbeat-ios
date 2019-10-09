@@ -52,7 +52,7 @@ class HairColorViewController: FeatureViewController {
 
   convenience init() {
 
-    let managedModel = FritzVisionHairSegmentationModel().managedModel
+    let managedModel = FritzVisionHairSegmentationModelFast().managedModel
     let hairSeg = FritzModelDetails(
       with: managedModel,
       featureDescription: .hairColor
@@ -92,7 +92,7 @@ class HairColorViewController: FeatureViewController {
 
     switch predictorDetails.featureDescription {
     case .hairColor:
-      let model = FritzVisionHairSegmentationModel(model: mlmodel)
+      let model = FritzVisionHairSegmentationPredictor(model: mlmodel)
       return AIStudioImagePredictor(model: model, predictorDetails: predictorDetails)
     default:
       return nil

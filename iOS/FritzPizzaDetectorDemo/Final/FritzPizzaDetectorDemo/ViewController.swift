@@ -6,7 +6,7 @@ class ViewController: UIViewController {
 
   var timer: Timer?
 
-  lazy var visionModel = FritzVisionLabelModel()
+  lazy var visionModel = FritzVisionLabelModelFast()
 
   private lazy var cameraSession = AVCaptureSession()
   private let sessionQueue = DispatchQueue(label: "com.fritzdemo.pizzadetector.session")
@@ -20,9 +20,6 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-
-    // Setup model
-    visionModel = FritzVisionLabelModel()
 
     // Setup camera
     guard let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back),

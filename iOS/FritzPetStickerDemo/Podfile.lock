@@ -1,36 +1,36 @@
 PODS:
-  - Fritz (4.1.0):
-    - Fritz/Vision (= 4.1.0)
-  - Fritz/Vision (4.1.0):
-    - FritzBase/Vision (= 4.1.0)
-  - Fritz/VisionSegmentationModel/Pet (4.1.0):
-    - FritzVisionPetSegmentationModel (~> 4.1.0)
-  - FritzBase/Core (4.1.0)
-  - FritzBase/CoreMLHelpers (4.1.0)
-  - FritzBase/ManagedModel (4.1.0):
-    - FritzBase/Core (= 4.1.0)
-  - FritzBase/Vision (4.1.0):
-    - FritzBase/Core (= 4.1.0)
-    - FritzBase/CoreMLHelpers (= 4.1.0)
-    - FritzBase/ManagedModel (= 4.1.0)
-  - FritzVisionPetSegmentationModel (4.1.0):
-    - FritzBase/Vision (~> 4.1.0)
+  - Fritz (4.2.4):
+    - Fritz/Vision (= 4.2.4)
+  - Fritz/Vision (4.2.4):
+    - FritzBase/Vision (= 4.2.4)
+  - Fritz/VisionSegmentationModel/Pet/Accurate (4.2.4):
+    - FritzVisionPetSegmentationModelAccurate (~> 4.2.0)
+  - FritzBase/Core (4.2.4)
+  - FritzBase/CoreMLHelpers (4.2.4)
+  - FritzBase/ManagedModel (4.2.4):
+    - FritzBase/Core (= 4.2.4)
+  - FritzBase/Vision (4.2.4):
+    - FritzBase/Core (= 4.2.4)
+    - FritzBase/CoreMLHelpers (= 4.2.4)
+    - FritzBase/ManagedModel (= 4.2.4)
+  - FritzVisionPetSegmentationModelAccurate (4.2.3):
+    - FritzBase/Vision (~> 4.2.0)
 
 DEPENDENCIES:
-  - Fritz (~> 4.1.0)
-  - Fritz/VisionSegmentationModel/Pet
+  - Fritz (~> 4.2.4)
+  - Fritz/VisionSegmentationModel/Pet/Accurate
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Fritz
     - FritzBase
-    - FritzVisionPetSegmentationModel
+    - FritzVisionPetSegmentationModelAccurate
 
 SPEC CHECKSUMS:
-  Fritz: 65530f5e3bc8a5875e01976875e0acee57358cfc
-  FritzBase: 800f4d6e1e595e8b3a0780c6427f031624d37040
-  FritzVisionPetSegmentationModel: cc8a11052e44e8b0abbbfce96acbe4db08447e47
+  Fritz: 22a0d6cc85abac643e4e9894c5cde1ac63b8d646
+  FritzBase: 4fd974c8903c619a2f68e8f909c1f960e63b1857
+  FritzVisionPetSegmentationModelAccurate: 256e74e5a82c3b2d9c3c9b4e04a89c993bed4b05
 
-PODFILE CHECKSUM: 316b38e81c58f991dfcd4a26ec625bcdca4750fd
+PODFILE CHECKSUM: 3c6af0ca5ef24ed48641895a7887656f1c4775a5
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.3

@@ -6,8 +6,8 @@ target 'FritzARKitDemo' do
   use_frameworks!
 
   # Pods for ARPoseDemo
-  pod 'Fritz'
-  pod 'Fritz/VisionPoseModel'
-  pod 'Fritz/VisionObjectModel'
+  pod 'Fritz', '~> 4.2.4'
+  pod 'Fritz/VisionPoseModel/Human/Fast'
+  pod 'Fritz/VisionObjectModel/Fast'
 
 end

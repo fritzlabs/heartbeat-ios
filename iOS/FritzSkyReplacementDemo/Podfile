@@ -6,7 +6,7 @@ target 'FritzSkyReplacementDemo' do
   use_frameworks!
 
   # Pods for FritzSkyReplacementDemo
-  pod 'Fritz', '~> 4.1.0'
-  pod 'Fritz/VisionSegmentationModel/Sky'
+  pod 'Fritz', '~> 4.2.4'
+  pod 'Fritz/VisionSegmentationModel/Sky/Fast'
 
 end

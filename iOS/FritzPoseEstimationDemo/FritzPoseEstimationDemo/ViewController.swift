@@ -14,7 +14,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
 
   var previewView: UIImageView!
 
-  lazy var poseModel = FritzVisionHumanPoseModel()
+  lazy var poseModel = FritzVisionHumanPoseModelFast()
 
   lazy var poseSmoother = PoseSmoother<OneEuroPointFilter, HumanSkeleton>()
 

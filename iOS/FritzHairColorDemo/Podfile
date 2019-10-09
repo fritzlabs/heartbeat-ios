@@ -6,7 +6,7 @@ target 'FritzHairColorDemo' do
   use_frameworks!
 
   # Pods for FritzHairColorDemo
-  pod 'Fritz', '~> 4.1.0'
-  pod 'Fritz/VisionSegmentationModel/Hair'
+  pod 'Fritz', '~> 4.2.4'
+  pod 'Fritz/VisionSegmentationModel/Hair/Fast'
 
 end

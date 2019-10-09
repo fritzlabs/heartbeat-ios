@@ -48,11 +48,15 @@ class ImageSegmentationViewController: FeatureViewController {
     
     switch modelType {
     case .peopleSegmentation:
-      segmentationModel = FritzVisionPeopleSegmentationModelFast(model: model)
+      segmentationModel = FritzVisionPeopleSegmentationPredictor(model: model)
     case .livingRoomSegmentation:
-      segmentationModel = FritzVisionLivingRoomSegmentationModel(model: model)
+      segmentationModel = FritzVisionLivingRoomSegmentationPredictor(model: model)
     case .outdoorSegmentation:
-      segmentationModel = FritzVisionOutdoorSegmentationModel(model: model)
+      segmentationModel = FritzVisionOutdoorSegmentationPredictor(model: model)
+    case .petSegmentation:
+      segmentationModel = FritzVisionOutdoorSegmentationPredictor(model: model)
+    case .skySegmentation:
+      segmentationModel = FritzVisionOutdoorSegmentationPredictor(model: model)
     default:
       return nil
     }

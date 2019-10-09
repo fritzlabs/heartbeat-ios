@@ -10,7 +10,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
     var backgroundView: UIImageView!
 
     let context = CIContext()
-    private lazy var visionModel = FritzVisionPetSegmentationModel()
+    private lazy var visionModel = FritzVisionPetSegmentationModelAccurate()
 
     override func viewDidLoad() {
       super.viewDidLoad()

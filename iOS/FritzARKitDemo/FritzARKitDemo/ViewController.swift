@@ -63,7 +63,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
 
   @IBOutlet var sceneView: ARSCNView!
 
-  lazy var poseModel = FritzVisionHumanPoseModel()
+  lazy var poseModel = FritzVisionHumanPoseModelFast()
 
   private var anchorPoints = [UUID: HumanSkeleton]()
 

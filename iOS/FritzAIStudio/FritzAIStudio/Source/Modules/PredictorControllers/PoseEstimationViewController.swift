@@ -29,7 +29,7 @@ class PoseEstimationViewController: FeatureViewController {
   override func build(_ predictorDetails: FritzModelDetails) -> AIStudioImagePredictor? {
     guard let mlmodel = predictorDetails.managedModel.loadModel()
       else { return nil }
-    let poseModel = FritzVisionHumanPoseModel(model: mlmodel)
+    let poseModel = FritzVisionHumanPosePredictor(model: mlmodel)
 
     switch predictorDetails.featureDescription {
     case .poseEstimation:
@@ -39,7 +39,7 @@ class PoseEstimationViewController: FeatureViewController {
   }
 
   convenience init() {
-    let managedModel = FritzVisionHumanPoseModel().managedModel
+    let managedModel = FritzVisionHumanPoseModelFast().managedModel
     let poseModel = FritzModelDetails(
       with: managedModel,
       featureDescription: .poseEstimation)
