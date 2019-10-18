@@ -1,4 +1,4 @@
-package ai.fritz.haircoloring;
+package ai.fritz.haircoloring.activities;
 
 import android.media.Image;
 import android.media.ImageReader;
@@ -10,6 +10,7 @@ import android.widget.ImageButton;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
+import ai.fritz.haircoloring.R;
 import ai.fritz.vision.FritzSurfaceView;
 import ai.fritz.vision.FritzVisionImage;
 import ai.fritz.vision.FritzVisionOrientation;

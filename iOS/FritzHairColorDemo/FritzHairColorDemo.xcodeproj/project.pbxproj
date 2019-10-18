@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B1828952356E01000A238F7 /* VideoHairViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1828942356E01000A238F7 /* VideoHairViewStoryboard.storyboard */; };
+		3B18289723575CAA00A238F7 /* HairPredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B18289623575CAA00A238F7 /* HairPredictor.swift */; };
+		3B78A37223569AFD0025AD73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78A37123569AFD0025AD73 /* ViewController.swift */; };
+		3B78A37423569B0D0025AD73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B78A37323569B0D0025AD73 /* Main.storyboard */; };
+		3B78A37B2356AB9C0025AD73 /* DemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78A37A2356AB9C0025AD73 /* DemoTableViewCell.swift */; };
+		3B78A37D2356ABB40025AD73 /* LinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78A37C2356ABB40025AD73 /* LinkTableViewCell.swift */; };
+		3B78A37F2356AD420025AD73 /* VideoHairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78A37E2356AD420025AD73 /* VideoHairViewController.swift */; };
+		3B78A3812356B2F40025AD73 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78A3802356B2F40025AD73 /* NavigationController.swift */; };
+		3B78A3872356C4A40025AD73 /* VideoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78A3862356C4A40025AD73 /* VideoPicker.swift */; };
 		83E704A6226A4B6200FF678D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E704A5226A4B6200FF678D /* AppDelegate.swift */; };
-		83E704A8226A4B6200FF678D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E704A7226A4B6200FF678D /* ViewController.swift */; };
-		83E704AB226A4B6200FF678D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E704A9226A4B6200FF678D /* Main.storyboard */; };
+		83E704A8226A4B6200FF678D /* LiveHairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E704A7226A4B6200FF678D /* LiveHairViewController.swift */; };
+		83E704AB226A4B6200FF678D /* LiveHairColorStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E704A9226A4B6200FF678D /* LiveHairColorStoryboard.storyboard */; };
 		83E704AD226A4B6200FF678D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83E704AC226A4B6200FF678D /* Assets.xcassets */; };
 		83E704B0226A4B6200FF678D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E704AE226A4B6200FF678D /* LaunchScreen.storyboard */; };
 		A3089B330C5471177D90773A /* Pods_FritzHairColorDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05803C4F467E2627EC32D3A7 /* Pods_FritzHairColorDemo.framework */; };
@@ -17,10 +26,19 @@
 
 /* Begin PBXFileReference section */
 		05803C4F467E2627EC32D3A7 /* Pods_FritzHairColorDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FritzHairColorDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B1828942356E01000A238F7 /* VideoHairViewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VideoHairViewStoryboard.storyboard; sourceTree = "<group>"; };
+		3B18289623575CAA00A238F7 /* HairPredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairPredictor.swift; sourceTree = "<group>"; };
+		3B78A37123569AFD0025AD73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B78A37323569B0D0025AD73 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3B78A37A2356AB9C0025AD73 /* DemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableViewCell.swift; sourceTree = "<group>"; };
+		3B78A37C2356ABB40025AD73 /* LinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkTableViewCell.swift; sourceTree = "<group>"; };
+		3B78A37E2356AD420025AD73 /* VideoHairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHairViewController.swift; sourceTree = "<group>"; };
+		3B78A3802356B2F40025AD73 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		3B78A3862356C4A40025AD73 /* VideoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPicker.swift; sourceTree = "<group>"; };
 		83E704A2226A4B6200FF678D /* FritzHairColorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FritzHairColorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E704A5226A4B6200FF678D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83E704A7226A4B6200FF678D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		83E704AA226A4B6200FF678D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83E704A7226A4B6200FF678D /* LiveHairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveHairViewController.swift; sourceTree = "<group>"; };
+		83E704AA226A4B6200FF678D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LiveHairColorStoryboard.storyboard; sourceTree = "<group>"; };
 		83E704AC226A4B6200FF678D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83E704AF226A4B6200FF678D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83E704B1226A4B6200FF678D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +67,39 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		3B78A3772356AB2F0025AD73 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3B78A37A2356AB9C0025AD73 /* DemoTableViewCell.swift */,
+				3B78A37C2356ABB40025AD73 /* LinkTableViewCell.swift */,
+				3B78A3862356C4A40025AD73 /* VideoPicker.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3B78A3822356B40A0025AD73 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				83E704A9226A4B6200FF678D /* LiveHairColorStoryboard.storyboard */,
+				83E704AE226A4B6200FF678D /* LaunchScreen.storyboard */,
+				3B78A37323569B0D0025AD73 /* Main.storyboard */,
+				3B1828942356E01000A238F7 /* VideoHairViewStoryboard.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3B78A3832356B4270025AD73 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				83E704A7226A4B6200FF678D /* LiveHairViewController.swift */,
+				3B78A37123569AFD0025AD73 /* ViewController.swift */,
+				3B78A37E2356AD420025AD73 /* VideoHairViewController.swift */,
+				3B78A3802356B2F40025AD73 /* NavigationController.swift */,
+				3B18289623575CAA00A238F7 /* HairPredictor.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		83E70499226A4B6200FF678D = {
 			isa = PBXGroup;
 			children = (
@@ -70,11 +121,11 @@
 		83E704A4226A4B6200FF678D /* FritzHairColorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3B78A3832356B4270025AD73 /* Controllers */,
+				3B78A3822356B40A0025AD73 /* Storyboards */,
+				3B78A3772356AB2F0025AD73 /* UI */,
 				83E704A5226A4B6200FF678D /* AppDelegate.swift */,
-				83E704A7226A4B6200FF678D /* ViewController.swift */,
-				83E704A9226A4B6200FF678D /* Main.storyboard */,
 				83E704AC226A4B6200FF678D /* Assets.xcassets */,
-				83E704AE226A4B6200FF678D /* LaunchScreen.storyboard */,
 				83E704B1226A4B6200FF678D /* Info.plist */,
 			);
 			path = FritzHairColorDemo;
@@ -148,9 +199,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B1828952356E01000A238F7 /* VideoHairViewStoryboard.storyboard in Resources */,
 				83E704B0226A4B6200FF678D /* LaunchScreen.storyboard in Resources */,
+				3B78A37423569B0D0025AD73 /* Main.storyboard in Resources */,
 				83E704AD226A4B6200FF678D /* Assets.xcassets in Resources */,
-				83E704AB226A4B6200FF678D /* Main.storyboard in Resources */,
+				83E704AB226A4B6200FF678D /* LiveHairColorStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,20 +256,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83E704A8226A4B6200FF678D /* ViewController.swift in Sources */,
+				3B78A37F2356AD420025AD73 /* VideoHairViewController.swift in Sources */,
+				3B78A37223569AFD0025AD73 /* ViewController.swift in Sources */,
+				83E704A8226A4B6200FF678D /* LiveHairViewController.swift in Sources */,
+				3B78A3872356C4A40025AD73 /* VideoPicker.swift in Sources */,
 				83E704A6226A4B6200FF678D /* AppDelegate.swift in Sources */,
+				3B18289723575CAA00A238F7 /* HairPredictor.swift in Sources */,
+				3B78A37B2356AB9C0025AD73 /* DemoTableViewCell.swift in Sources */,
+				3B78A3812356B2F40025AD73 /* NavigationController.swift in Sources */,
+				3B78A37D2356ABB40025AD73 /* LinkTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		83E704A9226A4B6200FF678D /* Main.storyboard */ = {
+		83E704A9226A4B6200FF678D /* LiveHairColorStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				83E704AA226A4B6200FF678D /* Base */,
 			);
-			name = Main.storyboard;
+			name = LiveHairColorStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 		83E704AE226A4B6200FF678D /* LaunchScreen.storyboard */ = {

@@ -22,6 +22,8 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>Uses Camera for Image processing</string>
+  <key>NSPhotoLibraryUsageDescription</key>
+  <string>Uses video library for post-processing</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

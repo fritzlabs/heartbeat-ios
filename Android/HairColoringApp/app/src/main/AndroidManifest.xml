@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
@@ -17,13 +18,21 @@
         android:supportsRtl="true"
         android:largeHeap="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activities.CameraActivity"
+            android:parentActivityName=".activities.MainActivity"/>
+        <activity
+            android:name=".activities.MediaActivity"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.PickerActivity"
+            android:parentActivityName=".activities.MainActivity" />
         <service
             android:name="ai.fritz.core.FritzCustomModelService"
             android:exported="true"

@@ -1,4 +1,4 @@
-package ai.fritz.haircoloring;
+package ai.fritz.haircoloring.activities;
 
 import android.Manifest;
 import android.content.Context;
@@ -19,11 +19,11 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Toast;
 
+import ai.fritz.haircoloring.R;
+import ai.fritz.haircoloring.views.CameraConnectionFragment;
 import androidx.appcompat.app.AppCompatActivity;
 
-import ai.fritz.haircoloring.R;
-import ai.fritz.haircoloring.CameraConnectionFragment;
-import ai.fritz.haircoloring.OverlayView;
+import ai.fritz.haircoloring.views.OverlayView;
 
 
 public abstract class BaseCameraActivity extends AppCompatActivity implements OnImageAvailableListener {

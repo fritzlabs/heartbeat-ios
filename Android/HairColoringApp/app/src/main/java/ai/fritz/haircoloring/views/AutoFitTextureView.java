@@ -1,4 +1,4 @@
-package ai.fritz.haircoloring;
+package ai.fritz.haircoloring.views;
 
 import android.content.Context;
 import android.util.AttributeSet;

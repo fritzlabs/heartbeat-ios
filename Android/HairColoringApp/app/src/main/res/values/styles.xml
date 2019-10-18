@@ -8,4 +8,20 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Text Themes -->
+    <style name="HeaderText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/sf_ui_display_regular</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">.12</item>
+    </style>
+
+    <style name="BodyText" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/sf_ui_display_light</item>
+        <item name="android:letterSpacing">.05</item>
+    </style>
+
 </resources>

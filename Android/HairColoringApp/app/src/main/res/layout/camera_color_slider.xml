@@ -6,7 +6,7 @@
     xmlns:colorpicker="http://schemas.android.com/tools"
     android:orientation="vertical">
 
-    <ai.fritz.haircoloring.AutoFitTextureView
+    <ai.fritz.haircoloring.views.AutoFitTextureView
         android:id="@+id/texture"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

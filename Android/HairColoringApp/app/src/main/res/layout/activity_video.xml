@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:colorpicker="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ai.fritz.haircoloring.views.AutoFitTextureView
+        android:id="@+id/texture_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"/>
+
+    <ai.fritz.vision.FritzSurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        app:gpuimage_show_loading="false"
+        app:gpuimage_surface_type="surface_view" />
+
+    <com.github.veritas1.verticalslidecolorpicker.VerticalSlideColorPicker
+        android:id="@+id/color_picker"
+        android:layout_width="40dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        colorpicker:borderColor="@android:color/black"
+        colorpicker:borderWidth="2dp"/>
+
+</RelativeLayout>

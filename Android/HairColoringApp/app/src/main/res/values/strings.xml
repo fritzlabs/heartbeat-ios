@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Hair Coloring</string>
     <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+
+    <string name="fritz_hair_color_title">Run in Real-Time</string>
+    <string name="fritz_hair_color_description">Using a live preview, change your hair color in real-time.</string>
+
+    <string name="fritz_video_hair_color_title">Run on a Saved Video</string>
+    <string name="fritz_video_hair_color_description">Choose a video you\'ve already recorded and run hair coloring on each frame.</string>
+
+    <string name="video_path_key">video</string>
 </resources>

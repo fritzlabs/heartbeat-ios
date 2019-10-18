@@ -4,13 +4,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ai.fritz.haircoloring.AutoFitTextureView
+    <ai.fritz.haircoloring.views.AutoFitTextureView
         android:id="@+id/texture"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"/>
 
-    <ai.fritz.haircoloring.OverlayView
+    <ai.fritz.haircoloring.views.OverlayView
         android:id="@+id/debug_overlay"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

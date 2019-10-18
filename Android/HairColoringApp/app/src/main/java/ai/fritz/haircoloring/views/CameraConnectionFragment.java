@@ -1,4 +1,4 @@
-package ai.fritz.haircoloring;
+package ai.fritz.haircoloring.views;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -42,6 +42,8 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
+
+import ai.fritz.haircoloring.R;
 
 
 public class CameraConnectionFragment extends Fragment {

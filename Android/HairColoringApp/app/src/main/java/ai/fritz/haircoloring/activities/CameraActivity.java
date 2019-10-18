@@ -1,4 +1,4 @@
-package ai.fritz.haircoloring;
+package ai.fritz.haircoloring.activities;
 
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -8,8 +8,8 @@ import android.util.Size;
 
 import com.github.veritas1.verticalslidecolorpicker.VerticalSlideColorPicker;
 
-import ai.fritz.core.Fritz;
 import ai.fritz.fritzvisionhairsegmentationmodel.HairSegmentationOnDeviceModelFast;
+import ai.fritz.haircoloring.R;
 import ai.fritz.vision.FritzVision;
 import ai.fritz.vision.FritzVisionImage;
 import ai.fritz.vision.imagesegmentation.BlendMode;
@@ -20,9 +20,7 @@ import ai.fritz.vision.imagesegmentation.MaskClass;
 import ai.fritz.vision.imagesegmentation.SegmentationOnDeviceModel;
 
 
-public class MainActivity extends BaseLiveGPUActivity {
-    private static final String API_KEY = "bbe75c73f8b24e63bc05bf81ed9d2829";
-
+public class CameraActivity extends BaseLiveGPUActivity {
     private int maskColor = Color.RED;
     private static final float HAIR_CONFIDENCE_THRESHOLD = .5f;
     private static final int HAIR_ALPHA = 180;
@@ -38,7 +36,6 @@ public class MainActivity extends BaseLiveGPUActivity {
     public void onCreate(final Bundle savedInstanceState) {
         setCameraFacingDirection(CameraCharacteristics.LENS_FACING_FRONT);
         super.onCreate(savedInstanceState);
-        Fritz.configure(this, API_KEY);
 
         // Create the segmentation options.
         options = new FritzVisionSegmentationPredictorOptions();

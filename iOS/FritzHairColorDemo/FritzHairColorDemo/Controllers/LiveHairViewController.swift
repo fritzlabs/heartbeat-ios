@@ -1,12 +1,25 @@
 import UIKit
 import AVFoundation
 import Fritz
+import ColorSlider
 
-class ViewController: UIViewController {
+class LiveHairViewController: UIViewController, HairPredictor {
+
+  var color: HairColor!
+  var _colorSlider: ColorSlider?
+  var colorSlider: ColorSlider {
+    if let slider = _colorSlider {
+      return slider
+    }
+
+    let slider = ColorSlider(orientation: .vertical, previewSide: .left)
+    _colorSlider = slider
+    slider.addTarget(self, action: #selector(updateColor(_:)), for: .valueChanged)
+    return slider
+  }
 
   var cameraView: UIImageView!
-
-  private lazy var visionModel = FritzVisionHairSegmentationModelFast()
+  internal lazy var visionModel = FritzVisionHairSegmentationModelFast()
 
   private lazy var cameraSession = AVCaptureSession()
   private let sessionQueue = DispatchQueue(label: "com.fritzdemo.imagesegmentation.session")
@@ -15,9 +28,11 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    color = HairColor(hairColor: colorSlider.color)
     cameraView = UIImageView(frame: view.bounds)
     cameraView.contentMode = .scaleAspectFill
     view.addSubview(cameraView)
+    addColorSlider()
 
     // Setup camera
     guard let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front),
@@ -50,48 +65,28 @@ class ViewController: UIViewController {
       self.cameraSession.startRunning()
     }
   }
+
+  override func viewWillLayoutSubviews() {
+    super.viewWillLayoutSubviews()
+    view.bringSubviewToFront(colorSlider)
+  }
 }
 
-extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
-
-  /// Scores output from model greater than this value will be set as 1.
-  /// Lowering this value will make the mask more intense for lower confidence values.
-  var clippingScoresAbove: Double { return 0.7 }
-
-  /// Values lower than this value will not appear in the mask.
-  var zeroingScoresBelow: Double { return 0.3 }
-
-  /// Controls the opacity the mask is applied to the base image.
-  var opacity: CGFloat { return 0.7 }
-
-  /// The method used to blend the hair mask with the underlying image.
-  /// Soft light produces the best results in our tests, but check out
-  /// .hue and .color for different effects.
-  var blendKernel: CIBlendKernel { return .softLight }
-
-  /// Color of the mask.
-  var color: UIColor { return .blue }
+extension LiveHairViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
 
   func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
     let image = FritzVisionImage(sampleBuffer: sampleBuffer, connection: connection)
-
-    guard let result = try? visionModel.predict(image),
-      let mask = result.buildSingleClassMask(
-        forClass: FritzVisionHairClass.hair,
-        clippingScoresAbove: clippingScoresAbove,
-        zeroingScoresBelow: zeroingScoresBelow,
-        resize: false,
-        color: color)
-      else { return }
-
-    let blended = image.blend(
-      withMask: mask,
-      blendKernel: blendKernel,
-      opacity: opacity
-    )
+    let blended = self.predict(with: image)
 
     DispatchQueue.main.async {
       self.cameraView.image = blended
     }
+  }
+}
+
+extension LiveHairViewController {
+  
+  @objc func updateColor(_ slider: ColorSlider) {
+    maskColor = slider.color
   }
 }
