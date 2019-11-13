@@ -16,7 +16,6 @@ enum AIStudioFeaturePredictors: String, RawRepresentable {
   case outdoorSegmentation = "outdoor_image_segmentation"
   case petSegmentation = "pet_image_segmentation"
   case skySegmentation = "sky_image_segmentation"
-  case flexibleStyleTransfer = "flexible_style_transfer"
   case styleTransfer = "custom_style_transfer"
   case hairColor = "hair_color"
   case poseEstimation = "pose_estimation"
@@ -36,10 +35,8 @@ enum AIStudioFeaturePredictors: String, RawRepresentable {
       return ImageSegmentationViewController.defaultOptions
     case .hairColor:
       return HairColorViewController.defaultOptions
-    case .flexibleStyleTransfer:
-      return FlexibleStyleTransferViewController.defaultOptions
     case .styleTransfer:
-      return [:]
+      return StyleTransferViewController.defaultOptions
     case .poseEstimation:
       return PoseEstimationViewController.defaultOptions
     case .unknown:

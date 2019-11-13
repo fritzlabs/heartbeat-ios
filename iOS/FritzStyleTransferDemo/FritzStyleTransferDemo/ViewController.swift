@@ -14,7 +14,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
 
   var previewView: UIImageView!
 
-  lazy var styleModel = FritzVisionStyleModel.starryNight
+  lazy var styleModel = PaintingStyleModel.Style.starryNight.build()
 
   private lazy var captureSession: AVCaptureSession = {
     let session = AVCaptureSession()

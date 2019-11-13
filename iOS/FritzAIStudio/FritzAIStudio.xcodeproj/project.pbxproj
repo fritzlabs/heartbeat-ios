@@ -21,12 +21,10 @@
 		38F2E2411FE0D0B6007241CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38F2E2401FE0D0B6007241CB /* Assets.xcassets */; };
 		38F2E2441FE0D0B6007241CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F2E2421FE0D0B6007241CB /* LaunchScreen.storyboard */; };
 		3B5631AD233A7A3200B2D289 /* FritzLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5631AC233A7A3200B2D289 /* FritzLogger.swift */; };
-		8325F7E922323110007C1D38 /* FlexibleStyleTransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8325F7E822323110007C1D38 /* FlexibleStyleTransferViewController.swift */; };
+		8325F7E922323110007C1D38 /* StyleTransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8325F7E822323110007C1D38 /* StyleTransferViewController.swift */; };
 		8325F7F1223238DC007C1D38 /* SegmentSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8325F7F0223238DC007C1D38 /* SegmentSliderCell.swift */; };
 		8325F7F3223243FB007C1D38 /* SegmentSliderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8325F7F2223243FB007C1D38 /* SegmentSliderCell.xib */; };
 		8325F7F522325A29007C1D38 /* LinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8325F7F422325A29007C1D38 /* LinkTableViewCell.swift */; };
-		833E545C2123A9EB007EFA8A /* StyleTransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833E545B2123A9EB007EFA8A /* StyleTransferViewController.swift */; };
-		833FD7F12242CEFA00B19DF4 /* kaleidoscope_512x512_a025_stable_flexible.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 833FD7F02242CEFA00B19DF4 /* kaleidoscope_512x512_a025_stable_flexible.mlmodel */; };
 		8375F0262271313B0048B9D8 /* AIStudioFeaturePredictors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8375F0252271313B0048B9D8 /* AIStudioFeaturePredictors.swift */; };
 		8375F028227134780048B9D8 /* PredictorOptionTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8375F027227134780048B9D8 /* PredictorOptionTypes.swift */; };
 		8375F02B227135F80048B9D8 /* ImagePredictorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8375F02A227135F80048B9D8 /* ImagePredictorProtocol.swift */; };
@@ -101,12 +99,10 @@
 		38F2E2431FE0D0B6007241CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38F2E2451FE0D0B6007241CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B5631AC233A7A3200B2D289 /* FritzLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FritzLogger.swift; sourceTree = "<group>"; };
-		8325F7E822323110007C1D38 /* FlexibleStyleTransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleStyleTransferViewController.swift; sourceTree = "<group>"; };
+		8325F7E822323110007C1D38 /* StyleTransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleTransferViewController.swift; sourceTree = "<group>"; };
 		8325F7F0223238DC007C1D38 /* SegmentSliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentSliderCell.swift; sourceTree = "<group>"; };
 		8325F7F2223243FB007C1D38 /* SegmentSliderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentSliderCell.xib; sourceTree = "<group>"; };
 		8325F7F422325A29007C1D38 /* LinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkTableViewCell.swift; sourceTree = "<group>"; };
-		833E545B2123A9EB007EFA8A /* StyleTransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleTransferViewController.swift; sourceTree = "<group>"; };
-		833FD7F02242CEFA00B19DF4 /* kaleidoscope_512x512_a025_stable_flexible.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = kaleidoscope_512x512_a025_stable_flexible.mlmodel; sourceTree = "<group>"; };
 		8375F0252271313B0048B9D8 /* AIStudioFeaturePredictors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIStudioFeaturePredictors.swift; sourceTree = "<group>"; };
 		8375F027227134780048B9D8 /* PredictorOptionTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictorOptionTypes.swift; sourceTree = "<group>"; };
 		8375F02A227135F80048B9D8 /* ImagePredictorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictorProtocol.swift; sourceTree = "<group>"; };
@@ -465,9 +461,7 @@
 				8375F03422721CE00048B9D8 /* HairColor+ColorSlider.swift */,
 				8396CA2C220A9FDC00742120 /* PoseEstimationViewController.swift */,
 				83AC97D62149CB8600E86B44 /* ImageSegmentationViewController.swift */,
-				833E545B2123A9EB007EFA8A /* StyleTransferViewController.swift */,
-				8325F7E822323110007C1D38 /* FlexibleStyleTransferViewController.swift */,
-				833FD7F02242CEFA00B19DF4 /* kaleidoscope_512x512_a025_stable_flexible.mlmodel */,
+				8325F7E822323110007C1D38 /* StyleTransferViewController.swift */,
 			);
 			path = PredictorControllers;
 			sourceTree = "<group>";
@@ -505,14 +499,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38F2E2481FE0D0B6007241CB /* Build configuration list for PBXNativeTarget "FritzAIStudio" */;
 			buildPhases = (
-				2C1AC0BE073F2B5C7B449D97 /* [CP] Check Pods Manifest.lock */,
-				383D40CC1FE1901700438A9B /* Swift Lint */,
-				383D40C31FE18EA000438A9B /* R.swift */,
+				2C1AC0BE073F2B5C7B449D97 /* ShellScript */,
+				383D40CC1FE1901700438A9B /* ShellScript */,
+				383D40C31FE18EA000438A9B /* ShellScript */,
 				38F2E2321FE0D0B6007241CB /* Sources */,
 				38F2E2331FE0D0B6007241CB /* Frameworks */,
 				38F2E2341FE0D0B6007241CB /* Resources */,
-				38B18CC31FE22C91005AA896 /* Fabric */,
-				EA18C4F1306D7737BA6172C8 /* [CP] Embed Pods Frameworks */,
+				38B18CC31FE22C91005AA896 /* ShellScript */,
+				EA18C4F1306D7737BA6172C8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -584,7 +578,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2C1AC0BE073F2B5C7B449D97 /* [CP] Check Pods Manifest.lock */ = {
+		2C1AC0BE073F2B5C7B449D97 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -606,7 +600,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		383D40C31FE18EA000438A9B /* R.swift */ = {
+		383D40C31FE18EA000438A9B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -622,7 +616,7 @@
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/FritzAIStudio\"\n# Solution as per https://github.com/mac-cain13/R.swift/issues/456#issuecomment-426344064\ndate > \"$SRCROOT/FritzAIStudio/rswift.workaround.file\"\n";
 		};
-		383D40CC1FE1901700438A9B /* Swift Lint */ = {
+		383D40CC1FE1901700438A9B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -636,7 +630,7 @@
 			shellPath = /bin/sh;
 			shellScript = "#if which swiftlint >/dev/null; then\n#    swiftlint\n#else\n#    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n#fi";
 		};
-		38B18CC31FE22C91005AA896 /* Fabric */ = {
+		38B18CC31FE22C91005AA896 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -650,7 +644,7 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" 3ab14d933cbf3577dd7434aa17e1171fdd726172 a7e273788cbf79557095d9bd720a5d71abef69142d7a82ef17e9d88751ee49d8\n";
 		};
-		EA18C4F1306D7737BA6172C8 /* [CP] Embed Pods Frameworks */ = {
+		EA18C4F1306D7737BA6172C8 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -669,6 +663,7 @@
 				"${PODS_ROOT}/FritzVisionObjectModelFast/Frameworks/FritzVisionObjectModelFast.framework",
 				"${PODS_ROOT}/FritzVisionPeopleSegmentationModelFast/Frameworks/FritzVisionPeopleSegmentationModelFast.framework",
 				"${PODS_ROOT}/FritzVisionStyleModelPaintings/Frameworks/FritzVisionStyleModelPaintings.framework",
+				"${PODS_ROOT}/FritzVisionStyleModelPatterns/Frameworks/FritzVisionStyleModelPatterns.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -685,6 +680,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVisionObjectModelFast.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVisionPeopleSegmentationModelFast.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVisionStyleModelPaintings.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVisionStyleModelPatterns.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -723,19 +719,17 @@
 				8375F02B227135F80048B9D8 /* ImagePredictorProtocol.swift in Sources */,
 				83FFFA9E226BC2BC0038EEE2 /* FritzTextPromptView.swift in Sources */,
 				83FFFA9A226BC13F0038EEE2 /* FocusExtension.swift in Sources */,
-				833FD7F12242CEFA00B19DF4 /* kaleidoscope_512x512_a025_stable_flexible.mlmodel in Sources */,
 				83FFFA7E226BB09B0038EEE2 /* FritzCamera.swift in Sources */,
 				3890742A1FFDE6A000DFF7F9 /* FritzVisionLabelViewController.swift in Sources */,
 				8325F7F1223238DC007C1D38 /* SegmentSliderCell.swift in Sources */,
 				3B5631AD233A7A3200B2D289 /* FritzLogger.swift in Sources */,
 				83AC97D72149CB8600E86B44 /* ImageSegmentationViewController.swift in Sources */,
 				83F8B4A722320AF700686149 /* FeatureOptions.swift in Sources */,
-				8325F7E922323110007C1D38 /* FlexibleStyleTransferViewController.swift in Sources */,
+				8325F7E922323110007C1D38 /* StyleTransferViewController.swift in Sources */,
 				83FFFAA4226BC9C00038EEE2 /* FritzCameraControllerDelegate.swift in Sources */,
 				83FFFAB2226C2F6F0038EEE2 /* SettingsButtonInteractionExtension.swift in Sources */,
 				83F8B49A2231A65C00686149 /* AIStudioImagePredictor.swift in Sources */,
 				38F2E23A1FE0D0B6007241CB /* AppDelegate.swift in Sources */,
-				833E545C2123A9EB007EFA8A /* StyleTransferViewController.swift in Sources */,
 				83FFFA88226BBA5E0038EEE2 /* CameraAVCaptureVideoDelegate.swift in Sources */,
 				83FFFAA2226BC8F60038EEE2 /* CameraDelegateImplmentation.swift in Sources */,
 				83FFFADC226ED4460038EEE2 /* PhotoCaptureExtensions.swift in Sources */,

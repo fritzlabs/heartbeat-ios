@@ -4,7 +4,7 @@
 target 'FritzObjectDetectionDemo' do
   use_frameworks!
 
-  pod 'Fritz', '~> 4.3.0-beta.1'
+  pod 'Fritz', '~> 5.0.0'
   pod 'Fritz/VisionObjectModel/Fast'
 
 end

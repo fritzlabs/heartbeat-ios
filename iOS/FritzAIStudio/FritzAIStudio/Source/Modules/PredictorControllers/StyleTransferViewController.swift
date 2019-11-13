@@ -14,61 +14,49 @@ import CoreML
 import Fritz
 
 
-extension FritzVisionStyleModel: ImagePredictor {
+extension FritzVisionStylePredictor: ImagePredictor {
   func predict(_ image: FritzVisionImage, options: ConfigurableOptions) throws -> UIImage? {
 
-    let options = FritzVisionStyleModelOptions()
+    let styleOptions = FritzVisionStyleModelOptions()
+    
+    let value = options[.modelResolution] as! SegmentValue
+    // This is a bit hacky, but we can change it if it becomes a problem
+    let index = value.selectedIndex
+    if index == 0 {
+      styleOptions.flexibleModelDimensions = .lowResolution
+    } else if index == 1 {
+      styleOptions.flexibleModelDimensions = .mediumResolution
+    } else if index == 2 {
+      styleOptions.flexibleModelDimensions = .highResolution
+    } else if index == 3 {
+      styleOptions.flexibleModelDimensions = .original
+    }
+    
+    // Resize the final image to match the input
+    styleOptions.resizeOutputToInputDimensions = true
+    
+    // Stylize the image
+    let stylizedBuffer = try predict(image, options: styleOptions)
 
-    let buffer = try predict(image, options: options)
-    return UIImage(pixelBuffer: buffer)
+    return UIImage(pixelBuffer: stylizedBuffer)
   }
 }
 
 
 class StyleTransferViewController: FeatureViewController {
 
-  enum StyleModels: String, RawRepresentable, CaseIterable {
-    case customStyleTransfer = "custom_style_transfer"
-    // Generally the raw
-    case starryNight
-    case pinkBlueRhombus
-    case theScream
-    case bicentennialPrint
-    case poppyField
-    case kaleidoscope
-    case femmes
-    case headOfClown
-    case horsesOnSeashore
-    case theTrial
-    case ritmoPlastico
-  }
-
   override var debugImage: UIImage? { return UIImage(named: "styleTransferBoston.jpg") }
-
-  override func build(_ predictorDetails: FritzModelDetails) -> AIStudioImagePredictor? {
-
-    guard let modelType = StyleModels(rawValue: predictorDetails.featureName),
-      let model = predictorDetails.managedModel.loadModel()
-      else { return nil }
-
-    switch modelType {
-    case .customStyleTransfer:
-      if let model = try? FritzVisionStyleModel(model: model) {
-        return AIStudioImagePredictor(model: model, predictorDetails: predictorDetails)
-      }
-      return nil
-    default:
-      // A bit of a hacky way to get the prepackaged models.
-      if let model = FritzVisionStyleModel.value(forKey: modelType.rawValue) as? FritzVisionStyleModel {
-        return AIStudioImagePredictor(model: model, predictorDetails: predictorDetails)
-      }
-      return nil
-    }
-  }
-
+  
+  static let defaultOptions: ConfigurableOptions = [
+    .modelResolution: SegmentValue(
+      optionType: .modelResolution,
+      options: ["Low", "Medium", "High", "original"],
+      selectedIndex: 0, priority: 0
+    )
+  ]
+  
   class func buildModelGroup() -> ModelGroupManager {
     var models: [FritzModelDetails] = []
-
     for paintingStyle in PaintingStyleModel.Style.allCases {
       let styleModel = paintingStyle.build()
       let fritzModel = FritzModelDetails(
@@ -78,18 +66,25 @@ class StyleTransferViewController: FeatureViewController {
       )
       models.append(fritzModel)
     }
+    
+    for patternStyle in PatternStyleModel.Style.allCases {
+      let styleModel = patternStyle.build()
+      let fritzModel = FritzModelDetails(
+        with: styleModel.managedModel,
+        featureDescription: .styleTransfer,
+        name: patternStyle.name
+      )
+      models.append(fritzModel)
+    }
 
-    return ModelGroupManager(with: models, initialModel: models[0], tagName: "aistudio-ios-style-transfer")
+    return ModelGroupManager(with: models, initialModel: models[0], tagName: nil)
   }
 
   convenience init() {
     let group = StyleTransferViewController.buildModelGroup()
-
     self.init(modelGroup: group, title: "Style Transfer")
-
     self.position = .front
-    self.streamBackgroundImage = false
-    self.resolution = .vga640x480
+    self.resolution = .high1920x1080
   }
 
   override func viewDidLoad() {
@@ -99,9 +94,14 @@ class StyleTransferViewController: FeatureViewController {
     gestureRecognizer.numberOfTapsRequired = 2
     view.addGestureRecognizer(gestureRecognizer)
   }
+
+  override func build(_ predictorDetails: FritzModelDetails) -> AIStudioImagePredictor? {
+    guard let model = predictorDetails.managedModel.loadModel(),
+      let predictor = try? FritzVisionStylePredictor(model: model) else { return nil }
+    
+    return AIStudioImagePredictor(model: predictor, predictorDetails: predictorDetails)
+  }
 }
-
-
 
 extension StyleTransferViewController {
 
@@ -126,7 +126,6 @@ extension StyleTransferViewController {
         // If there is not a selected model, or the model is the last
         // model, start at the beginining. Ideally, we would show the plain
         // image, but there is a small still untraced bug in the FritzCameraViewController blocking that.
-
         let newModel = modelGroup.models[0]
         // Model is the same model that is already loaded.
         if newModel == modelGroup.selectedPredictorDetails {
@@ -134,7 +133,6 @@ extension StyleTransferViewController {
         }
         modelGroup.selectedPredictorDetails = newModel
         updateFeature(newModel)
-
         return
     }
 

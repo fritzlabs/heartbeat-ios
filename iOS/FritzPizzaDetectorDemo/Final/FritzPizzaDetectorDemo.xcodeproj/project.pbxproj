@@ -98,11 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83CF5506226FC44B00F995AA /* Build configuration list for PBXNativeTarget "FritzPizzaDetectorDemo" */;
 			buildPhases = (
-				CB469173CE2DB334D3397BAE /* [CP] Check Pods Manifest.lock */,
+				CB469173CE2DB334D3397BAE /* ShellScript */,
 				83CF54F0226FC44900F995AA /* Sources */,
 				83CF54F1226FC44900F995AA /* Frameworks */,
 				83CF54F2226FC44900F995AA /* Resources */,
-				AF706660276906083F1D83A0 /* [CP] Embed Pods Frameworks */,
+				AF706660276906083F1D83A0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -161,7 +161,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AF706660276906083F1D83A0 /* [CP] Embed Pods Frameworks */ = {
+		AF706660276906083F1D83A0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -178,7 +178,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FritzPizzaDetectorDemo/Pods-FritzPizzaDetectorDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CB469173CE2DB334D3397BAE /* [CP] Check Pods Manifest.lock */ = {
+		CB469173CE2DB334D3397BAE /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

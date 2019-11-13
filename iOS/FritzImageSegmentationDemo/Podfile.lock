@@ -1,23 +1,23 @@
 PODS:
-  - Fritz (4.2.4):
-    - Fritz/Vision (= 4.2.4)
-  - Fritz/Vision (4.2.4):
-    - FritzBase/Vision (= 4.2.4)
-  - Fritz/VisionSegmentationModel/People/Fast (4.2.4):
-    - FritzVisionPeopleSegmentationModelFast (~> 4.2.0)
-  - FritzBase/Core (4.2.4)
-  - FritzBase/CoreMLHelpers (4.2.4)
-  - FritzBase/ManagedModel (4.2.4):
-    - FritzBase/Core (= 4.2.4)
-  - FritzBase/Vision (4.2.4):
-    - FritzBase/Core (= 4.2.4)
-    - FritzBase/CoreMLHelpers (= 4.2.4)
-    - FritzBase/ManagedModel (= 4.2.4)
-  - FritzVisionPeopleSegmentationModelFast (4.2.3):
-    - FritzBase/Vision (~> 4.2.0)
+  - Fritz (5.0.0):
+    - Fritz/Vision (= 5.0.0)
+  - Fritz/Vision (5.0.0):
+    - FritzBase/Vision (= 5.0.0)
+  - Fritz/VisionSegmentationModel/People/Fast (5.0.0):
+    - FritzVisionPeopleSegmentationModelFast (= 5.0.0)
+  - FritzBase/Core (5.0.0)
+  - FritzBase/CoreMLHelpers (5.0.0)
+  - FritzBase/ManagedModel (5.0.0):
+    - FritzBase/Core (= 5.0.0)
+  - FritzBase/Vision (5.0.0):
+    - FritzBase/Core (= 5.0.0)
+    - FritzBase/CoreMLHelpers (= 5.0.0)
+    - FritzBase/ManagedModel (= 5.0.0)
+  - FritzVisionPeopleSegmentationModelFast (5.0.0):
+    - FritzBase/Vision (= 5.0.0)
 
 DEPENDENCIES:
-  - Fritz (~> 4.2.4)
+  - Fritz (~> 5.0.0)
   - Fritz/VisionSegmentationModel/People/Fast
 
 SPEC REPOS:
@@ -27,10 +27,10 @@ SPEC REPOS:
     - FritzVisionPeopleSegmentationModelFast
 
 SPEC CHECKSUMS:
-  Fritz: 22a0d6cc85abac643e4e9894c5cde1ac63b8d646
-  FritzBase: 4fd974c8903c619a2f68e8f909c1f960e63b1857
-  FritzVisionPeopleSegmentationModelFast: 139367f1e4c7f817250a57f8035c57fef2357e48
+  Fritz: c06106240a488236e951993dc0a31472fb058121
+  FritzBase: d9593a523b46b0badce04a49614aca30820a4879
+  FritzVisionPeopleSegmentationModelFast: 9202394ce3c07c894766b474bd01397d37cce27f
 
-PODFILE CHECKSUM: cdba00ef193c1b55887b42f4bb89f06b7ee79791
+PODFILE CHECKSUM: 4b00c06126654a62b91e354bec0b535074fbfdd3
 
 COCOAPODS: 1.8.3

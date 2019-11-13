@@ -107,11 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83305C85228399E600F93F6B /* Build configuration list for PBXNativeTarget "FritzARKitDemo" */;
 			buildPhases = (
-				CEF2B1E578DE1A338462465F /* [CP] Check Pods Manifest.lock */,
+				CEF2B1E578DE1A338462465F /* ShellScript */,
 				83305C6D228399E500F93F6B /* Sources */,
 				83305C6E228399E500F93F6B /* Frameworks */,
 				83305C6F228399E500F93F6B /* Resources */,
-				2FCD9D984A4D0A8021B0A733 /* [CP] Embed Pods Frameworks */,
+				2FCD9D984A4D0A8021B0A733 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -170,7 +170,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2FCD9D984A4D0A8021B0A733 /* [CP] Embed Pods Frameworks */ = {
+		2FCD9D984A4D0A8021B0A733 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -187,7 +187,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FritzARKitDemo/Pods-FritzARKitDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CEF2B1E578DE1A338462465F /* [CP] Check Pods Manifest.lock */ = {
+		CEF2B1E578DE1A338462465F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

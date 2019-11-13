@@ -1,40 +1,41 @@
 PODS:
   - ColorSlider (4.4)
-  - Fritz (4.2.4):
-    - Fritz/Vision (= 4.2.4)
-  - Fritz/Vision (4.2.4):
-    - FritzBase/Vision (= 4.2.4)
-  - Fritz/VisionSegmentationModel/Hair/Fast (4.2.4):
-    - FritzVisionHairSegmentationModelFast (~> 4.2.0)
-  - FritzBase/Core (4.2.4)
-  - FritzBase/CoreMLHelpers (4.2.4)
-  - FritzBase/ManagedModel (4.2.4):
-    - FritzBase/Core (= 4.2.4)
-  - FritzBase/Vision (4.2.4):
-    - FritzBase/Core (= 4.2.4)
-    - FritzBase/CoreMLHelpers (= 4.2.4)
-    - FritzBase/ManagedModel (= 4.2.4)
-  - FritzVisionHairSegmentationModelFast (4.2.3):
-    - FritzBase/Vision (~> 4.2.0)
+  - Fritz (5.0.0):
+    - Fritz/Vision (= 5.0.0)
+  - Fritz/Vision (5.0.0):
+    - FritzBase/Vision (= 5.0.0)
+  - Fritz/VisionSegmentationModel/Hair/Fast (5.0.0):
+    - FritzVisionHairSegmentationModelFast (= 5.0.0)
+  - FritzBase/Core (5.0.0)
+  - FritzBase/CoreMLHelpers (5.0.0)
+  - FritzBase/ManagedModel (5.0.0):
+    - FritzBase/Core (= 5.0.0)
+  - FritzBase/Vision (5.0.0):
+    - FritzBase/Core (= 5.0.0)
+    - FritzBase/CoreMLHelpers (= 5.0.0)
+    - FritzBase/ManagedModel (= 5.0.0)
+  - FritzVisionHairSegmentationModelFast (5.0.0):
+    - FritzBase/Vision (= 5.0.0)
 
 DEPENDENCIES:
   - ColorSlider (~> 4.4)
-  - Fritz (~> 4.2.4)
+  - Fritz (~> 5.0.0)
   - Fritz/VisionSegmentationModel/Hair/Fast
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  "git@github.com:CocoaPods/Specs.git":
     - ColorSlider
+  trunk:
     - Fritz
     - FritzBase
     - FritzVisionHairSegmentationModelFast
 
 SPEC CHECKSUMS:
   ColorSlider: 9a888e65b871fa1e6a26fadebf4931c949935681
-  Fritz: 22a0d6cc85abac643e4e9894c5cde1ac63b8d646
-  FritzBase: 4fd974c8903c619a2f68e8f909c1f960e63b1857
-  FritzVisionHairSegmentationModelFast: bf3e422aecd510437cc580379634b168c31ffcb4
+  Fritz: c06106240a488236e951993dc0a31472fb058121
+  FritzBase: d9593a523b46b0badce04a49614aca30820a4879
+  FritzVisionHairSegmentationModelFast: e1300e5790f30448990afae8675953a4cedae972
 
-PODFILE CHECKSUM: 1ce82615a175f85f5c846300122ae5f0c8d3efa5
+PODFILE CHECKSUM: 81bb97dbb1bc36ad961110ce14bb6e34de120e87
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.3

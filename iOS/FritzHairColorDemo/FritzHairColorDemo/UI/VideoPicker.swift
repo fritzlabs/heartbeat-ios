@@ -4,37 +4,41 @@ public protocol VideoPickerDelegate: class {
   func didSelect(url: URL?)
 }
 
-open class VideoPicker: NSObject {
+public class VideoPicker: NSObject {
 
-  private let pickerController: UIImagePickerController
-  private weak var presentationController: UIViewController?
+  private let pickerController = UIImagePickerController()
+  private weak var viewController: UIViewController?
   private weak var delegate: VideoPickerDelegate?
 
-  public init(presentationController: UIViewController, delegate: VideoPickerDelegate) {
-    self.pickerController = UIImagePickerController()
-
+  public init(controller: UIViewController, delegate: VideoPickerDelegate) {
     super.init()
 
-    self.presentationController = presentationController
+    self.viewController = controller
     self.delegate = delegate
-
     self.pickerController.delegate = self
     self.pickerController.allowsEditing = true
     self.pickerController.mediaTypes = ["public.movie"]
     self.pickerController.videoQuality = .typeHigh
   }
 
-  private func action(for type: UIImagePickerController.SourceType, title: String) -> UIAlertAction? {
+  private func action(
+    for type: UIImagePickerController.SourceType,
+    title: String
+  ) -> UIAlertAction? {
     guard UIImagePickerController.isSourceTypeAvailable(type) else {
       return nil
     }
 
     return UIAlertAction(title: title, style: .default) { [unowned self] _ in
       self.pickerController.sourceType = type
-      self.presentationController?.present(self.pickerController, animated: true)
+      self.viewController?.present(self.pickerController, animated: true)
     }
   }
 
+  /// Show the action sheet.
+  ///
+  /// - Parameters:
+  ///   - sourceView: the view to show the action sheet on
   public func present(from sourceView: UIView) {
     let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
 
@@ -42,7 +46,9 @@ open class VideoPicker: NSObject {
       alertController.addAction(action)
     }
 
-    alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+    alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel) { _ in
+      self.popToRoot()
+    })
 
     if UIDevice.current.userInterfaceIdiom == .pad {
       alertController.popoverPresentationController?.sourceView = sourceView
@@ -50,13 +56,27 @@ open class VideoPicker: NSObject {
       alertController.popoverPresentationController?.permittedArrowDirections = [.down, .up]
     }
 
-    self.presentationController?.present(alertController, animated: true)
+    self.viewController?.present(alertController, animated: true)
   }
 
+  /// Dismisses the menu and calls the delegate.
+  ///
+  /// - Parameters:
+  ///  - controller: the picker controller
+  ///  - url: the url of the selected item
   private func pickerController(_ controller: UIImagePickerController, didSelect url: URL?) {
-    controller.dismiss(animated: true, completion: nil)
-
+    if let _ = url {
+      controller.dismiss(animated: true)
+    }
+    else {
+      controller.dismiss(animated: false) { self.popToRoot() }
+    }
     self.delegate?.didSelect(url: url)
+  }
+
+  /// Go back to the main page
+  private func popToRoot() {
+    self.viewController?.navigationController?.popToRootViewController(animated: true)
   }
 }
 
@@ -66,8 +86,10 @@ extension VideoPicker: UIImagePickerControllerDelegate {
     self.pickerController(picker, didSelect: nil)
   }
 
-  public func imagePickerController(_ picker: UIImagePickerController,
-                                    didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+  public func imagePickerController(
+    _ picker: UIImagePickerController,
+    didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]
+  ) {
     guard let url = info[.mediaURL] as? URL else {
       return self.pickerController(picker, didSelect: nil)
     }
@@ -76,6 +98,4 @@ extension VideoPicker: UIImagePickerControllerDelegate {
   }
 }
 
-extension VideoPicker: UINavigationControllerDelegate {
-
-}
+extension VideoPicker: UINavigationControllerDelegate {}

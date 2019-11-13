@@ -146,11 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83E704B4226A4B6200FF678D /* Build configuration list for PBXNativeTarget "FritzHairColorDemo" */;
 			buildPhases = (
-				A87BA6BF21E7427A83460FB4 /* [CP] Check Pods Manifest.lock */,
+				A87BA6BF21E7427A83460FB4 /* ShellScript */,
 				83E7049E226A4B6200FF678D /* Sources */,
 				83E7049F226A4B6200FF678D /* Frameworks */,
 				83E704A0226A4B6200FF678D /* Resources */,
-				75EBBA0EAF846061FEE1D29C /* [CP] Embed Pods Frameworks */,
+				75EBBA0EAF846061FEE1D29C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -210,7 +210,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		75EBBA0EAF846061FEE1D29C /* [CP] Embed Pods Frameworks */ = {
+		75EBBA0EAF846061FEE1D29C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -227,7 +227,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FritzHairColorDemo/Pods-FritzHairColorDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A87BA6BF21E7427A83460FB4 /* [CP] Check Pods Manifest.lock */ = {
+		A87BA6BF21E7427A83460FB4 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

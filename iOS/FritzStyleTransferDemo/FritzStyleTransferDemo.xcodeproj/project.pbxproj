@@ -95,11 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83AC97C821495DD600E86B44 /* Build configuration list for PBXNativeTarget "FritzStyleTransferDemo" */;
 			buildPhases = (
-				5D1BF771AE4439EF6FE66C95 /* [CP] Check Pods Manifest.lock */,
+				5D1BF771AE4439EF6FE66C95 /* ShellScript */,
 				83AC97B221495DD400E86B44 /* Sources */,
 				83AC97B321495DD400E86B44 /* Frameworks */,
 				83AC97B421495DD400E86B44 /* Resources */,
-				861F0BDBE5ADD909627E5917 /* [CP] Embed Pods Frameworks */,
+				861F0BDBE5ADD909627E5917 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -158,7 +158,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5D1BF771AE4439EF6FE66C95 /* [CP] Check Pods Manifest.lock */ = {
+		5D1BF771AE4439EF6FE66C95 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -176,7 +176,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		861F0BDBE5ADD909627E5917 /* [CP] Embed Pods Frameworks */ = {
+		861F0BDBE5ADD909627E5917 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -278,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -332,7 +332,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;

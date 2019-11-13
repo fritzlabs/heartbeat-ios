@@ -6,35 +6,24 @@ import ColorSlider
 
 class VideoHairViewController: UIViewController, HairPredictor {
 
-  var color: HairColor!
-  var _colorSlider: ColorSlider?
-  var colorSlider: ColorSlider {
-    if let slider = _colorSlider {
-      return slider
-    }
-
-    let slider = ColorSlider(orientation: .vertical, previewSide: .left)
-    _colorSlider = slider
-    slider.addTarget(self, action: #selector(updateColor(_:)), for: .valueChanged)
-    return slider
-  }
-
   var videoPicker: VideoPicker!
-  var videoPlayer: AVPlayer!
-  var isLoop: Bool = true
+  var videoPlayer: FritzVisionVideo!
+  var filterOptions = FritzVisionHairSegmentationFilterOptions()
 
-  internal lazy var visionModel = FritzVisionHairSegmentationModelFast()
+  lazy var visionModel = FritzVisionHairSegmentationModelFast()
+  var colorSlider = ColorSlider(orientation: .vertical, previewSide: .left)
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    color = HairColor(hairColor: colorSlider.color)
+    colorSlider.addTarget(self, action: #selector(updateColor(_:)), for: .valueChanged)
+    filterOptions.maskColor = colorSlider.color
   }
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
 
     // Show video picker
-    self.videoPicker = VideoPicker(presentationController: self, delegate: self)
+    self.videoPicker = VideoPicker(controller: self, delegate: self)
     self.videoPicker.present(from: view)
   }
 }
@@ -42,59 +31,30 @@ class VideoHairViewController: UIViewController, HairPredictor {
 extension VideoHairViewController: VideoPickerDelegate {
 
   func didSelect(url: URL?) {
-    guard let url = url else {
-      return
-    }
+    guard let url = url else { return }
 
-    // Run prediction on every frame of the video
-    let composition = AVVideoComposition(asset: AVAsset(url: url)) { request in
-      let source = request.sourceImage
-      let fritzImage = FritzVisionImage(image: UIImage(ciImage: source))
+    // Setting the options for the video
+    let options = FritzVisionVideoOptions()
+    options.filters.append(FritzVisionHairBlendFilter(model: visionModel, options: filterOptions))
+    videoPlayer = FritzVisionVideo(url: url, options: options)
 
-      if let maskedImage = self.predict(with: fritzImage) {
-        request.finish(with: maskedImage.ciImage!, context: nil)
-      }
-      else {
-        request.finish(with: source, context: nil)
-      }
-    }
+    // Setup the view
+    let fritzView = FritzVideoView()
+    fritzView.frame = view.bounds
+    fritzView.fritzVideo = videoPlayer
 
-    // Set up the video player and start it
-    let videoURL = URL(string: url.absoluteString)
-    videoPlayer = AVPlayer(url: videoURL!)
-    videoPlayer.currentItem!.videoComposition = composition
-    let playerLayer = AVPlayerLayer(player: videoPlayer)
-    playerLayer.frame = view.bounds
-    view.layer.addSublayer(playerLayer)
-    NotificationCenter.default.addObserver(self,
-                                           selector: #selector(reachTheEndOfTheVideo(_:)),
-                                           name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
-                                           object: self.videoPlayer?.currentItem)
-    beginPlayback()
-  }
-}
-
-extension VideoHairViewController {
-
-  func beginPlayback() {
-    guard let videoPlayer = videoPlayer else { return }
-    videoPlayer.play()
+    // Add components to the view and start the video
     addColorSlider()
+    view.addSubview(fritzView)
+    view.bringSubviewToFront(fritzView)
     view.bringSubviewToFront(colorSlider)
-  }
-
-  @objc func reachTheEndOfTheVideo(_ notification: Notification) {
-    if isLoop {
-      videoPlayer?.pause()
-      videoPlayer?.seek(to: CMTime.zero)
-      videoPlayer?.play()
-    }
+    fritzView.play()
   }
 }
 
 extension VideoHairViewController {
   
   @objc func updateColor(_ slider: ColorSlider) {
-    maskColor = slider.color
+    filterOptions.maskColor = slider.color
   }
 }

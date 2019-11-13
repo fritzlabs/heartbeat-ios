@@ -41,8 +41,6 @@ class DemosViewController: UITableViewController {
         viewController = PoseEstimationViewController()
       case "StyleTransfer":
         viewController = StyleTransferViewController()
-      case "FlexibleStyleTransfer":
-        viewController = FlexibleStyleTransferViewController()
       case "HairColor":
         viewController = HairColorViewController()
       default:
