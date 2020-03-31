@@ -19,14 +19,28 @@ extension Double {
   }
 }
 
+
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
   @IBOutlet weak var cameraView: UIView!
-  @IBOutlet weak var frameLabel: UILabel!
+  @IBOutlet weak var fpsLabel: UILabel!
+  @IBOutlet weak var modelIdLabel: UILabel!
+  @IBOutlet weak var modelVersionLabel: UILabel!
+
   var lastExecution = Date()
   var screenHeight: Double?
   var screenWidth: Double?
 
+  // Use a pre-trained object detection model from Fritz AI.
   lazy var visionModel = FritzVisionObjectModelFast()
+
+  // To use your own custom object detection model, follow the instructions here:
+  // https://docs.fritz.ai/develop/vision/object-detection/ios.html
+  // lazy var visionModel = FritzVisionObjectPredictor(model: YourModelName().fritz())
+
+  // Only show detections above a certain confidence threshold. For new models in development,
+  // you may need to lower this to see predictions. As you improve your model, you can
+  // increase this reduce false positives.
+  let confidenceThreshold = 0.1
 
   private lazy var cameraLayer: AVCaptureVideoPreviewLayer = {
     let layer = AVCaptureVideoPreviewLayer(session: self.captureSession)
@@ -56,8 +70,15 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
   override func viewDidLoad() {
     super.viewDidLoad()
     self.cameraView?.layer.addSublayer(self.cameraLayer)
-    self.cameraView?.bringSubviewToFront(self.frameLabel)
-    self.frameLabel.textAlignment = .left
+    // Setup labels
+    self.cameraView?.bringSubviewToFront(self.fpsLabel)
+    self.fpsLabel.textAlignment = .center
+    self.cameraView?.bringSubviewToFront(self.modelIdLabel)
+    self.modelIdLabel.textAlignment = .center
+    self.cameraView?.bringSubviewToFront(self.modelVersionLabel)
+    self.modelVersionLabel.textAlignment = .center
+
+    // Setup video capture.
     let videoOutput = AVCaptureVideoDataOutput()
     videoOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "MyQueue"))
     self.captureSession.addOutput(videoOutput)
@@ -91,9 +112,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     // Dispose of any resources that can be recreated.
   }
 
-  func drawBoxes(predictions: [FritzVisionObject], framesPerSecond: Double) {
-    self.frameLabel.text = "FPS: \(framesPerSecond.format(f: ".3"))"
-
+  func drawBoxes(predictions: [FritzVisionObject]) {
     for (index, prediction) in predictions.enumerated() {
       let textLabel = String(format: "%.2f - %@", prediction.confidence, prediction.label)
       let height = Double(cameraView.frame.height)
@@ -115,25 +134,34 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     }
   }
 
+  func updateLabels() {
+    let thisExecution = Date()
+    let executionTime = thisExecution.timeIntervalSince(self.lastExecution)
+    let framesPerSecond: Double = 1 / executionTime
+    self.lastExecution = thisExecution
+
+    DispatchQueue.main.async {
+      self.fpsLabel.text = "FPS: \(framesPerSecond.format(f: ".3"))"
+      self.modelIdLabel.text = "Model ID: \(self.visionModel.managedModel.activeModelConfig.identifier)"
+      self.modelVersionLabel.text = "Active Version: \(self.visionModel.managedModel.activeModelConfig.version)"
+    }
+  }
+
   func captureOutput(
     _ output: AVCaptureOutput,
     didOutput sampleBuffer: CMSampleBuffer,
     from connection: AVCaptureConnection) {
     let image = FritzVisionImage(sampleBuffer: sampleBuffer, connection: connection)
     let options = FritzVisionObjectModelOptions()
-    options.threshold = 0.5
+    options.threshold = confidenceThreshold
 
     guard let results = try? visionModel.predict(image, options: options) else { return }
 
     if results.count > 0 {
-      let thisExecution = Date()
-      let executionTime = thisExecution.timeIntervalSince(self.lastExecution)
-      let framesPerSecond: Double = 1 / executionTime
-      self.lastExecution = thisExecution
-
       DispatchQueue.main.async {
-        self.drawBoxes(predictions: results, framesPerSecond: framesPerSecond)
+        self.drawBoxes(predictions: results)
       }
     }
+    updateLabels()
   }
 }

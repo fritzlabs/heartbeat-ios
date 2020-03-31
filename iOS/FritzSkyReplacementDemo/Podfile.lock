@@ -1,23 +1,23 @@
 PODS:
-  - Fritz (5.0.0):
-    - Fritz/Vision (= 5.0.0)
-  - Fritz/Vision (5.0.0):
-    - FritzBase/Vision (= 5.0.0)
-  - Fritz/VisionSegmentationModel/Sky/Fast (5.0.0):
-    - FritzVisionSkySegmentationModelFast (= 5.0.0)
-  - FritzBase/Core (5.0.0)
-  - FritzBase/CoreMLHelpers (5.0.0)
-  - FritzBase/ManagedModel (5.0.0):
-    - FritzBase/Core (= 5.0.0)
-  - FritzBase/Vision (5.0.0):
-    - FritzBase/Core (= 5.0.0)
-    - FritzBase/CoreMLHelpers (= 5.0.0)
-    - FritzBase/ManagedModel (= 5.0.0)
-  - FritzVisionSkySegmentationModelFast (5.0.0):
-    - FritzBase/Vision (= 5.0.0)
+  - Fritz (5.3.0):
+    - Fritz/Vision (= 5.3.0)
+  - Fritz/Vision (5.3.0):
+    - FritzBase/Vision (= 5.3.0)
+  - Fritz/VisionSegmentationModel/Sky/Fast (5.3.0):
+    - FritzVisionSkySegmentationModelFast (~> 5.3.0)
+  - FritzBase/Core (5.3.0)
+  - FritzBase/CoreMLHelpers (5.3.0)
+  - FritzBase/ManagedModel (5.3.0):
+    - FritzBase/Core (= 5.3.0)
+  - FritzBase/Vision (5.3.0):
+    - FritzBase/Core (= 5.3.0)
+    - FritzBase/CoreMLHelpers (= 5.3.0)
+    - FritzBase/ManagedModel (= 5.3.0)
+  - FritzVisionSkySegmentationModelFast (5.3.0):
+    - FritzBase/Vision (~> 5.3.0)
 
 DEPENDENCIES:
-  - Fritz (~> 5.0.0)
+  - Fritz (~> 5.3.0)
   - Fritz/VisionSegmentationModel/Sky/Fast
 
 SPEC REPOS:
@@ -27,10 +27,10 @@ SPEC REPOS:
     - FritzVisionSkySegmentationModelFast
 
 SPEC CHECKSUMS:
-  Fritz: c06106240a488236e951993dc0a31472fb058121
-  FritzBase: d9593a523b46b0badce04a49614aca30820a4879
-  FritzVisionSkySegmentationModelFast: 4d8766997024e1ede792b959e6d9226a5ea571f1
+  Fritz: 9f13fccd5bc7fc08a64d8bf79764c221e9d38cfe
+  FritzBase: aedffaeb45d5c09ccf66d7d4ad4e8d578072c3de
+  FritzVisionSkySegmentationModelFast: 50dbed1ad8231eb20fb61393ba8e8cd95ddb611b
 
-PODFILE CHECKSUM: 200e60453851291e8d89f8704cb4cfa43ea701b2
+PODFILE CHECKSUM: a009dd5583c694035817bb63ddfe763e3d842d6f
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.9.1

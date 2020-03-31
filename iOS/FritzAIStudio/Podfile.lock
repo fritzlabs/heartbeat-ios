@@ -3,46 +3,46 @@ PODS:
   - Crashlytics (3.14.0):
     - Fabric (~> 1.10.2)
   - Fabric (1.10.2)
-  - Fritz (5.1.0):
-    - Fritz/Vision (= 5.1.0)
-  - Fritz/Vision (5.1.0):
-    - FritzBase/Vision (= 5.1.0)
-  - Fritz/VisionLabelModel/Fast (5.1.0):
-    - FritzVisionLabelModelFast (~> 5.1.0)
-  - Fritz/VisionObjectModel/Fast (5.1.0):
-    - FritzVisionObjectModelFast (~> 5.1.0)
-  - Fritz/VisionPoseModel/Human/Fast (5.1.0):
-    - FritzVisionHumanPoseModelFast (~> 5.1.0)
-  - Fritz/VisionSegmentationModel/Hair/Fast (5.1.0):
-    - FritzVisionHairSegmentationModelFast (~> 5.1.0)
-  - Fritz/VisionSegmentationModel/People/Fast (5.1.0):
-    - FritzVisionPeopleSegmentationModelFast (~> 5.1.0)
-  - Fritz/VisionStyleModel/Paintings (5.1.0):
-    - FritzVisionStyleModelPaintings (~> 5.1.0)
-  - Fritz/VisionStyleModel/Patterns (5.1.0):
-    - FritzVisionStyleModelPatterns (~> 5.1.0)
-  - FritzBase/Core (5.1.0)
-  - FritzBase/CoreMLHelpers (5.1.0)
-  - FritzBase/ManagedModel (5.1.0):
-    - FritzBase/Core (= 5.1.0)
-  - FritzBase/Vision (5.1.0):
-    - FritzBase/Core (= 5.1.0)
-    - FritzBase/CoreMLHelpers (= 5.1.0)
-    - FritzBase/ManagedModel (= 5.1.0)
-  - FritzVisionHairSegmentationModelFast (5.1.0):
-    - FritzBase/Vision (~> 5.1.0)
-  - FritzVisionHumanPoseModelFast (5.1.0):
-    - FritzBase/Vision (~> 5.1.0)
-  - FritzVisionLabelModelFast (5.1.0):
-    - FritzBase/Vision (~> 5.1.0)
-  - FritzVisionObjectModelFast (5.1.0):
-    - FritzBase/Vision (~> 5.1.0)
-  - FritzVisionPeopleSegmentationModelFast (5.1.0):
-    - FritzBase/Vision (~> 5.1.0)
-  - FritzVisionStyleModelPaintings (5.1.0):
-    - FritzBase/Vision (~> 5.1.0)
-  - FritzVisionStyleModelPatterns (5.1.0):
-    - FritzBase/Vision (~> 5.1.0)
+  - Fritz (5.3.0):
+    - Fritz/Vision (= 5.3.0)
+  - Fritz/Vision (5.3.0):
+    - FritzBase/Vision (= 5.3.0)
+  - Fritz/VisionLabelModel/Fast (5.3.0):
+    - FritzVisionLabelModelFast (~> 5.3.0)
+  - Fritz/VisionObjectModel/Fast (5.3.0):
+    - FritzVisionObjectModelFast (~> 5.3.0)
+  - Fritz/VisionPoseModel/Human/Fast (5.3.0):
+    - FritzVisionHumanPoseModelFast (~> 5.3.0)
+  - Fritz/VisionSegmentationModel/Hair/Fast (5.3.0):
+    - FritzVisionHairSegmentationModelFast (~> 5.3.0)
+  - Fritz/VisionSegmentationModel/People/Fast (5.3.0):
+    - FritzVisionPeopleSegmentationModelFast (~> 5.3.0)
+  - Fritz/VisionStyleModel/Paintings (5.3.0):
+    - FritzVisionStyleModelPaintings (~> 5.3.0)
+  - Fritz/VisionStyleModel/Patterns (5.3.0):
+    - FritzVisionStyleModelPatterns (~> 5.3.0)
+  - FritzBase/Core (5.3.0)
+  - FritzBase/CoreMLHelpers (5.3.0)
+  - FritzBase/ManagedModel (5.3.0):
+    - FritzBase/Core (= 5.3.0)
+  - FritzBase/Vision (5.3.0):
+    - FritzBase/Core (= 5.3.0)
+    - FritzBase/CoreMLHelpers (= 5.3.0)
+    - FritzBase/ManagedModel (= 5.3.0)
+  - FritzVisionHairSegmentationModelFast (5.3.0):
+    - FritzBase/Vision (~> 5.3.0)
+  - FritzVisionHumanPoseModelFast (5.3.0):
+    - FritzBase/Vision (~> 5.3.0)
+  - FritzVisionLabelModelFast (5.3.0):
+    - FritzBase/Vision (~> 5.3.0)
+  - FritzVisionObjectModelFast (5.3.0):
+    - FritzBase/Vision (~> 5.3.0)
+  - FritzVisionPeopleSegmentationModelFast (5.3.0):
+    - FritzBase/Vision (~> 5.3.0)
+  - FritzVisionStyleModelPaintings (5.3.0):
+    - FritzBase/Vision (~> 5.3.0)
+  - FritzVisionStyleModelPatterns (5.3.0):
+    - FritzBase/Vision (~> 5.3.0)
   - R.swift (5.0.0.alpha.2):
     - R.swift.Library (~> 5.0.0.alpha.2)
   - R.swift.Library (5.0.1)
@@ -51,7 +51,7 @@ DEPENDENCIES:
   - ColorSlider (~> 4.4)
   - Crashlytics (~> 3.9)
   - Fabric (~> 1.7)
-  - Fritz (~> 5.1.0)
+  - Fritz (~> 5.3.0)
   - Fritz/VisionLabelModel/Fast
   - Fritz/VisionObjectModel/Fast
   - Fritz/VisionPoseModel/Human/Fast
@@ -59,7 +59,7 @@ DEPENDENCIES:
   - Fritz/VisionSegmentationModel/People/Fast
   - Fritz/VisionStyleModel/Paintings
   - Fritz/VisionStyleModel/Patterns
-  - R.swift (~> 5.0.0.alpha.2)
+  - R.swift (= 5.0.0.alpha.2)
 
 SPEC REPOS:
   trunk:
@@ -82,18 +82,18 @@ SPEC CHECKSUMS:
   ColorSlider: 9a888e65b871fa1e6a26fadebf4931c949935681
   Crashlytics: 540b7e5f5da5a042647227a5e3ac51d85eed06df
   Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
-  Fritz: 9d0906f2a5cc3b67a4d68db0b25f5796980e8c39
-  FritzBase: 9284a1c336719d54793523d5734c9c8ec784c4d0
-  FritzVisionHairSegmentationModelFast: 2aebce9db085f46dee24a46313dae25f38f9b657
-  FritzVisionHumanPoseModelFast: b583f3dcd0b983a7495396789e6ed57f475b511b
-  FritzVisionLabelModelFast: 06869e65dc5e3adb29f5829880f326fae828aa0b
-  FritzVisionObjectModelFast: 6aab82b0a8fce386ad334f0088b85b939702f60d
-  FritzVisionPeopleSegmentationModelFast: 71d1850c93ab800c9dd5270b399bc7e365e1d627
-  FritzVisionStyleModelPaintings: 6e3e49b2bed86a348a6c5dbdec51014a39e83008
-  FritzVisionStyleModelPatterns: 3a94b93e36cc0eefbf4a3c549aaca58d19a56445
+  Fritz: 9f13fccd5bc7fc08a64d8bf79764c221e9d38cfe
+  FritzBase: aedffaeb45d5c09ccf66d7d4ad4e8d578072c3de
+  FritzVisionHairSegmentationModelFast: c24e43b826312c8c18f2e94be598f9fe008f0efc
+  FritzVisionHumanPoseModelFast: e629ea585967bd327e337245d38573a5ad0033af
+  FritzVisionLabelModelFast: a5398f536e4b5ee6a022bd81e648f22283681c3d
+  FritzVisionObjectModelFast: 98ef876b4fb55359dcff6125b35af44a9fdd3633
+  FritzVisionPeopleSegmentationModelFast: 526ae84d3e04604aab24edd5e9ee6659ab69566a
+  FritzVisionStyleModelPaintings: 632d179c92b842031d3651afcfa6928500b3f66a
+  FritzVisionStyleModelPatterns: f57c0ba3b97a1a56aee42261798010641495ea29
   R.swift: 31fa1bd537fa81307815cc622122f33331f32174
   R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
 
-PODFILE CHECKSUM: e7373535da75e9ea935690e7763cf6de7439087d
+PODFILE CHECKSUM: 1dbbe877b4a959a2cef8b96c2e0b011c98609f3e
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

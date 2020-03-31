@@ -1,23 +1,23 @@
 PODS:
-  - Fritz (5.0.0):
-    - Fritz/Vision (= 5.0.0)
-  - Fritz/Vision (5.0.0):
-    - FritzBase/Vision (= 5.0.0)
-  - Fritz/VisionStyleModel/Paintings (5.0.0):
-    - FritzVisionStyleModelPaintings (= 5.0.0)
-  - FritzBase/Core (5.0.0)
-  - FritzBase/CoreMLHelpers (5.0.0)
-  - FritzBase/ManagedModel (5.0.0):
-    - FritzBase/Core (= 5.0.0)
-  - FritzBase/Vision (5.0.0):
-    - FritzBase/Core (= 5.0.0)
-    - FritzBase/CoreMLHelpers (= 5.0.0)
-    - FritzBase/ManagedModel (= 5.0.0)
-  - FritzVisionStyleModelPaintings (5.0.0):
-    - FritzBase/Vision (= 5.0.0)
+  - Fritz (5.3.0):
+    - Fritz/Vision (= 5.3.0)
+  - Fritz/Vision (5.3.0):
+    - FritzBase/Vision (= 5.3.0)
+  - Fritz/VisionStyleModel/Paintings (5.3.0):
+    - FritzVisionStyleModelPaintings (~> 5.3.0)
+  - FritzBase/Core (5.3.0)
+  - FritzBase/CoreMLHelpers (5.3.0)
+  - FritzBase/ManagedModel (5.3.0):
+    - FritzBase/Core (= 5.3.0)
+  - FritzBase/Vision (5.3.0):
+    - FritzBase/Core (= 5.3.0)
+    - FritzBase/CoreMLHelpers (= 5.3.0)
+    - FritzBase/ManagedModel (= 5.3.0)
+  - FritzVisionStyleModelPaintings (5.3.0):
+    - FritzBase/Vision (~> 5.3.0)
 
 DEPENDENCIES:
-  - Fritz (~> 5.0.0)
+  - Fritz (~> 5.3.0)
   - Fritz/VisionStyleModel/Paintings
 
 SPEC REPOS:
@@ -27,10 +27,10 @@ SPEC REPOS:
     - FritzVisionStyleModelPaintings
 
 SPEC CHECKSUMS:
-  Fritz: c06106240a488236e951993dc0a31472fb058121
-  FritzBase: d9593a523b46b0badce04a49614aca30820a4879
-  FritzVisionStyleModelPaintings: d98bba5c95ea5e462951845f2936c4294318b5ec
+  Fritz: 9f13fccd5bc7fc08a64d8bf79764c221e9d38cfe
+  FritzBase: aedffaeb45d5c09ccf66d7d4ad4e8d578072c3de
+  FritzVisionStyleModelPaintings: 632d179c92b842031d3651afcfa6928500b3f66a
 
-PODFILE CHECKSUM: 411a38e46ec084698258d6fa0b1aef30aa652a3e
+PODFILE CHECKSUM: f0b7be0839c90d0bb4901f8db4bb0a7cf1deb15f
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.9.1

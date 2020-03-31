@@ -1,23 +1,23 @@
 PODS:
-  - Fritz (5.1.0):
-    - Fritz/Vision (= 5.1.0)
-  - Fritz/Vision (5.1.0):
-    - FritzBase/Vision (= 5.1.0)
-  - Fritz/VisionObjectModel/Fast (5.1.0):
-    - FritzVisionObjectModelFast (~> 5.1.0)
-  - FritzBase/Core (5.1.0)
-  - FritzBase/CoreMLHelpers (5.1.0)
-  - FritzBase/ManagedModel (5.1.0):
-    - FritzBase/Core (= 5.1.0)
-  - FritzBase/Vision (5.1.0):
-    - FritzBase/Core (= 5.1.0)
-    - FritzBase/CoreMLHelpers (= 5.1.0)
-    - FritzBase/ManagedModel (= 5.1.0)
-  - FritzVisionObjectModelFast (5.1.0):
-    - FritzBase/Vision (~> 5.1.0)
+  - Fritz (5.3.0):
+    - Fritz/Vision (= 5.3.0)
+  - Fritz/Vision (5.3.0):
+    - FritzBase/Vision (= 5.3.0)
+  - Fritz/VisionObjectModel/Fast (5.3.0):
+    - FritzVisionObjectModelFast (~> 5.3.0)
+  - FritzBase/Core (5.3.0)
+  - FritzBase/CoreMLHelpers (5.3.0)
+  - FritzBase/ManagedModel (5.3.0):
+    - FritzBase/Core (= 5.3.0)
+  - FritzBase/Vision (5.3.0):
+    - FritzBase/Core (= 5.3.0)
+    - FritzBase/CoreMLHelpers (= 5.3.0)
+    - FritzBase/ManagedModel (= 5.3.0)
+  - FritzVisionObjectModelFast (5.3.0):
+    - FritzBase/Vision (~> 5.3.0)
 
 DEPENDENCIES:
-  - Fritz (~> 5.1.0)
+  - Fritz (~> 5.3.0)
   - Fritz/VisionObjectModel/Fast
 
 SPEC REPOS:
@@ -27,10 +27,10 @@ SPEC REPOS:
     - FritzVisionObjectModelFast
 
 SPEC CHECKSUMS:
-  Fritz: 9d0906f2a5cc3b67a4d68db0b25f5796980e8c39
-  FritzBase: 9284a1c336719d54793523d5734c9c8ec784c4d0
-  FritzVisionObjectModelFast: 6aab82b0a8fce386ad334f0088b85b939702f60d
+  Fritz: 9f13fccd5bc7fc08a64d8bf79764c221e9d38cfe
+  FritzBase: aedffaeb45d5c09ccf66d7d4ad4e8d578072c3de
+  FritzVisionObjectModelFast: 98ef876b4fb55359dcff6125b35af44a9fdd3633
 
-PODFILE CHECKSUM: 9baf439915a1f755fe95b030e80060224c247a49
+PODFILE CHECKSUM: 574019bb44d7ee606d818b50f3fb986ea9c8a887
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

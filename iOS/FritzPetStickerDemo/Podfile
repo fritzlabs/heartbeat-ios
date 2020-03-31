@@ -6,7 +6,7 @@ target 'FritzPetStickerDemo' do
   use_frameworks!
 
   # Pods for FritzPetStickerDemo
-  pod 'Fritz', '~> 5.0.2'
+  pod 'Fritz', '~> 5.3.0'
   pod 'Fritz/VisionSegmentationModel/Pet/Accurate'
 
 end
